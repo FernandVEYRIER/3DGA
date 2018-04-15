@@ -10,6 +10,11 @@ namespace Assets.Scripts.Effects
     [Serializable]
     public class EffectFactory
     {
+        /// <summary>
+        /// The different kinds of liquids usable.
+        /// </summary>
+        public enum LIQUID_TYPE { Water, Coke, Rum, Bacardi, Vodka, LimeJuice }
+
         [SerializeField] private List<AEffect> _effectPool = new List<AEffect>();
 
         /// <summary>
@@ -17,9 +22,9 @@ namespace Assets.Scripts.Effects
         /// </summary>
         /// <param name="containedLiquids"></param>
         /// <returns></returns>
-        public AEffect GetEffect(List<Liquid> containedLiquids)
+        public AEffect GetEffect(List<LIQUID_TYPE> containedLiquids)
         {
-            throw new NotImplementedException();
+            return _effectPool.Find(x => x.Recipe.Matches(containedLiquids));
         }
     }
 }

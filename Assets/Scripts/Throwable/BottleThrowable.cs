@@ -8,7 +8,7 @@ namespace Assets.Scripts.Throwable
     /// </summary>
     public class BottleThrowable : AThrowable
     {
-        [SerializeField] private Liquid _liquid;
+        [SerializeField] private EffectFactory.LIQUID_TYPE _liquid;
 
         protected override void OnObjectDestroy()
         {

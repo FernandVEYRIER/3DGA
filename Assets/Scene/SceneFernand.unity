@@ -244,10 +244,17 @@ MonoBehaviour:
     - _recipe:
         _name: Kamikaze
         _ingredients:
-        - liquid: {fileID: 0}
-          percentage: 0
-        - liquid: {fileID: 0}
-          percentage: 0
+        - Liquid: 5
+          Percentage: 70
+        - Liquid: 4
+          Percentage: 30
+    - _recipe:
+        _name: Cuba Libre
+        _ingredients:
+        - Liquid: 2
+          Percentage: 35
+        - Liquid: 1
+          Percentage: 65
 --- !u!4 &891657426
 Transform:
   m_ObjectHideFlags: 0
@@ -310,13 +317,18 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114133673636641696, guid: 2a4e705aab8d7f0459efdb7fc7973702,
+        type: 2}
+      propertyPath: _hitTags.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4713464795834900, guid: 2a4e705aab8d7f0459efdb7fc7973702, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4713464795834900, guid: 2a4e705aab8d7f0459efdb7fc7973702, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.73
       objectReference: {fileID: 0}
     - target: {fileID: 4713464795834900, guid: 2a4e705aab8d7f0459efdb7fc7973702, type: 2}
       propertyPath: m_LocalPosition.z
@@ -341,6 +353,11 @@ Prefab:
     - target: {fileID: 4713464795834900, guid: 2a4e705aab8d7f0459efdb7fc7973702, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133673636641696, guid: 2a4e705aab8d7f0459efdb7fc7973702,
+        type: 2}
+      propertyPath: _hitTags.Array.data[0]
+      value: Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2a4e705aab8d7f0459efdb7fc7973702, type: 2}

@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using Assets.Scripts.Effects;
+using UnityEngine;
 
 namespace Assets.Scripts.Throwable
 {
@@ -10,9 +8,38 @@ namespace Assets.Scripts.Throwable
     /// </summary>
     public class GlassThrowable : AThrowable
     {
+        private readonly LiquidContainer _container = new LiquidContainer();
+
         protected override void OnObjectDestroy()
         {
-            throw new NotImplementedException();
+            if (_hitEffect != null)
+                Instantiate(_hitEffect, transform.position, Quaternion.identity);
+            var effect = _container.GetGeneratedEffect();
+            if (effect != null)
+                effect.Activate();
+            Destroy(gameObject);
+        }
+
+        private void Fill(EffectFactory.LIQUID_TYPE liquid)
+        {
+            _container.Fill(liquid);
+        }
+
+        override protected void Update()
+        {
+            base.Update();
+            if (Input.GetKey(KeyCode.O))
+                Fill(EffectFactory.LIQUID_TYPE.LimeJuice);
+            if (Input.GetKey(KeyCode.P))
+                Fill(EffectFactory.LIQUID_TYPE.Vodka);
+            if (Input.GetKeyDown(KeyCode.M))
+            {
+                var effect = _container.GetGeneratedEffect();
+                if (effect != null)
+                    Debug.Log("Generated effect ==> " + effect.Recipe.Name);
+                else
+                    Debug.Log("No effect at the moment.");
+            }
         }
     }
 }

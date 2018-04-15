@@ -112,7 +112,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitEffect: {fileID: 0}
-  _hitTags: []
+  _hitTags:
+  - Floor
 --- !u!136 &136340571542974146
 CapsuleCollider:
   m_ObjectHideFlags: 1
