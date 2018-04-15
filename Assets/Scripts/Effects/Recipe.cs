@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Assets.Scripts.Effects
@@ -19,21 +20,37 @@ namespace Assets.Scripts.Effects
         [SerializeField] private List<Ingredient> _ingredients = new List<Ingredient>();
 
         /// <summary>
+        /// How precise the percentages have to be to consider the recipe matching.
+        /// </summary>
+        private readonly float percentageTolerance = 10;
+
+        /// <summary>
         /// Tells if the list of liquids matches the recipe.
         /// </summary>
         /// <param name="containedLiquids"></param>
         /// <returns></returns>
-        public bool Matches(List<EffectFactory.LIQUID_TYPE> containedLiquids)
+        public bool Matches(List<Ingredient> containedLiquids)
         {
-            //return _ingredients.Except(containedLiquids).ToList().Count == 0;
-            int liquidsFound = 0;
+            var foundLiquids = new List<Ingredient>();
             foreach (var liquid in containedLiquids)
             {
-                if (_ingredients.Find(x => x.Liquid == liquid) == null)
-                    return false;
-                ++liquidsFound;
+                var match = _ingredients.Find(x => x.Liquid == liquid.Liquid);
+                if (match != null
+                    && match.Percentage - percentageTolerance < liquid.Percentage && match.Percentage + percentageTolerance > liquid.Percentage)
+                {
+                    foundLiquids.Add(match);
+                }
             }
-            return containedLiquids.Count > 0 && liquidsFound == _ingredients.Count;
+            return foundLiquids.Count == _ingredients.Count;
+            //return _ingredients.Except(containedLiquids).ToList().Count == 0;
+            //int liquidsFound = 0;
+            //foreach (var liquid in containedLiquids)
+            //{
+            //    if (_ingredients.Find(x => x.Liquid == liquid) == null)
+            //        return false;
+            //    ++liquidsFound;
+            //}
+            //return containedLiquids.Count > 0 && liquidsFound == _ingredients.Count;
         }
     }
 

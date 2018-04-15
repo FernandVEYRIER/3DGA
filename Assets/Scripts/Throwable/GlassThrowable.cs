@@ -32,6 +32,8 @@ namespace Assets.Scripts.Throwable
                 Fill(EffectFactory.LIQUID_TYPE.LimeJuice);
             if (Input.GetKey(KeyCode.P))
                 Fill(EffectFactory.LIQUID_TYPE.Vodka);
+            if (Input.GetKey(KeyCode.I))
+                Fill(EffectFactory.LIQUID_TYPE.Water);
             if (Input.GetKeyDown(KeyCode.M))
             {
                 var effect = _container.GetGeneratedEffect();

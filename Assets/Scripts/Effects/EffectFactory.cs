@@ -22,7 +22,7 @@ namespace Assets.Scripts.Effects
         /// </summary>
         /// <param name="containedLiquids"></param>
         /// <returns></returns>
-        public AEffect GetEffect(List<LIQUID_TYPE> containedLiquids)
+        public AEffect GetEffect(List<Ingredient> containedLiquids)
         {
             return _effectPool.Find(x => x.Recipe.Matches(containedLiquids));
         }
