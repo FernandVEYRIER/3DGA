@@ -1,4 +1,5 @@
 ﻿using Assets.Scripts.Game;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,8 +10,14 @@ namespace Assets.Scripts.Effects
     /// </summary>
     public class LiquidContainer
     {
+        /// <summary>
+        /// True if the container is empty, false otherwise.
+        /// </summary>
+        public bool IsEmpty { get { return fillPercentage <= 0; } }
+
         private readonly List<Ingredient> _containedLiquids = new List<Ingredient>();
         private float fillPercentage;
+        [SerializeField]
         private float fillStep = 0.25f;
 
         /// <summary>
@@ -39,6 +46,27 @@ namespace Assets.Scripts.Effects
             }
             l.Percentage += fillStep;
             fillPercentage += fillStep;
+        }
+
+        /// <summary>
+        /// Fills the container with the given liquid and the given amount.
+        /// </summary>
+        /// <param name="liquid"></param>
+        /// <param name="amount">Should be between 0 and 100%</param>
+        public void Fill(EffectFactory.LIQUID_TYPE liquid, float amount)
+        {
+            _containedLiquids.Add(new Ingredient { Liquid = liquid, Percentage = amount });
+            fillPercentage += amount;
+        }
+
+        /// <summary>
+        /// Depletes the container from its content.
+        /// </summary>
+        public void Deplete()
+        {
+            fillPercentage -= fillStep;
+            if (fillPercentage <= 0)
+                fillPercentage = 0;
         }
 
         /// <summary>

@@ -20,7 +20,7 @@ namespace Assets.Scripts.Throwable
             Destroy(gameObject);
         }
 
-        private void Fill(EffectFactory.LIQUID_TYPE liquid)
+        public void Fill(EffectFactory.LIQUID_TYPE liquid)
         {
             _container.Fill(liquid);
         }
