@@ -9,6 +9,9 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     [SerializeField]
     protected string[] ActionClassName;
 
+    [SerializeField]
+    protected string AnimationClassName;
+
     [SerializeField] 
     [Range(0.0f, 1.0f)]
     protected float humor;
@@ -19,12 +22,13 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
 
     protected NavMeshAgent nav;
     protected Action<GameObject> actionCB;
-    protected Action<GameObject> actionCCB;
-    protected Action<GameObject> actionCSCB;
-    protected Action<GameObject> actionCECB;
-    protected Action<GameObject> actionTCB;
-    protected Action<GameObject> actionTSCB;
-    protected Action<GameObject> actionTECB;
+    protected Action<GameObject, ADrunkAI> actionCCB;
+    protected Action<GameObject, ADrunkAI> actionCSCB;
+    protected Action<GameObject, ADrunkAI> actionCECB;
+    protected Action<GameObject, ADrunkAI> actionTCB;
+    protected Action<GameObject, ADrunkAI> actionTSCB;
+    protected Action<GameObject, ADrunkAI> actionTECB;
+    protected AAnimation animations;
     protected List<AAction> actions;
     protected List<ActionEnum.ActionData> actionList;
     protected Dictionary<ActionEnum.Action, Action> actionMethode;
@@ -37,9 +41,18 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     protected virtual void Start() {
         print("ADrunk start");
         nav = GetComponent<NavMeshAgent>();
-        actions = new List<AAction>();
         actionList = new List<ActionEnum.ActionData>();
         actionMethode = new Dictionary<ActionEnum.Action, Action>();
+        actions = new List<AAction>();
+
+        animations = (AAnimation)Activator.CreateInstance(Type.GetType(AnimationClassName));
+        animations.Initialize(this);
+
+        foreach (string s in ActionClassName)
+        {
+            actions.Add((AAction)Activator.CreateInstance(Type.GetType(s)));
+            actions[actions.Count - 1].Initialize(this);
+        }
 
         actionMethode.Add(ActionEnum.Action.ActionDone, ActionDone);
         actionMethode.Add(ActionEnum.Action.Walk, SetDirection);
@@ -47,6 +60,11 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         actionMethode.Add(ActionEnum.Action.ThrowBottle, ThrowBottle);
         actionMethode.Add(ActionEnum.Action.Hide, Hide);
         actionMethode.Add(ActionEnum.Action.Sit, Sit);
+        actionMethode.Add(ActionEnum.Action.Leave, Leave);
+        actionMethode.Add(ActionEnum.Action.Kick, Kick);
+        actionMethode.Add(ActionEnum.Action.Slip, Slip);
+        actionMethode.Add(ActionEnum.Action.Stun, Stun);
+
 
         walking = false;
         anim = false;
@@ -66,13 +84,13 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
 
     public void SetActionCB(Action<GameObject> CB) { actionCB = CB; }
 
-    public void SetCollisionCB(Action<GameObject> CB) { actionCCB = CB; }
-    public void SetCollisionStayCB(Action<GameObject> CB) { actionCSCB = CB; }
-    public void SetCollisionExitCB(Action<GameObject> CB) { actionCECB = CB; }
+    public void SetCollisionCB(Action<GameObject, ADrunkAI> CB) { actionCCB = CB; }
+    public void SetCollisionStayCB(Action<GameObject, ADrunkAI> CB) { actionCSCB = CB; }
+    public void SetCollisionExitCB(Action<GameObject, ADrunkAI> CB) { actionCECB = CB; }
 
-    public void SetTriggerCB(Action<GameObject> CB) { actionTCB = CB; }
-    public void SetTriggerStayCB(Action<GameObject> CB) { actionTSCB = CB; }
-    public void SetTriggerExitCB(Action<GameObject> CB) { actionTECB = CB; }
+    public void SetTriggerCB(Action<GameObject, ADrunkAI> CB) { actionTCB = CB; }
+    public void SetTriggerStayCB(Action<GameObject, ADrunkAI> CB) { actionTSCB = CB; }
+    public void SetTriggerExitCB(Action<GameObject, ADrunkAI> CB) { actionTECB = CB; }
 
 
     public void AddAction(ActionEnum.Action newAction, GameObject go)
@@ -84,6 +102,8 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     {
         StopWalking();
         actionCB = null;
+        anim = false;
+        ResetCallback();
         actionList.Clear();
     }
 
@@ -103,22 +123,47 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
 
     private void OnCollisionEnter(Collision collision)
     {
-        print("colision");
         if (actionCCB != null)
-            actionCCB(collision.gameObject);
+            actionCCB(collision.gameObject, this);
+        if (collision.gameObject.GetComponent<AEvent>() != null &&
+            collision.gameObject.GetComponent<AEvent>().Collision == AEvent.CollisionType.CollionEnter)
+        {
+            collision.gameObject.GetComponent<AEvent>().SetAIAction(this, humor, alcool);
+        }
     }
 
     private void OnTriggerEnter(Collider collision)
     {
-        print("trigger");
         if (actionTCB != null)
-            actionTCB(collision.gameObject);
+            actionTCB(collision.gameObject, this);
+        if (collision.gameObject.GetComponent<AEvent>() != null &&
+            collision.gameObject.GetComponent<AEvent>().Collision == AEvent.CollisionType.TriggerEnter)
+        {
+            collision.gameObject.GetComponent<AEvent>().SetAIAction(this, humor, alcool);
+        }
     }
 
     private void OnTriggerStay(Collider other)
     {
         if (actionTSCB != null)
-            actionTSCB(other.gameObject);
+            actionTSCB(other.gameObject, this);
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (actionTECB != null)
+            actionTECB(other.gameObject, this);
+    }
+
+    private void ResetCallback()
+    {
+         actionCB = null;
+         actionCCB = null;
+         actionCSCB = null;
+         actionCECB = null;
+         actionTCB = null;
+         actionTSCB = null;
+         actionTECB = null;
     }
 
     //internal usefull action of the AI
@@ -128,6 +173,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     {
         nav.SetDestination(actionList[0].go.transform.position);
         walking = true;
+        animations.Walk();
     }
 
     protected void SelectAction()
@@ -155,23 +201,22 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     //throwing bootle action
     #region throw
 
-    //return true if bottle
     public bool HaveBottle()
     {
        return bottle != null ? true : false;
     }
 
-    //get the bottle on the floor
     protected void GetBottle()
     {
-        Destroy(actionList[0].go);
-        AnimationDone();
+        anim = true;
+        Destroy(actionList[0].go, 0.1f);
+        animations.GetBottle();
     }
 
-    //throw the bottle
     protected void ThrowBottle()
     {
-        AnimationDone();
+        anim = true;
+        animations.ThrowBottle();
     }
     #endregion throw
 
@@ -182,7 +227,8 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     //hide the AI behind an object
     protected void Hide()
     {
-        AnimationDone();
+        anim = true;
+        animations.Hide();
     }
     #endregion hide
 
@@ -192,7 +238,41 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     //sit the AI on a chair
     protected void Sit()
     {
-        AnimationDone();
+        anim = true;
+        animations.Sit();
     }
     #endregion sit
+
+    //siting action
+    #region leave
+
+    //make the AI leave
+    protected void Leave()
+    {
+        anim = true;
+        Destroy(gameObject, animations.Leave());
+    }
+    #endregion leave
+
+    //kick an other AI
+    protected void Kick()
+    {
+        anim = true;
+        print("kicking someone hahaha !");
+        animations.Kick();
+    }
+
+    //slip on the floor
+    protected void Slip()
+    {
+        anim = true;
+        animations.Slip();
+    }
+
+    //get Stun by bottle or a kick
+    protected void Stun()
+    {
+        anim = true;
+        animations.Stun();
+    }
 }

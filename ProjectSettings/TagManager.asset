@@ -7,6 +7,10 @@ TagManager:
   - Projectile
   - Floor
   - Fire
+  - Throwable
+  - Hidding
+  - Exit
+  - AI
   layers:
   - Default
   - TransparentFX

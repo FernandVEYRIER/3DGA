@@ -10,6 +10,10 @@ public class ActionEnum {
         Sit,
         Hide,
         ActionDone,
+        Leave,
+        Kick,
+        Slip,
+        Stun,
     };
 
     public struct ActionData

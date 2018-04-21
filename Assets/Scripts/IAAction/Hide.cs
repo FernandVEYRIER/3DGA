@@ -22,9 +22,9 @@ public class Hide : AAction
         AI.SetTriggerStayCB(hide);
     }
 
-    private void hide(GameObject col)
+    private void hide(GameObject col, ADrunkAI ai)
     {
-        if (col.transform.tag == "Hidding" && col == hiddingPlace)
+        if (col == hiddingPlace)
         {
             AI.SetTriggerCB(null);
             AI.SetTriggerStayCB(null);

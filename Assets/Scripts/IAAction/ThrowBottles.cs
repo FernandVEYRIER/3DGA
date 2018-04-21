@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ThrowBottles : AAction {
 
+    private GameObject bottle;
+
     public override void Initialize(ADrunkAI ai)
     {
         base.Initialize(ai);
@@ -15,12 +17,12 @@ public class ThrowBottles : AAction {
         Debug.Log("action throw bottle");
         if (!AI.HaveBottle())
         {
-            GameObject go = elementManager.getNearestThrowableObject(AI.gameObject.transform.position);
-            if (go == null)
+            bottle = elementManager.getNearestThrowableObject(AI.gameObject.transform.position);
+            if (bottle == null)
                 AI.AddAction(ActionEnum.Action.ActionDone, null);
             else
             {
-                AI.AddAction(ActionEnum.Action.Walk, go);
+                AI.AddAction(ActionEnum.Action.Walk, bottle);
                 AI.SetCollisionCB(getBottle);
             }
         }
@@ -28,9 +30,9 @@ public class ThrowBottles : AAction {
             ThrowThisBottle();
     }
 
-    private void getBottle(GameObject col)
+    private void getBottle(GameObject col, ADrunkAI ai)
     {
-        if (col.tag == "Throwable")
+        if (bottle == col)
         {
             Debug.Log("getBottle callback");
             AI.SetCollisionCB(null);

@@ -5,44 +5,47 @@ using UnityEngine;
 public class ElementManager : MonoBehaviour {
 
     private GameObject[] hiddingSpot;
+    private GameObject[] exits;
 
     private void Start()
     {
         hiddingSpot = GameObject.FindGameObjectsWithTag("Hidding");
+        exits = GameObject.FindGameObjectsWithTag("Exit");
     }
 
     public  GameObject getNearestThrowableObject(Vector3 position)
     {
-        int tMin = 0;
-        float minDist = Mathf.Infinity;
-        GameObject[] throwable = GameObject.FindGameObjectsWithTag("Throwable");
-        if (throwable.Length == 0)
-            return null;
-
-        for (int i = 0; i < throwable.Length; i++)
-        {
-            float dist = Vector3.Distance(throwable[i].transform.position, position);
-            if (dist < minDist)
-            {
-                tMin = i;
-                minDist = dist;
-            }
-        }
-
-        return (throwable[tMin]);
+        return (getNearestObjectFromList(position, GameObject.FindGameObjectsWithTag("Throwable")));
     }
 
     public GameObject GetNearestHiddingSpot(Vector3 position)
     {
+        return (getNearestObjectFromList(position, hiddingSpot));
+    }
+
+    public GameObject GetRandomHiddingSpot(Vector3 position)
+    {
+        return (getRandomObjectFromList(hiddingSpot));
+    }
+
+    public GameObject GetNearestLeavingExit(Vector3 position)
+    {
+        return (getNearestObjectFromList(position, exits));
+    }
+
+    //private usefull methode
+
+    private GameObject getNearestObjectFromList(Vector3 position, GameObject[] list)
+    {
         int tMin = 0;
         float minDist = Mathf.Infinity;
 
-        if (hiddingSpot.Length < 1)
+        if (list.Length < 1)
             return null;
 
-        for (int i = 0; i < hiddingSpot.Length; i++)
+        for (int i = 0; i < list.Length; i++)
         {
-            float dist = Vector3.Distance(hiddingSpot[i].transform.position, position);
+            float dist = Vector3.Distance(list[i].transform.position, position);
             if (dist < minDist)
             {
                 tMin = i;
@@ -50,14 +53,14 @@ public class ElementManager : MonoBehaviour {
             }
         }
 
-        return (hiddingSpot[tMin]);
+        return (list[tMin]);
     }
 
-    public GameObject GetRandomHiddingSpot(Vector3 position)
+    private GameObject getRandomObjectFromList(GameObject[] list)
     {
-        if (hiddingSpot.Length < 1)
+        if (list.Length < 1)
             return null;
 
-        return (hiddingSpot[Random.Range(0, hiddingSpot.Length)]);
+        return (list[Random.Range(0, hiddingSpot.Length)]);
     }
 }
