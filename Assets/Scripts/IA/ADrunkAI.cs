@@ -30,7 +30,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     [Range(0.0f, 1.0f)]
     protected float humor, alcool;
     [SerializeField]
-    protected GameObject hand, target;
+    protected GameObject hand;
     [SerializeField()]
     LocalDictionary alcoolPerAction, humorPerAction;
 
@@ -47,6 +47,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     protected List<ActionEnum.ActionData> actionList;
     protected Dictionary<ActionEnum.Action, Action> actionMethode;
     protected AIComportement comportement;
+    public AIComportement Comportement { get { return comportement; } }
 
     protected GameObject bottle;
     protected bool walking;
@@ -95,7 +96,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         if (forceActionDone)
             ActionDone();
 
-        if (walking && destination == null)
+        if (walking && (destination == null || destination.transform.position.x != nav.destination.x || destination.transform.position.z != nav.destination.z))
             ActionDone();
         if (!walking && !anim && actionList.Count != 0)
         {
@@ -138,7 +139,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         destination = null;
         nav.SetDestination(gameObject.transform.position);
         walking = false;
-        if (actionList[0].type == ActionEnum.Action.Walk)
+        if (actionList.Count > 0 && actionList[0].type == ActionEnum.Action.Walk)
             AnimationDone();
     }
 
@@ -152,6 +153,14 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     public bool HaveBottle()
     {
         return bottle != null ? true : false;
+    }
+
+    public void ThrowThisBottle(Vector3 pos)
+    {
+        if (bottle == null)
+            return;
+        bottle.GetComponent<AThrowable>().Throw(pos);
+        bottle = null;
     }
 
     //every modification of alcool is made here
@@ -218,16 +227,21 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
 
     protected void SetDirection()
     {
-        nav.SetDestination(actionList[0].go.transform.position);
-        destination = actionList[0].go;
-        actionBase(ActionEnum.Action.Walk);
-        walking = true;
-        animations.Walk();
+        if (actionList[0].go == null)
+            ActionDone();
+        else
+        {
+            nav.SetDestination(actionList[0].go.transform.position);
+            destination = actionList[0].go;
+            actionBase(ActionEnum.Action.Walk);
+            walking = true;
+            animations.Walk();
+        }
     }
 
     protected void SelectAction()
     {
-        int actionToPlay = 0;
+        int actionToPlay = -1;
 
         for (int i = 0; i < actions.Count; i++)
         {
@@ -243,7 +257,8 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
                 }
             }
         }
-        actions[actionToPlay].DoAction();
+        if (actionToPlay != -1)
+            actions[actionToPlay].DoAction();
     }
     #endregion usefull action
 
@@ -262,7 +277,6 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     //get the bootle in the actionList
     protected void GetBottle()
     {
-        actionBase(ActionEnum.Action.GetBottle);
         if (actionList[0].go.GetComponent<AThrowable>() == null)
         {
             Destroy(actionList[0].go);
@@ -270,11 +284,10 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         }
         else
         {
+            actionBase(ActionEnum.Action.GetBottle);
             bottle = actionList[0].go;
             bottle.GetComponent<AThrowable>().Grab(hand.transform);
-            bottle.transform.position = hand.transform.position;
             bottle.tag = "Untagged";
-            bottle.GetComponent<AThrowable>().Throw(target.transform.position);
             animations.GetBottle();
         }
     }
@@ -282,8 +295,13 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     //throw the bottle hold by the AI
     protected void ThrowBottle()
     {
-        actionBase(ActionEnum.Action.ThrowBottle);
-        animations.ThrowBottle();
+        if (bottle == null)
+            AnimationDone();
+        else
+        {
+            actionBase(ActionEnum.Action.ThrowBottle);
+            animations.ThrowBottle();
+        }
     }
 
     //hide the AI behind an object

@@ -9,7 +9,7 @@ public class ThrowBottles : AAction {
     public override void Initialize(ADrunkAI ai)
     {
         base.Initialize(ai);
-        pourcentage = GameObject.Find("throwBottles").GetComponent<PourcentageMaker>();
+        action = ActionEnum.Action.ThrowBottle;
     }
 
     public override void DoAction()

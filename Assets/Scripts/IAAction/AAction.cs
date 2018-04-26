@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class AAction : IAction {
-
-    protected PourcentageMaker pourcentage;
+public abstract class AAction : IAction
+{
+    protected ActionEnum.Action action;
     protected ADrunkAI AI;
     protected ElementManager elementManager;
 
@@ -16,9 +16,7 @@ public abstract class AAction : IAction {
 
     public virtual float GetPourcentage(float humor, float alcool)
     {
-        if (pourcentage != null)
-            return pourcentage.GetPourcentage(humor, alcool);
-        return 0.0f;
+        return AI.Comportement.GetPourcentage(action, humor, alcool);
     }
 
     public virtual void DoAction()

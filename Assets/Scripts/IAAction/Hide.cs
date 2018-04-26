@@ -10,7 +10,7 @@ public class Hide : AAction
     public override void Initialize(ADrunkAI ai)
     {
         base.Initialize(ai);
-        pourcentage = GameObject.Find("hide").GetComponent<PourcentageMaker>();
+        action = ActionEnum.Action.Hide;
     }
 
     public override void DoAction()
@@ -29,7 +29,7 @@ public class Hide : AAction
             AI.SetTriggerCB(null);
             AI.SetTriggerStayCB(null);
             AI.StopWalking();
-            AI.AddAction(ActionEnum.Action.ActionDone, null);
+            AI.AddAction(ActionEnum.Action.Hide, null);
         }
     }
 }

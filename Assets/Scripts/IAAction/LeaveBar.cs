@@ -9,7 +9,7 @@ public class LeaveBar : AAction
     public override void Initialize(ADrunkAI ai)
     {
         base.Initialize(ai);
-        pourcentage = GameObject.Find("leave").GetComponent<PourcentageMaker>();
+        action = ActionEnum.Action.Leave;
     }
 
     public override void DoAction()
