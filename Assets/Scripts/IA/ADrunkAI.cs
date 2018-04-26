@@ -263,12 +263,20 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     protected void GetBottle()
     {
         actionBase(ActionEnum.Action.GetBottle);
-        //Destroy(actionList[0].go);
-        actionList[0].go.GetComponent<AThrowable>().Grab(hand.transform);
-        actionList[0].go.transform.position = hand.transform.position;
-        actionList[0].go.tag = "Untagged";
-        actionList[0].go.GetComponent<AThrowable>().Throw(target.transform.position);
-        animations.GetBottle();
+        if (actionList[0].go.GetComponent<AThrowable>() == null)
+        {
+            Destroy(actionList[0].go);
+            AnimationDone();
+        }
+        else
+        {
+            bottle = actionList[0].go;
+            bottle.GetComponent<AThrowable>().Grab(hand.transform);
+            bottle.transform.position = hand.transform.position;
+            bottle.tag = "Untagged";
+            bottle.GetComponent<AThrowable>().Throw(target.transform.position);
+            animations.GetBottle();
+        }
     }
 
     //throw the bottle hold by the AI
