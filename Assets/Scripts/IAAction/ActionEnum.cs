@@ -4,7 +4,8 @@ public class ActionEnum {
 
     public enum Action
     {
-        Walk,
+        Nothing = -1,
+        Walk = 0,
         GetBottle,
         ThrowBottle,
         Sit,

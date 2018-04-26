@@ -4,6 +4,10 @@ using UnityEngine;
 
 public abstract class AEvent : MonoBehaviour {
 
+    [SerializeField]
+    [Range(-1.0f, 1.0f)]
+    float amountOfAlcool, amountOfJoyness = 0;
+
     public enum CollisionType
     {
         CollionEnter,
@@ -31,6 +35,8 @@ public abstract class AEvent : MonoBehaviour {
         if (((float)(UnityEngine.Random.Range(0, 101)) / 100.0f) < ((humor.Evaluate(aiHumor) + alcool.Evaluate(aiAlcool)) / 2))
         {
             print("event proc, modification of the actions !!");
+            ai.GetDrunk(amountOfAlcool);
+            ai.GetHappy(amountOfJoyness);
             Action(ai);
         }
     }

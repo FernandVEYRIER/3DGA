@@ -6,6 +6,9 @@ using UnityEngine;
 
 public interface IDrunkAI {
 
+    void GetDrunk(float amount);
+    void GetHappy(float amount);
+
     void SetActionCB(Action<GameObject> CB);
 
     void SetCollisionCB(Action<GameObject, ADrunkAI> CB);

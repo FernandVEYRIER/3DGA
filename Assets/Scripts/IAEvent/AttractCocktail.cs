@@ -32,7 +32,8 @@ public class AttractCocktail : AEvent
      private void CocktailDisappear(GameObject col, ADrunkAI ai)
     {
         print("trigger cocktail disappear");
-        if (col == gameObject)
+        
+        if (gameObject != null && col == gameObject)
         {
             print("cocktail desapear, ai change his mind");
             ai.ActionDone();

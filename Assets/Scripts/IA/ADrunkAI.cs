@@ -4,21 +4,32 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+using com.Collections;
+
 public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
+
+    [System.Serializable()]
+    public class LocalDictionary : SerializableDictionaryBase<ActionEnum.Action, float>
+    {
+
+    }
+    //just for debug
+    [SerializeField]
+    private ActionEnum.Action actiondebug;
+    //serialised for debug nothing else
+    [SerializeField]
+    private GameObject destination;
+    public bool forceActionDone;
 
     [SerializeField]
     protected string[] ActionClassName;
-
     [SerializeField]
     protected string AnimationClassName;
-
     [SerializeField] 
     [Range(0.0f, 1.0f)]
-    protected float humor;
-
-    [SerializeField]
-    [Range(0.0f, 1.0f)]
-    protected float alcool;
+    protected float humor, alcool;
+    [SerializeField()]
+    LocalDictionary alcoolPerAction, humorPerAction;
 
     protected NavMeshAgent nav;
     protected Action<GameObject> actionCB;
@@ -32,6 +43,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     protected List<AAction> actions;
     protected List<ActionEnum.ActionData> actionList;
     protected Dictionary<ActionEnum.Action, Action> actionMethode;
+    protected AIComportement comportement;
 
     protected GameObject bottle;
     protected bool walking;
@@ -44,6 +56,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         actionList = new List<ActionEnum.ActionData>();
         actionMethode = new Dictionary<ActionEnum.Action, Action>();
         actions = new List<AAction>();
+        comportement = gameObject.GetComponent<AIComportement>();
 
         animations = (AAnimation)Activator.CreateInstance(Type.GetType(AnimationClassName));
         animations.Initialize(this);
@@ -69,13 +82,21 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         walking = false;
         anim = false;
         bottle = null;
+        destination = null;
+        forceActionDone = false;
     }
 
     // Update is called once per frame
     protected virtual void Update()
     {
+        if (forceActionDone)
+            ActionDone();
+
+        if (walking && destination == null)
+            ActionDone();
         if (!walking && !anim && actionList.Count != 0)
         {
+            actiondebug = actionList[0].type; //to delete, juste for debug
             actionMethode[actionList[0].type]();
         }
         if (actionList.Count == 0)
@@ -100,6 +121,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
 
     public void ActionDone()
     {
+        actiondebug = ActionEnum.Action.Nothing; //to delete, juste for debug
         StopWalking();
         actionCB = null;
         anim = false;
@@ -109,6 +131,8 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
 
     public void StopWalking()
     {
+        actiondebug = ActionEnum.Action.Nothing; //to delete, juste for debug
+        destination = null;
         nav.SetDestination(gameObject.transform.position);
         walking = false;
         if (actionList[0].type == ActionEnum.Action.Walk)
@@ -119,6 +143,26 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     {
         actionList.RemoveAt(0);
         anim = false;
+    }
+
+    //return true if AI got bottle
+    public bool HaveBottle()
+    {
+        return bottle != null ? true : false;
+    }
+
+    //every modification of alcool is made here
+    public void GetDrunk(float amount)
+    {
+        alcool += amount;
+        alcool = alcool < 0 ? 0 : alcool > 1 ? 1 : alcool;
+    }
+
+    //every modification of humor is made here
+    public void GetHappy(float amount)
+    {
+        humor += amount;
+        humor = humor < 0 ? 0 : humor > 1 ? 1 : humor;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -172,6 +216,8 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     protected void SetDirection()
     {
         nav.SetDestination(actionList[0].go.transform.position);
+        destination = actionList[0].go;
+        actionBase(ActionEnum.Action.Walk);
         walking = true;
         animations.Walk();
     }
@@ -198,66 +244,60 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     }
     #endregion usefull action
 
-    //throwing bootle action
-    #region throw
+    //all action of the AI
+    #region Action
 
-    public bool HaveBottle()
-    {
-       return bottle != null ? true : false;
-    }
-
-    protected void GetBottle()
+    protected void actionBase(ActionEnum.Action action)
     {
         anim = true;
-        Destroy(actionList[0].go, 0.1f);
+        if (alcoolPerAction.ContainsKey(action))
+            GetDrunk(alcoolPerAction[action]);
+        if (humorPerAction.ContainsKey(action))
+            GetHappy(humorPerAction[action]);
+    }
+
+
+
+    //get the bootle in the actionList
+    protected void GetBottle()
+    {
+        actionBase(ActionEnum.Action.GetBottle);
+        Destroy(actionList[0].go);
         animations.GetBottle();
     }
 
+    //throw the bottle hold by the AI
     protected void ThrowBottle()
     {
-        anim = true;
+        actionBase(ActionEnum.Action.ThrowBottle);
         animations.ThrowBottle();
     }
-    #endregion throw
-
-
-    //hidding action
-    #region hide
 
     //hide the AI behind an object
     protected void Hide()
     {
-        anim = true;
+        actionBase(ActionEnum.Action.Hide);
         animations.Hide();
     }
-    #endregion hide
-
-    //siting action
-    #region sit
 
     //sit the AI on a chair
     protected void Sit()
     {
-        anim = true;
+        actionBase(ActionEnum.Action.Sit);
         animations.Sit();
     }
-    #endregion sit
-
-    //siting action
-    #region leave
 
     //make the AI leave
     protected void Leave()
     {
-        anim = true;
+        actionBase(ActionEnum.Action.Leave);
         Destroy(gameObject, animations.Leave());
     }
-    #endregion leave
 
     //kick an other AI
     protected void Kick()
     {
-        anim = true;
+        actionBase(ActionEnum.Action.Kick);
         print("kicking someone hahaha !");
         animations.Kick();
     }
@@ -265,14 +305,15 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     //slip on the floor
     protected void Slip()
     {
-        anim = true;
+        actionBase(ActionEnum.Action.Slip);
         animations.Slip();
     }
 
     //get Stun by bottle or a kick
     protected void Stun()
     {
-        anim = true;
+        actionBase(ActionEnum.Action.Stun);
         animations.Stun();
     }
+    #endregion Action
 }
