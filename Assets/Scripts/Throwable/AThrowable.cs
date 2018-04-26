@@ -17,6 +17,7 @@ namespace Assets.Scripts.Throwable
         protected Transform _attachedTransform;
 
         private bool _isGrabbed;
+        private bool _hasBeenThrown;
         private Vector3 _previousPosition;
         private Vector3 _throwForce;
 
@@ -56,7 +57,7 @@ namespace Assets.Scripts.Throwable
         /// <param name="collision"></param>
         virtual protected void OnCollisionEnter(Collision collision)
         {
-            if (_hitTags.Contains(collision.transform.tag))
+            if (_hasBeenThrown && _hitTags.Contains(collision.transform.tag))
             {
                 OnObjectDestroy();
             }
@@ -73,6 +74,7 @@ namespace Assets.Scripts.Throwable
         public virtual void Throw()
         {
             _isGrabbed = false;
+            _hasBeenThrown = true;
             transform.SetParent(null);
             _rigidBody.AddForce(_throwForce);
             _attachedTransform = null;
@@ -86,6 +88,7 @@ namespace Assets.Scripts.Throwable
         public virtual void Throw(Vector3 target)
         {
             _isGrabbed = false;
+            _hasBeenThrown = true;
             transform.SetParent(null);
             _attachedTransform = null;
             float firingAngle = 45f, gravity = Mathf.Abs(Physics.gravity.y);
@@ -112,6 +115,7 @@ namespace Assets.Scripts.Throwable
             fwd = transform.TransformDirection(fwd);
 
             _rigidBody.velocity = fwd;
+            _rigidBody.angularVelocity = transform.right * 15f;
         }
 
         /// <summary>
