@@ -73,6 +73,7 @@ namespace Assets.Scripts.Throwable
         public virtual void Throw()
         {
             _isGrabbed = false;
+            transform.SetParent(null);
             _rigidBody.AddForce(_throwForce);
             _attachedTransform = null;
         }
@@ -85,6 +86,7 @@ namespace Assets.Scripts.Throwable
         public virtual void Throw(Vector3 target)
         {
             _isGrabbed = false;
+            transform.SetParent(null);
             _attachedTransform = null;
             float firingAngle = 45f, gravity = Mathf.Abs(Physics.gravity.y);
 
@@ -119,6 +121,8 @@ namespace Assets.Scripts.Throwable
         public virtual void Grab(Transform parent)
         {
             _isGrabbed = true;
+            transform.position = parent.position;
+            transform.SetParent(parent);
             _previousPosition = transform.position;
             _attachedTransform = parent;
         }
