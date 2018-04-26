@@ -113,217 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 118e658197c36154e9d162b7dd208e28, type: 2}
---- !u!1001 &43931067
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 2.93
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -7.24
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humor
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcool
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[2]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[3]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[4]
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[5]
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[0]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[1]
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[2]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[3]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[4]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[5]
-      value: -0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[0]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[1]
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[2]
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[2]
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[3]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[3]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[4]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[4]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[5]
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[5]
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[6]
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[6]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[7]
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[7]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1001482598733268, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_Name
-      value: Capsule (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 54011391367636634, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &119751202
 Prefab:
   m_ObjectHideFlags: 0
@@ -382,6 +171,8 @@ GameObject:
   - component: {fileID: 119938151}
   - component: {fileID: 119938150}
   - component: {fileID: 119938149}
+  - component: {fileID: 119938154}
+  - component: {fileID: 119938153}
   m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Throwable
@@ -455,6 +246,37 @@ Transform:
   m_Father: {fileID: 1640098574}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &119938153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 119938148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e52289941c654b499c8319ead609d07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hitEffect: {fileID: 0}
+  _hitTags:
+  - Hidding
+  - AI
+  _liquid: 0
+--- !u!54 &119938154
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 119938148}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &158816843
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,6 +372,8 @@ GameObject:
   - component: {fileID: 167366082}
   - component: {fileID: 167366081}
   - component: {fileID: 167366080}
+  - component: {fileID: 167366085}
+  - component: {fileID: 167366084}
   m_Layer: 0
   m_Name: Cube (5)
   m_TagString: Untagged
@@ -623,6 +447,37 @@ Transform:
   m_Father: {fileID: 1640098574}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &167366084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 167366079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e52289941c654b499c8319ead609d07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hitEffect: {fileID: 0}
+  _hitTags:
+  - Hidding
+  - AI
+  _liquid: 0
+--- !u!54 &167366085
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 167366079}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &203528052
 GameObject:
   m_ObjectHideFlags: 0
@@ -1515,217 +1370,6 @@ Transform:
   m_Father: {fileID: 2020381384}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &446011310
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -7.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 4.41
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_RootOrder
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humor
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcool
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[2]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[3]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[4]
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[5]
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[0]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[1]
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[2]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[3]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[4]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[5]
-      value: -0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[0]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[1]
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[2]
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[2]
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[3]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[3]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[4]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[4]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[5]
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[5]
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[6]
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[6]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[7]
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[7]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1001482598733268, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_Name
-      value: Capsule (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 54011391367636634, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &451009239
 GameObject:
   m_ObjectHideFlags: 0
@@ -2103,428 +1747,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 653664120}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &671599097
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -9.21
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 1.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_RootOrder
-      value: 19
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humor
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcool
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[2]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[3]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[4]
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[5]
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[0]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[1]
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[2]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[3]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[4]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[5]
-      value: -0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[0]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[1]
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[2]
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[2]
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[3]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[3]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[4]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[4]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[5]
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[5]
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[6]
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[6]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[7]
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[7]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1001482598733268, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_Name
-      value: Capsule (15)
-      objectReference: {fileID: 0}
-    - target: {fileID: 54011391367636634, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &694183450
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -1.68
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -9.87
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humor
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcool
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[2]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[3]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[4]
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[5]
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[0]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[1]
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[2]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[3]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[4]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[5]
-      value: -0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[0]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[1]
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[2]
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[2]
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[3]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[3]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[4]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[4]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[5]
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[5]
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[6]
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[6]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[7]
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[7]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1001482598733268, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_Name
-      value: Capsule (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 54011391367636634, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &731945988
 GameObject:
   m_ObjectHideFlags: 0
@@ -2759,217 +1981,6 @@ Transform:
   m_Father: {fileID: 554530852}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &872454817
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -3.88
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humor
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcool
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[2]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[3]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[4]
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[5]
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[0]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[1]
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[2]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[3]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[4]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[5]
-      value: -0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[0]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[1]
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[2]
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[2]
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[3]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[3]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[4]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[4]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[5]
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[5]
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[6]
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[6]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[7]
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[7]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1001482598733268, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_Name
-      value: Capsule (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 54011391367636634, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &911900856
 GameObject:
   m_ObjectHideFlags: 0
@@ -3069,6 +2080,8 @@ GameObject:
   - component: {fileID: 1022658867}
   - component: {fileID: 1022658866}
   - component: {fileID: 1022658865}
+  - component: {fileID: 1022658870}
+  - component: {fileID: 1022658869}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Throwable
@@ -3142,6 +2155,37 @@ Transform:
   m_Father: {fileID: 1640098574}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1022658869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1022658864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e52289941c654b499c8319ead609d07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hitEffect: {fileID: 0}
+  _hitTags:
+  - Hidding
+  - AI
+  _liquid: 0
+--- !u!54 &1022658870
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1022658864}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1050250974
 GameObject:
   m_ObjectHideFlags: 0
@@ -3228,217 +2272,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1050250974}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &1080565885
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 5.17
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -10.95
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_RootOrder
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humor
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcool
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[2]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[3]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[4]
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[5]
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[0]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[1]
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[2]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[3]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[4]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[5]
-      value: -0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[0]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[1]
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[2]
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[2]
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[3]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[3]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[4]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[4]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[5]
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[5]
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[6]
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[6]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[7]
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[7]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1001482598733268, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_Name
-      value: Capsule (12)
-      objectReference: {fileID: 0}
-    - target: {fileID: 54011391367636634, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &1083216167
 Prefab:
   m_ObjectHideFlags: 0
@@ -3696,6 +2529,34 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1102895555}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1142798224
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1142798225}
+  m_Layer: 0
+  m_Name: hand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1142798225
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1142798224}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.57, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1358538575}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1187217942
 GameObject:
   m_ObjectHideFlags: 0
@@ -4028,6 +2889,8 @@ GameObject:
   - component: {fileID: 1289083163}
   - component: {fileID: 1289083162}
   - component: {fileID: 1289083161}
+  - component: {fileID: 1289083166}
+  - component: {fileID: 1289083165}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Throwable
@@ -4101,6 +2964,37 @@ Transform:
   m_Father: {fileID: 1640098574}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1289083165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1289083160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e52289941c654b499c8319ead609d07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hitEffect: {fileID: 0}
+  _hitTags:
+  - Hidding
+  - AI
+  _liquid: 0
+--- !u!54 &1289083166
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1289083160}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1299674067
 GameObject:
   m_ObjectHideFlags: 0
@@ -4429,9 +3323,19 @@ Prefab:
       propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: hand
+      value: 
+      objectReference: {fileID: 1142798224}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &1358538575 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1358538574}
 --- !u!1 &1399627450
 GameObject:
   m_ObjectHideFlags: 0
@@ -4557,428 +3461,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1001 &1454797192
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 8.91
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -9.34
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_RootOrder
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humor
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcool
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[2]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[3]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[4]
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[5]
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[0]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[1]
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[2]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[3]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[4]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[5]
-      value: -0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[0]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[1]
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[2]
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[2]
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[3]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[3]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[4]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[4]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[5]
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[5]
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[6]
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[6]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[7]
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[7]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1001482598733268, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_Name
-      value: Capsule (11)
-      objectReference: {fileID: 0}
-    - target: {fileID: 54011391367636634, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &1455650698
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -8.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -4.45
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humor
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcool
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[2]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[3]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[4]
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[5]
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[0]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[1]
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[2]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[3]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[4]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[5]
-      value: -0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[0]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[1]
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[2]
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[2]
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[3]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[3]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[4]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[4]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[5]
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[5]
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[6]
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[6]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[7]
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[7]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1001482598733268, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_Name
-      value: Capsule (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 54011391367636634, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1528851918
 GameObject:
   m_ObjectHideFlags: 0
@@ -5010,217 +3492,6 @@ Transform:
   m_Father: {fileID: 2020381384}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1553072399
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 7.37
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 5.94
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_RootOrder
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humor
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcool
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[2]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[3]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[4]
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[5]
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[0]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[1]
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[2]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[3]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[4]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[5]
-      value: -0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[0]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[1]
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[2]
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[2]
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[3]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[3]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[4]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[4]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[5]
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[5]
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[6]
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[6]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[7]
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[7]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1001482598733268, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_Name
-      value: Capsule (10)
-      objectReference: {fileID: 0}
-    - target: {fileID: 54011391367636634, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1625590447
 GameObject:
   m_ObjectHideFlags: 0
@@ -5752,217 +4023,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4577852828863804, guid: 440f310d23e9861459842ea19fa8f223,
     type: 2}
   m_PrefabInternal: {fileID: 1815748378}
---- !u!1001 &1853459767
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -0.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -12.64
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_RootOrder
-      value: 17
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humor
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcool
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[2]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[3]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[4]
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[5]
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[0]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[1]
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[2]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[3]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[4]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[5]
-      value: -0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[0]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[1]
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[2]
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[2]
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[3]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[3]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[4]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[4]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[5]
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[5]
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[6]
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[6]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[7]
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[7]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1001482598733268, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_Name
-      value: Capsule (13)
-      objectReference: {fileID: 0}
-    - target: {fileID: 54011391367636634, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1884523731
 GameObject:
   m_ObjectHideFlags: 0
@@ -6107,6 +4167,8 @@ GameObject:
   - component: {fileID: 1943572147}
   - component: {fileID: 1943572152}
   - component: {fileID: 1943572151}
+  - component: {fileID: 1943572154}
+  - component: {fileID: 1943572153}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -6246,6 +4308,37 @@ MonoBehaviour:
   goOfAction:
   - {fileID: 1943572146}
   - {fileID: 1943572146}
+--- !u!114 &1943572153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1943572146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e52289941c654b499c8319ead609d07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hitEffect: {fileID: 0}
+  _hitTags:
+  - Hidding
+  - AI
+  _liquid: 0
+--- !u!54 &1943572154
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1943572146}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2020381383
 GameObject:
   m_ObjectHideFlags: 0
@@ -6283,428 +4376,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &2041762956
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -4.78
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.18
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humor
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcool
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[2]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[3]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[4]
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[5]
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[0]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[1]
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[2]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[3]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[4]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[5]
-      value: -0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[0]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[1]
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[2]
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[2]
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[3]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[3]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[4]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[4]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[5]
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[5]
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[6]
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[6]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[7]
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[7]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1001482598733268, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_Name
-      value: Capsule (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 54011391367636634, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &2043575301
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -8.09
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -12.21
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_RootOrder
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humor
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcool
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[2]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[3]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[4]
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[5]
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[0]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[1]
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[2]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[3]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[4]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[5]
-      value: -0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[0]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[1]
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[2]
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[2]
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[3]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[3]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[4]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[4]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[5]
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[5]
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[6]
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[6]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[7]
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[7]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1001482598733268, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_Name
-      value: Capsule (14)
-      objectReference: {fileID: 0}
-    - target: {fileID: 54011391367636634, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &2046592848
 Prefab:
   m_ObjectHideFlags: 0
@@ -6819,6 +4490,8 @@ GameObject:
   - component: {fileID: 2066165542}
   - component: {fileID: 2066165541}
   - component: {fileID: 2066165545}
+  - component: {fileID: 2066165547}
+  - component: {fileID: 2066165546}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Throwable
@@ -6946,6 +4619,37 @@ MonoBehaviour:
   goOfAction:
   - {fileID: 2066165540}
   - {fileID: 0}
+--- !u!114 &2066165546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2066165540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e52289941c654b499c8319ead609d07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hitEffect: {fileID: 0}
+  _hitTags:
+  - Hidding
+  - AI
+  _liquid: 0
+--- !u!54 &2066165547
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2066165540}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2096006368
 GameObject:
   m_ObjectHideFlags: 0
@@ -6979,425 +4683,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &2124427167
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 1.61
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 7.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_RootOrder
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humor
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcool
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[2]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[3]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[4]
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[5]
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[0]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[1]
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[2]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[3]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[4]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[5]
-      value: -0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[0]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[1]
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[2]
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[2]
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[3]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[3]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[4]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[4]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[5]
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[5]
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[6]
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[6]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[7]
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[7]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1001482598733268, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_Name
-      value: Capsule (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 54011391367636634, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &2135589886
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -5.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 8.41
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humor
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcool
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[2]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[3]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[4]
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._keys.Array.data[5]
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[0]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[1]
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[2]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[3]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[4]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcoolPerAction._values.Array.data[5]
-      value: -0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[0]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[1]
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[2]
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[2]
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[3]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[3]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[4]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[4]
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[5]
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[5]
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[6]
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[6]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._keys.Array.data[7]
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[7]
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1001482598733268, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-      propertyPath: m_Name
-      value: Capsule (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 54011391367636634, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
-  m_IsPrefabParent: 0

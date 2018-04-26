@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 using com.Collections;
+using Assets.Scripts.Throwable;
 
 public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
 
@@ -28,6 +29,8 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     [SerializeField] 
     [Range(0.0f, 1.0f)]
     protected float humor, alcool;
+    [SerializeField]
+    protected GameObject hand, target;
     [SerializeField()]
     LocalDictionary alcoolPerAction, humorPerAction;
 
@@ -256,13 +259,15 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
             GetHappy(humorPerAction[action]);
     }
 
-
-
     //get the bootle in the actionList
     protected void GetBottle()
     {
         actionBase(ActionEnum.Action.GetBottle);
-        Destroy(actionList[0].go);
+        //Destroy(actionList[0].go);
+        actionList[0].go.GetComponent<AThrowable>().Grab(hand.transform);
+        actionList[0].go.transform.position = hand.transform.position;
+        actionList[0].go.tag = "Untagged";
+        actionList[0].go.GetComponent<AThrowable>().Throw(target.transform.position);
         animations.GetBottle();
     }
 
