@@ -51,7 +51,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1860209908069046
 GameObject:
   m_ObjectHideFlags: 0
@@ -276,7 +276,6 @@ MonoBehaviour:
   ActionClassName:
   - ThrowBottles
   - Hide
-  - LeaveBar
   AnimationClassName: BasicGuyAnimation
   humor: 0.5
   alcool: 0.5
