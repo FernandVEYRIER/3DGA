@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 23712841589736346}
   - component: {fileID: 54471871653780826}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Bollte_green
   m_TagString: Bottle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1094426101288372}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.16, y: 1.4, z: -1.9446478}
+  m_LocalPosition: {x: 5.198, y: 1.491, z: -3.4216075}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children: []
   m_Father: {fileID: 0}
@@ -91,7 +91,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1094426101288372}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 100
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
