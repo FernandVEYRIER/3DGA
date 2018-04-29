@@ -15,6 +15,9 @@ namespace Assets.Scripts.Effects
         /// </summary>
         public enum LIQUID_TYPE { Water, Coke, Rum, Bacardi, Vodka, LimeJuice }
 
+        [Tooltip("The corresponding color for every liquid. Should be the same size as the LIQUID_TYPE enum.")]
+        [SerializeField] private Color[] liquidColors;
+
         [SerializeField] private List<AEffect> _effectPool = new List<AEffect>();
 
         /// <summary>
@@ -25,6 +28,15 @@ namespace Assets.Scripts.Effects
         public AEffect GetEffect(List<Ingredient> containedLiquids)
         {
             return _effectPool.Find(x => x.Recipe.Matches(containedLiquids));
+        }
+
+        public Color GetLiquidColor(LIQUID_TYPE liquid)
+        {
+            if (liquidColors.Length > (int)liquid)
+            {
+                return liquidColors[(int)liquid];
+            }
+            return Color.magenta;
         }
     }
 }

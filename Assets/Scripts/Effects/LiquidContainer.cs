@@ -1,7 +1,7 @@
 ﻿using Assets.Scripts.Game;
-using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Assets.Scripts.Extensions;
 
 namespace Assets.Scripts.Effects
 {
@@ -51,6 +51,21 @@ namespace Assets.Scripts.Effects
             }
             l.Percentage += fillStep;
             FillAmount += fillStep;
+        }
+
+        /// <summary>
+        /// Returns the global color of the container according to the current contained liquids.
+        /// </summary>
+        /// <returns></returns>
+        public Color GetContainerColor()
+        {
+            var col = Color.clear;
+            var colList = new List<Color>();
+            foreach (var liquid in _containedLiquids)
+            {
+                colList.Add(GameManager.Instance.Factory.GetLiquidColor(liquid.Liquid));
+            }
+            return Extension.CombineColors(colList);
         }
 
         /// <summary>

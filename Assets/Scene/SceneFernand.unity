@@ -414,6 +414,48 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 683fa979dece1f84387107da43d16bb2, type: 3}
   m_IsPrefabParent: 0
+--- !u!1001 &757819242
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4657380000299182, guid: 4d1d8572f252736459512fca68a7a4bc, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4657380000299182, guid: 4d1d8572f252736459512fca68a7a4bc, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4657380000299182, guid: 4d1d8572f252736459512fca68a7a4bc, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4657380000299182, guid: 4d1d8572f252736459512fca68a7a4bc, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4657380000299182, guid: 4d1d8572f252736459512fca68a7a4bc, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4657380000299182, guid: 4d1d8572f252736459512fca68a7a4bc, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4657380000299182, guid: 4d1d8572f252736459512fca68a7a4bc, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4657380000299182, guid: 4d1d8572f252736459512fca68a7a4bc, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 4d1d8572f252736459512fca68a7a4bc, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &881095341
 Prefab:
   m_ObjectHideFlags: 0
@@ -456,62 +498,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad3522b75e7cfca4fbbdb6a76e1db4f0, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &891657424
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 891657426}
-  - component: {fileID: 891657425}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &891657425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 891657424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f17cb12c702eaa04c9519f4184c15f5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _factory:
-    _effectPool:
-    - _recipe:
-        _name: Kamikaze
-        _ingredients:
-        - Liquid: 5
-          Percentage: 70
-        - Liquid: 4
-          Percentage: 30
-    - _recipe:
-        _name: Cuba Libre
-        _ingredients:
-        - Liquid: 2
-          Percentage: 35
-        - Liquid: 1
-          Percentage: 65
---- !u!4 &891657426
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 891657424}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1030934851
 Prefab:
   m_ObjectHideFlags: 0
@@ -550,6 +536,11 @@ Prefab:
     - target: {fileID: 4497340982236634, guid: f505bbc9cce8d864e8ccdab873489b13, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114922403585228992, guid: f505bbc9cce8d864e8ccdab873489b13,
+        type: 2}
+      propertyPath: _liquid
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f505bbc9cce8d864e8ccdab873489b13, type: 2}

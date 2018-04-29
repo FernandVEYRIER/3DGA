@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1435556092476070}
+  m_IsPrefabParent: 1
+--- !u!1 &1435556092476070
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4657380000299182}
+  - component: {fileID: 114438003406636134}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4657380000299182
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1435556092476070}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114438003406636134
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1435556092476070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f17cb12c702eaa04c9519f4184c15f5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _factory:
+    liquidColors:
+    - {r: 0.12602727, g: 0.6733868, b: 0.8161765, a: 0.716}
+    - {r: 0.42647058, g: 0.050173007, b: 0.050173007, a: 0.797}
+    - {r: 0.9485294, g: 0.93458045, b: 0.93458045, a: 0.197}
+    - {r: 0.8897059, g: 0.85045415, b: 0.85045415, a: 0.203}
+    - {r: 0.88235295, g: 0.8304498, b: 0.8304498, a: 0.222}
+    - {r: 0.72813505, g: 0.7352941, b: 0.21626295, a: 0.76}
+    _effectPool:
+    - _recipe:
+        _name: Kamikaze
+        _ingredients:
+        - Liquid: 5
+          Percentage: 70
+        - Liquid: 4
+          Percentage: 30
+    - _recipe:
+        _name: Cuba Libre
+        _ingredients:
+        - Liquid: 2
+          Percentage: 35
+        - Liquid: 1
+          Percentage: 65
