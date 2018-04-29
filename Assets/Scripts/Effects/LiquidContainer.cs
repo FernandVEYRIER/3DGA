@@ -13,10 +13,16 @@ namespace Assets.Scripts.Effects
         /// <summary>
         /// True if the container is empty, false otherwise.
         /// </summary>
-        public bool IsEmpty { get { return fillPercentage <= 0; } }
+        public bool IsEmpty { get { return FillAmount <= 0; } }
+
+        /// <summary>
+        /// The current filling amount of the container, from 0 to 100.
+        /// </summary>
+        public float FillAmount { get; private set; }
+
 
         private readonly List<Ingredient> _containedLiquids = new List<Ingredient>();
-        private float fillPercentage;
+
         [SerializeField]
         private float fillStep = 0.25f;
 
@@ -38,14 +44,13 @@ namespace Assets.Scripts.Effects
                 l = new Ingredient { Liquid = liquid };
                 _containedLiquids.Add(l);
             }
-            Debug.Log("Fill percentage => " + l.Percentage);
-            if (fillPercentage >= 100)
+            if (FillAmount >= 100)
             {
-                fillPercentage = 100;
+                FillAmount = 100;
                 return;
             }
             l.Percentage += fillStep;
-            fillPercentage += fillStep;
+            FillAmount += fillStep;
         }
 
         /// <summary>
@@ -56,7 +61,7 @@ namespace Assets.Scripts.Effects
         public void Fill(EffectFactory.LIQUID_TYPE liquid, float amount)
         {
             _containedLiquids.Add(new Ingredient { Liquid = liquid, Percentage = amount });
-            fillPercentage += amount;
+            FillAmount += amount;
         }
 
         /// <summary>
@@ -64,9 +69,9 @@ namespace Assets.Scripts.Effects
         /// </summary>
         public void Deplete()
         {
-            fillPercentage -= fillStep;
-            if (fillPercentage <= 0)
-                fillPercentage = 0;
+            FillAmount -= fillStep;
+            if (FillAmount <= 0)
+                FillAmount = 0;
         }
 
         /// <summary>
@@ -74,7 +79,7 @@ namespace Assets.Scripts.Effects
         /// </summary>
         private void Empty()
         {
-            fillPercentage = 0;
+            FillAmount = 0;
             _containedLiquids.Clear();
         }
 

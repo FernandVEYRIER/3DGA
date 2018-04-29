@@ -8,7 +8,15 @@ namespace Assets.Scripts.Throwable
     /// </summary>
     public class GlassThrowable : AThrowable
     {
+        [SerializeField] private GameObject _liquid;
+
         private readonly LiquidContainer _container = new LiquidContainer();
+
+        private void Start()
+        {
+            _liquid.SetActive(false);
+            _liquid.transform.localScale = new Vector3(1, 0, 1);
+        }
 
         protected override void OnObjectDestroy()
         {
@@ -23,6 +31,8 @@ namespace Assets.Scripts.Throwable
         public void Fill(EffectFactory.LIQUID_TYPE liquid)
         {
             _container.Fill(liquid);
+            _liquid.SetActive(true);
+            _liquid.transform.localScale = new Vector3(1, _container.FillAmount / 100f, 1);
         }
 
         override protected void Update()
