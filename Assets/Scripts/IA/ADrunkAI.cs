@@ -11,9 +11,8 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
 
     [System.Serializable()]
     public class LocalDictionary : SerializableDictionaryBase<ActionEnum.Action, float>
-    {
+    {}
 
-    }
     //just for debug
     [SerializeField]
     private ActionEnum.Action actiondebug;
