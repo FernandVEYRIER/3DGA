@@ -2,7 +2,6 @@
 using Assets.Scripts.Liquids;
 using UnityEngine;
 
-
 namespace Assets.Scripts.Throwable
 {
     /// <summary>
@@ -11,6 +10,7 @@ namespace Assets.Scripts.Throwable
     public class BottleThrowable : AThrowable
     {
         [SerializeField] private EffectFactory.LIQUID_TYPE _liquid;
+        [SerializeField] private ParticleHandler _particles;
 
         private readonly LiquidContainer _container = new LiquidContainer();
         private ParticleHandler _particleHandler;
@@ -26,10 +26,13 @@ namespace Assets.Scripts.Throwable
         {
             var s = obj.GetComponent<GlassThrowable>();
 
+
             if (s != null && !_container.IsEmpty)
             {
                 s.Fill(_liquid);
                 _container.Deplete();
+                if (_container.IsEmpty)
+                    _particles.Stop();
             }
         }
 

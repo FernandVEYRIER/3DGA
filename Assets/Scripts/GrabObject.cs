@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Assets.Scripts.Throwable;
 
 public class GrabObject : MonoBehaviour {
 
@@ -31,6 +32,8 @@ public class GrabObject : MonoBehaviour {
 		}
 		// 2
 		collidingObject = col.gameObject;
+		col.gameObject.GetComponent<Rigidbody> ().velocity = Vector3.zero;
+		col.gameObject.GetComponent<Rigidbody> ().angularVelocity = Vector3.zero;
 	}
 
 	// 1
@@ -64,6 +67,8 @@ public class GrabObject : MonoBehaviour {
 		// 2
 		var joint = AddFixedJoint();
 		joint.connectedBody = objectInHand.GetComponent<Rigidbody>();
+
+
 	}
 
 	// 3
@@ -86,6 +91,13 @@ public class GrabObject : MonoBehaviour {
 			// 3
 			objectInHand.GetComponent<Rigidbody>().velocity = Controller.velocity * forceRelase;
 			objectInHand.GetComponent<Rigidbody>().angularVelocity = Controller.angularVelocity * forceRelase;
+
+			if (objectInHand.GetComponent<AThrowable> () != null)
+				objectInHand.GetComponent<AThrowable> ().PlayerThrow();
+
+			// Release here
+
+
 		}
 		// 4
 		objectInHand = null;

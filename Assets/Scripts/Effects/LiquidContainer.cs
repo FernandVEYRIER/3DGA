@@ -1,7 +1,7 @@
 ﻿using Assets.Scripts.Game;
-using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Assets.Scripts.Extensions;
 
 namespace Assets.Scripts.Effects
 {
@@ -13,10 +13,16 @@ namespace Assets.Scripts.Effects
         /// <summary>
         /// True if the container is empty, false otherwise.
         /// </summary>
-        public bool IsEmpty { get { return fillPercentage <= 0; } }
+        public bool IsEmpty { get { return FillAmount <= 0; } }
+
+        /// <summary>
+        /// The current filling amount of the container, from 0 to 100.
+        /// </summary>
+        public float FillAmount { get; private set; }
+
 
         private readonly List<Ingredient> _containedLiquids = new List<Ingredient>();
-        private float fillPercentage;
+
         [SerializeField]
         private float fillStep = 0.25f;
 
@@ -38,14 +44,28 @@ namespace Assets.Scripts.Effects
                 l = new Ingredient { Liquid = liquid };
                 _containedLiquids.Add(l);
             }
-            Debug.Log("Fill percentage => " + l.Percentage);
-            if (fillPercentage >= 100)
+            if (FillAmount >= 100)
             {
-                fillPercentage = 100;
+                FillAmount = 100;
                 return;
             }
             l.Percentage += fillStep;
-            fillPercentage += fillStep;
+            FillAmount += fillStep;
+        }
+
+        /// <summary>
+        /// Returns the global color of the container according to the current contained liquids.
+        /// </summary>
+        /// <returns></returns>
+        public Color GetContainerColor()
+        {
+            var col = Color.clear;
+            var colList = new List<Color>();
+            foreach (var liquid in _containedLiquids)
+            {
+                colList.Add(GameManager.Instance.Factory.GetLiquidColor(liquid.Liquid));
+            }
+            return Extension.CombineColors(colList);
         }
 
         /// <summary>
@@ -56,7 +76,7 @@ namespace Assets.Scripts.Effects
         public void Fill(EffectFactory.LIQUID_TYPE liquid, float amount)
         {
             _containedLiquids.Add(new Ingredient { Liquid = liquid, Percentage = amount });
-            fillPercentage += amount;
+            FillAmount += amount;
         }
 
         /// <summary>
@@ -64,9 +84,9 @@ namespace Assets.Scripts.Effects
         /// </summary>
         public void Deplete()
         {
-            fillPercentage -= fillStep;
-            if (fillPercentage <= 0)
-                fillPercentage = 0;
+            FillAmount -= fillStep;
+            if (FillAmount <= 0)
+                FillAmount = 0;
         }
 
         /// <summary>
@@ -74,7 +94,7 @@ namespace Assets.Scripts.Effects
         /// </summary>
         private void Empty()
         {
-            fillPercentage = 0;
+            FillAmount = 0;
             _containedLiquids.Clear();
         }
 

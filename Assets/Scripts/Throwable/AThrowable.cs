@@ -17,7 +17,7 @@ namespace Assets.Scripts.Throwable
         protected Transform _attachedTransform;
 
         private bool _isGrabbed;
-        private bool _hasBeenThrown;
+		private bool _hasBeenThrown;
         private Vector3 _previousPosition;
         private Vector3 _throwForce;
 
@@ -79,6 +79,14 @@ namespace Assets.Scripts.Throwable
             _rigidBody.AddForce(_throwForce);
             _attachedTransform = null;
         }
+
+		public virtual void PlayerThrow()
+		{
+			_isGrabbed = false;
+			_hasBeenThrown = true;
+			transform.SetParent(null);
+			_attachedTransform = null;
+		}
 
         /// <summary>
         /// Throws the object with a parabola trajectory,

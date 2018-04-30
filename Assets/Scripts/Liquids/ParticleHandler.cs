@@ -1,5 +1,6 @@
 ﻿using System;
 using Assets.Scripts.Effects;
+using Assets.Scripts.Throwable;
 using UnityEngine;
 
 namespace Assets.Scripts.Liquids
@@ -39,6 +40,12 @@ namespace Assets.Scripts.Liquids
             var emi = _particles.emission;
             float amount = ComputeParticleEmission();
             emi.rateOverTime = new ParticleSystem.MinMaxCurve(amount);
+        }
+
+        public void Stop()
+        {
+            var emi = _particles.emission;
+            emi.enabled = false;
         }
 
         /// <summary>

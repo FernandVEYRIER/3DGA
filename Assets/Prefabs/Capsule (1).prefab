@@ -276,6 +276,7 @@ MonoBehaviour:
   ActionClassName:
   - ThrowBottles
   - Hide
+  - LeaveBar
   AnimationClassName: BasicGuyAnimation
   humor: 0.5
   alcool: 0.5
@@ -284,7 +285,7 @@ MonoBehaviour:
     _keys: 000000000100000003000000040000000800000009000000
     _values:
     - -0.01
-    - 0.1
+    - 0.02
     - -0.01
     - -0.01
     - -0.1
@@ -293,8 +294,8 @@ MonoBehaviour:
     _keys: 0000000001000000020000000300000004000000070000000800000009000000
     _values:
     - -0.01
-    - 0.5
-    - 0.5
+    - 0.05
+    - 0.05
     - -0.01
     - -0.01
     - 0.1
@@ -339,16 +340,28 @@ MonoBehaviour:
       outSlope: -0.82928497
       tangentMode: 0
     - serializedVersion: 2
-      time: 0.49494576
-      value: 0.1286335
-      inSlope: -0.017753573
-      outSlope: -0.017753573
+      time: 0.047483157
+      value: 0.1945834
+      inSlope: -4.645385
+      outSlope: -4.645385
       tangentMode: 0
     - serializedVersion: 2
-      time: 0.99998283
-      value: 0.040366508
-      inSlope: -0.7309212
-      outSlope: -0.7309212
+      time: 0.119636826
+      value: 0.048353825
+      inSlope: -0.46772003
+      outSlope: -0.46772003
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.5024531
+      value: -0.0013713837
+      inSlope: 0.008735487
+      outSlope: 0.008735487
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.99810266
+      value: 0.06794362
+      inSlope: 0.5248602
+      outSlope: 0.5248602
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -391,20 +404,26 @@ MonoBehaviour:
   - serializedVersion: 2
     m_Curve:
     - serializedVersion: 2
-      time: -0.0042553195
-      value: 0.23054613
-      inSlope: 0.027655574
-      outSlope: 0.027655574
+      time: 0.002126669
+      value: 0.1500255
+      inSlope: -1.1611875
+      outSlope: -1.1611875
       tangentMode: 0
     - serializedVersion: 2
       time: 0.49787235
-      value: 0.043226264
+      value: 0.0019970164
       inSlope: 0
       outSlope: 0
       tangentMode: 0
     - serializedVersion: 2
-      time: 0.99575806
-      value: 0.4956665
+      time: 0.90008277
+      value: 0.050541565
+      inSlope: 0.48973703
+      outSlope: 0.48973703
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1.0013733
+      value: 0.49950027
       inSlope: 4.1209455
       outSlope: 4.1209455
       tangentMode: 0
