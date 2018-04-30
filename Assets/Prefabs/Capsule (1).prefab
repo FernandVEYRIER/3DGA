@@ -216,6 +216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360a58a3dfd053949b7e85c18bdde250, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Enable: 1
   amountOfAlcool: 0
   amountOfJoyness: 0
   collision: 0
@@ -277,21 +278,25 @@ MonoBehaviour:
   - ThrowBottles
   - Hide
   - LeaveBar
+  - Dance
+  - Drink
   AnimationClassName: BasicGuyAnimation
   humor: 0.5
   alcool: 0.5
   hand: {fileID: 1860209908069046}
   alcoolPerAction:
-    _keys: 000000000100000003000000040000000800000009000000
+    _keys: 0000000001000000030000000400000008000000090000000b0000000a000000
     _values:
     - -0.01
-    - 0.02
+    - 0.01
     - -0.01
     - -0.01
     - -0.1
     - -0.02
+    - -0.01
+    - 0.05
   humorPerAction:
-    _keys: 0000000001000000020000000300000004000000070000000800000009000000
+    _keys: 00000000010000000200000003000000040000000700000008000000090000000b0000000a000000
     _values:
     - -0.01
     - 0.05
@@ -301,6 +306,8 @@ MonoBehaviour:
     - 0.1
     - -0.1
     - -0.1
+    - 0.05
+    - 0.05
 --- !u!114 &114911262608856274
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -312,7 +319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56bf2f23114fe33409b006475f249b26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  action: 020000000600000004000000
+  action: 0200000006000000040000000b0000000a000000
   humor:
   - serializedVersion: 2
     m_Curve:
@@ -383,6 +390,40 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+  - serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0.6109991
+      outSlope: 0.6109991
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0.19946274
+      inSlope: 0.82106656
+      outSlope: 0.82106656
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  - serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: -0.001876831
+      value: 0.19946289
+      inSlope: 0.5615244
+      outSlope: 0.5615244
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1.002544
+      value: 0.0012473464
+      inSlope: 0.0827447
+      outSlope: 0.0827447
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
   alcool:
   - serializedVersion: 2
     m_Curve:
@@ -441,6 +482,46 @@ MonoBehaviour:
     - serializedVersion: 2
       time: 1
       value: 0.25360107
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  - serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: -0.0024973317
+      value: 0.0011329651
+      inSlope: -0.09161444
+      outSlope: -0.09161444
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.5487012
+      value: 0.20118776
+      inSlope: 0.06484774
+      outSlope: 0.06484774
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1.0041485
+      value: 0.00092091877
+      inSlope: -1.8159933
+      outSlope: -1.8159933
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  - serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0.5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0.5
       inSlope: 0
       outSlope: 0
       tangentMode: 0

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public abstract class AEvent : MonoBehaviour {
 
+    public bool Enable = true;
+
     [SerializeField]
     [Range(-1.0f, 1.0f)]
     float amountOfAlcool, amountOfJoyness = 0;
@@ -32,12 +34,15 @@ public abstract class AEvent : MonoBehaviour {
     
     virtual public void SetAIAction(ADrunkAI ai, float aiHumor, float aiAlcool)
     {
-        if (((float)(UnityEngine.Random.Range(0, 101)) / 100.0f) < ((humor.Evaluate(aiHumor) + alcool.Evaluate(aiAlcool)) / 2))
+        if (Enable)
         {
-            print("event proc, modification of the actions !!");
-            ai.GetDrunk(amountOfAlcool);
-            ai.GetHappy(amountOfJoyness);
-            Action(ai);
+            if (((float)(UnityEngine.Random.Range(0, 101)) / 100.0f) < ((humor.Evaluate(aiHumor) + alcool.Evaluate(aiAlcool)) / 2))
+            {
+                print("event proc, modification of the actions !!");
+                ai.GetDrunk(amountOfAlcool);
+                ai.GetHappy(amountOfJoyness);
+                Action(ai);
+            }
         }
     }
 

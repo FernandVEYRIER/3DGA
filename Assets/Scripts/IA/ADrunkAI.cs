@@ -80,7 +80,8 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         actionMethode.Add(ActionEnum.Action.Kick, Kick);
         actionMethode.Add(ActionEnum.Action.Slip, Slip);
         actionMethode.Add(ActionEnum.Action.Stun, Stun);
-
+        actionMethode.Add(ActionEnum.Action.Dance, Dance);
+        actionMethode.Add(ActionEnum.Action.Drink, Drink);
 
         walking = false;
         anim = false;
@@ -299,6 +300,8 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         else
         {
             actionBase(ActionEnum.Action.ThrowBottle);
+            if (bottle.GetComponent<AEvent>() != null)
+                bottle.GetComponent<AEvent>().Enable = true;
             animations.ThrowBottle();
         }
     }
@@ -344,6 +347,20 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     {
         actionBase(ActionEnum.Action.Stun);
         animations.Stun();
+    }
+
+    //Ia gonna dance
+    protected void Dance()
+    {
+        actionBase(ActionEnum.Action.Stun);
+        animations.Dance();
+    }
+
+    //IA gonna drink is bottle
+    protected void Drink()
+    {
+        actionBase(ActionEnum.Action.Stun);
+        animations.Drink();
     }
     #endregion Action
 }

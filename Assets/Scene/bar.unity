@@ -186,6 +186,11 @@ Prefab:
       propertyPath: m_Name
       value: Bottle (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 114782093003599940, guid: f505bbc9cce8d864e8ccdab873489b13,
+        type: 2}
+      propertyPath: Enable
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f505bbc9cce8d864e8ccdab873489b13, type: 2}
   m_IsPrefabParent: 0
@@ -266,6 +271,11 @@ Prefab:
         type: 2}
       propertyPath: _hitTags.Array.data[0]
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782093003599940, guid: f505bbc9cce8d864e8ccdab873489b13,
+        type: 2}
+      propertyPath: Enable
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f505bbc9cce8d864e8ccdab873489b13, type: 2}
@@ -473,6 +483,11 @@ Prefab:
     - target: {fileID: 1520467787741018, guid: f505bbc9cce8d864e8ccdab873489b13, type: 2}
       propertyPath: m_Name
       value: Bottle (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782093003599940, guid: f505bbc9cce8d864e8ccdab873489b13,
+        type: 2}
+      propertyPath: Enable
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f505bbc9cce8d864e8ccdab873489b13, type: 2}
@@ -854,6 +869,10 @@ Prefab:
       propertyPath: m_Name
       value: Capsule (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1001482598733268, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
   m_IsPrefabParent: 0
@@ -888,6 +907,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c974ab39326201f43a648fb48b08e58a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Enable: 1
   amountOfAlcool: 0.1
   amountOfJoyness: -0.1
   collision: 0
@@ -1532,6 +1552,10 @@ Prefab:
       propertyPath: m_Name
       value: Capsule (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1001482598733268, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
   m_IsPrefabParent: 0
@@ -2009,6 +2033,11 @@ Prefab:
       propertyPath: _hitTags.Array.data[0]
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 114782093003599940, guid: f505bbc9cce8d864e8ccdab873489b13,
+        type: 2}
+      propertyPath: Enable
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f505bbc9cce8d864e8ccdab873489b13, type: 2}
   m_IsPrefabParent: 0
@@ -2126,6 +2155,11 @@ Prefab:
     - target: {fileID: 1520467787741018, guid: f505bbc9cce8d864e8ccdab873489b13, type: 2}
       propertyPath: m_Name
       value: Bottle (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782093003599940, guid: f505bbc9cce8d864e8ccdab873489b13,
+        type: 2}
+      propertyPath: Enable
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f505bbc9cce8d864e8ccdab873489b13, type: 2}
@@ -2499,6 +2533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a5ebc22405d350418f37500eaae6733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Enable: 1
   amountOfAlcool: -0.05
   amountOfJoyness: -0.2
   collision: 3
@@ -2858,6 +2893,10 @@ Prefab:
       propertyPath: m_Name
       value: Capsule (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1001482598733268, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
   m_IsPrefabParent: 0
@@ -3026,6 +3065,11 @@ Prefab:
     - target: {fileID: 1520467787741018, guid: f505bbc9cce8d864e8ccdab873489b13, type: 2}
       propertyPath: m_Name
       value: Bottle (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782093003599940, guid: f505bbc9cce8d864e8ccdab873489b13,
+        type: 2}
+      propertyPath: Enable
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f505bbc9cce8d864e8ccdab873489b13, type: 2}
@@ -3504,6 +3548,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a5ebc22405d350418f37500eaae6733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Enable: 1
   amountOfAlcool: -0.05
   amountOfJoyness: -0.2
   collision: 3
@@ -3637,6 +3682,11 @@ Prefab:
       propertyPath: _hitTags.Array.data[0]
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 114782093003599940, guid: f505bbc9cce8d864e8ccdab873489b13,
+        type: 2}
+      propertyPath: Enable
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f505bbc9cce8d864e8ccdab873489b13, type: 2}
   m_IsPrefabParent: 0
@@ -3767,6 +3817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a5ebc22405d350418f37500eaae6733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Enable: 1
   amountOfAlcool: -0.05
   amountOfJoyness: -0.2
   collision: 3
@@ -4212,6 +4263,10 @@ Prefab:
       propertyPath: m_Name
       value: Capsule (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1001482598733268, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
   m_IsPrefabParent: 0
@@ -4222,20 +4277,65 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: ActionClassName.Array.size
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
         type: 2}
-      propertyPath: humor.Array.data[1].m_Curve.Array.size
+      propertyPath: humor.Array.size
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
         type: 2}
-      propertyPath: alcool.Array.data[1].m_Curve.Array.size
-      value: 4
+      propertyPath: action.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcool.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: ActionClassName.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: humorPerAction._keys.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcoolPerAction._keys.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: humorPerAction._values.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcoolPerAction._values.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: humor.Array.data[3].m_Curve.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: humor.Array.data[4].m_Curve.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcool.Array.data[3].m_Curve.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcool.Array.data[4].m_Curve.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4953156373948212, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
       propertyPath: m_LocalPosition.x
@@ -4271,173 +4371,353 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
         type: 2}
+      propertyPath: ActionClassName.Array.data[3]
+      value: Dance
+      objectReference: {fileID: 0}
+    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: humorPerAction._keys.Array.data[8]
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: humorPerAction._values.Array.data[8]
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcoolPerAction._keys.Array.data[6]
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcoolPerAction._values.Array.data[6]
+      value: -0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: action.Array.data[3]
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: humor.Array.data[3].m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: humor.Array.data[3].m_Curve.Array.data[1].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: humor.Array.data[3].m_Curve.Array.data[1].value
+      value: 0.19946274
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: humor.Array.data[3].m_PreInfinity
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: humor.Array.data[3].m_PostInfinity
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcool.Array.data[3].m_Curve.Array.data[0].value
+      value: 0.0011329651
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcool.Array.data[3].m_Curve.Array.data[1].time
+      value: 0.5487012
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcool.Array.data[3].m_Curve.Array.data[1].value
+      value: 0.20118776
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcool.Array.data[3].m_PreInfinity
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcool.Array.data[3].m_PostInfinity
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: humor.Array.data[3].m_Curve.Array.data[2].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: humor.Array.data[3].m_Curve.Array.data[2].value
+      value: 0.41101837
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcool.Array.data[3].m_Curve.Array.data[1].inSlope
+      value: 0.06484774
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcool.Array.data[3].m_Curve.Array.data[1].outSlope
+      value: 0.06484774
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcool.Array.data[3].m_Curve.Array.data[2].time
+      value: 1.0041485
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcool.Array.data[3].m_Curve.Array.data[2].value
+      value: 0.00092091877
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcool.Array.data[3].m_Curve.Array.data[0].time
+      value: -0.0024973317
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcool.Array.data[3].m_Curve.Array.data[2].inSlope
+      value: -1.8159933
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcool.Array.data[3].m_Curve.Array.data[2].outSlope
+      value: -1.8159933
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcool.Array.data[3].m_Curve.Array.data[0].inSlope
+      value: -0.09161444
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcool.Array.data[3].m_Curve.Array.data[0].outSlope
+      value: -0.09161444
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: humor.Array.data[3].m_Curve.Array.data[0].inSlope
+      value: 0.6109991
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: humor.Array.data[3].m_Curve.Array.data[0].outSlope
+      value: 0.6109991
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: humor.Array.data[3].m_Curve.Array.data[0].tangentMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: humor.Array.data[3].m_Curve.Array.data[1].inSlope
+      value: 0.82106656
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: humor.Array.data[3].m_Curve.Array.data[1].outSlope
+      value: 0.82106656
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: humor.Array.data[3].m_Curve.Array.data[1].tangentMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcoolPerAction._keys.Array.data[7]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcoolPerAction._values.Array.data[7]
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: humorPerAction._keys.Array.data[9]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: humorPerAction._values.Array.data[9]
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
       propertyPath: alcoolPerAction._values.Array.data[1]
-      value: 0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcool.Array.data[1].m_Curve.Array.data[2].time
-      value: 0.90008277
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcool.Array.data[1].m_Curve.Array.data[2].value
-      value: 0.050541565
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcool.Array.data[1].m_Curve.Array.data[2].inSlope
-      value: 0.48973703
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcool.Array.data[1].m_Curve.Array.data[2].outSlope
-      value: 0.48973703
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcool.Array.data[1].m_Curve.Array.data[3].time
-      value: 1.0013733
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcool.Array.data[1].m_Curve.Array.data[3].value
-      value: 0.49950027
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcool.Array.data[1].m_Curve.Array.data[3].inSlope
-      value: 4.1209455
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcool.Array.data[1].m_Curve.Array.data[3].outSlope
-      value: 4.1209455
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcool.Array.data[1].m_Curve.Array.data[0].value
-      value: 0.1500255
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: alcool.Array.data[1].m_Curve.Array.data[0].time
-      value: 0.002126669
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humor.Array.data[1].m_Curve.Array.data[1].time
-      value: 0.047483157
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humor.Array.data[1].m_Curve.Array.data[1].value
-      value: 0.1945834
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humor.Array.data[1].m_Curve.Array.data[1].inSlope
-      value: -4.645385
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humor.Array.data[1].m_Curve.Array.data[1].outSlope
-      value: -4.645385
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humor.Array.data[1].m_Curve.Array.data[2].time
-      value: 0.119636826
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humor.Array.data[1].m_Curve.Array.data[2].value
-      value: 0.048353825
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humor.Array.data[1].m_Curve.Array.data[2].inSlope
-      value: -0.46772003
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humor.Array.data[1].m_Curve.Array.data[2].outSlope
-      value: -0.46772003
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humor.Array.data[1].m_Curve.Array.data[3].time
-      value: 0.5024531
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humor.Array.data[1].m_Curve.Array.data[3].value
-      value: -0.0013713837
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humor.Array.data[1].m_Curve.Array.data[3].inSlope
-      value: 0.008735487
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humor.Array.data[1].m_Curve.Array.data[3].outSlope
-      value: 0.008735487
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
         type: 2}
-      propertyPath: humorPerAction._values.Array.data[1]
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: humorPerAction._values.Array.data[2]
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: ActionClassName.Array.data[2]
-      value: LeaveBar
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083296143858886, guid: 579796a8f69a41546a106b20d3f4f78e,
-        type: 2}
-      propertyPath: actionMinPourcentage
-      value: 0.05
+      propertyPath: ActionClassName.Array.data[4]
+      value: Drink
       objectReference: {fileID: 0}
     - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
         type: 2}
-      propertyPath: alcool.Array.data[1].m_Curve.Array.data[0].inSlope
-      value: -1.1611875
+      propertyPath: action.Array.data[4]
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
         type: 2}
-      propertyPath: alcool.Array.data[1].m_Curve.Array.data[0].outSlope
-      value: -1.1611875
+      propertyPath: humor.Array.data[4].m_Curve.Array.data[0].inSlope
+      value: 0.5615244
       objectReference: {fileID: 0}
     - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
         type: 2}
-      propertyPath: humor.Array.data[1].m_Curve.Array.data[4].time
-      value: 0.99810266
+      propertyPath: humor.Array.data[4].m_Curve.Array.data[0].outSlope
+      value: 0.5615244
       objectReference: {fileID: 0}
     - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
         type: 2}
-      propertyPath: humor.Array.data[1].m_Curve.Array.data[4].value
-      value: 0.06794362
+      propertyPath: humor.Array.data[4].m_Curve.Array.data[1].time
+      value: 1.002544
       objectReference: {fileID: 0}
     - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
         type: 2}
-      propertyPath: humor.Array.data[1].m_Curve.Array.data[4].inSlope
-      value: 0.5248602
+      propertyPath: humor.Array.data[4].m_Curve.Array.data[1].value
+      value: 0.0012473464
       objectReference: {fileID: 0}
     - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
         type: 2}
-      propertyPath: humor.Array.data[1].m_Curve.Array.data[4].outSlope
-      value: 0.5248602
+      propertyPath: humor.Array.data[4].m_Curve.Array.data[1].inSlope
+      value: 0.0827447
       objectReference: {fileID: 0}
     - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
         type: 2}
-      propertyPath: alcool.Array.data[1].m_Curve.Array.data[1].value
-      value: 0.0019970164
+      propertyPath: humor.Array.data[4].m_Curve.Array.data[1].outSlope
+      value: 0.0827447
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: humor.Array.data[4].m_PreInfinity
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: humor.Array.data[4].m_PostInfinity
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcool.Array.data[4].m_Curve.Array.data[0].time
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcool.Array.data[4].m_Curve.Array.data[0].value
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcool.Array.data[4].m_Curve.Array.data[0].inSlope
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcool.Array.data[4].m_Curve.Array.data[0].outSlope
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcool.Array.data[4].m_Curve.Array.data[1].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcool.Array.data[4].m_Curve.Array.data[1].value
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcool.Array.data[4].m_Curve.Array.data[1].inSlope
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcool.Array.data[4].m_Curve.Array.data[1].outSlope
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcool.Array.data[4].m_Curve.Array.data[2].time
+      value: 1.0041485
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcool.Array.data[4].m_Curve.Array.data[2].value
+      value: 0.00092091877
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcool.Array.data[4].m_Curve.Array.data[2].inSlope
+      value: -1.8159933
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcool.Array.data[4].m_Curve.Array.data[2].outSlope
+      value: -1.8159933
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcool.Array.data[4].m_PreInfinity
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcool.Array.data[4].m_PostInfinity
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: humor.Array.data[4].m_Curve.Array.data[0].time
+      value: -0.001876831
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: humor.Array.data[4].m_Curve.Array.data[0].value
+      value: 0.19946289
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: humor.Array.data[4].m_Curve.Array.data[2].time
+      value: 1.002544
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: humor.Array.data[4].m_Curve.Array.data[2].value
+      value: 0.009120882
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: humor.Array.data[4].m_Curve.Array.data[2].inSlope
+      value: 0.0827447
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: humor.Array.data[4].m_Curve.Array.data[2].outSlope
+      value: 0.0827447
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcool.Array.data[4].m_Curve.Array.data[0].tangentMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911262608856274, guid: 579796a8f69a41546a106b20d3f4f78e,
+        type: 2}
+      propertyPath: alcool.Array.data[4].m_Curve.Array.data[1].tangentMode
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
@@ -4791,6 +5071,11 @@ Prefab:
       propertyPath: _hitTags.Array.data[0]
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 114782093003599940, guid: f505bbc9cce8d864e8ccdab873489b13,
+        type: 2}
+      propertyPath: Enable
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f505bbc9cce8d864e8ccdab873489b13, type: 2}
   m_IsPrefabParent: 0
@@ -4871,6 +5156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c974ab39326201f43a648fb48b08e58a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Enable: 1
   amountOfAlcool: 0.1
   amountOfJoyness: -0.1
   collision: 0
@@ -5053,6 +5339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c974ab39326201f43a648fb48b08e58a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Enable: 1
   amountOfAlcool: 0.1
   amountOfJoyness: -0.1
   collision: 0
@@ -5216,6 +5503,11 @@ Prefab:
         type: 2}
       propertyPath: _hitTags.Array.data[0]
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782093003599940, guid: f505bbc9cce8d864e8ccdab873489b13,
+        type: 2}
+      propertyPath: Enable
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f505bbc9cce8d864e8ccdab873489b13, type: 2}
@@ -5691,6 +5983,10 @@ Prefab:
       propertyPath: m_Name
       value: Capsule (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1001482598733268, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
   m_IsPrefabParent: 0
@@ -5753,6 +6049,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c974ab39326201f43a648fb48b08e58a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Enable: 1
   amountOfAlcool: 0.1
   amountOfJoyness: -0.1
   collision: 0
@@ -5924,6 +6221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a5ebc22405d350418f37500eaae6733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Enable: 1
   amountOfAlcool: -0.05
   amountOfJoyness: -0.2
   collision: 3
@@ -6057,6 +6355,11 @@ Prefab:
       propertyPath: m_Name
       value: Bottle (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 114782093003599940, guid: f505bbc9cce8d864e8ccdab873489b13,
+        type: 2}
+      propertyPath: Enable
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f505bbc9cce8d864e8ccdab873489b13, type: 2}
   m_IsPrefabParent: 0
@@ -6171,6 +6474,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b3599c08928e8c488bd383e81be9d97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Enable: 1
   amountOfAlcool: 0.5
   amountOfJoyness: 0.2
   collision: 3
@@ -6230,6 +6534,7 @@ MonoBehaviour:
   - Hidding
   - AI
   _liquid: 0
+  _particles: {fileID: 0}
 --- !u!54 &1943572154
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6478,6 +6783,10 @@ Prefab:
       propertyPath: m_Name
       value: Capsule (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1001482598733268, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
   m_IsPrefabParent: 0
@@ -6553,6 +6862,11 @@ Prefab:
         type: 2}
       propertyPath: _hitTags.Array.data[0]
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782093003599940, guid: f505bbc9cce8d864e8ccdab873489b13,
+        type: 2}
+      propertyPath: Enable
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f505bbc9cce8d864e8ccdab873489b13, type: 2}
@@ -6926,6 +7240,10 @@ Prefab:
     - target: {fileID: 1001482598733268, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
       propertyPath: m_Name
       value: Capsule (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001482598733268, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 579796a8f69a41546a106b20d3f4f78e, type: 2}

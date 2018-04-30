@@ -15,6 +15,8 @@ public class ActionEnum {
         Kick,
         Slip,
         Stun,
+        Drink,
+        Dance,
     };
 
     public struct ActionData

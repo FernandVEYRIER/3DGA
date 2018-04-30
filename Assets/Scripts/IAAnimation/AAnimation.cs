@@ -85,4 +85,21 @@ public abstract class AAnimation : IAnimation
     {
         AI.AnimationDone();
     }
+
+    public void Dance()
+    {
+        AI.StartCoroutine(DanceAnimation(UnityEngine.Random.Range(0.0f, 5.0f)));
+    }
+
+    private IEnumerator DanceAnimation(float time)
+    {
+        Debug.Log("dancing for : " + time);
+        yield return new WaitForSeconds(time);
+        AI.AnimationDone();
+    }
+
+    public void Drink()
+    {
+        AI.AnimationDone();
+    }
 }

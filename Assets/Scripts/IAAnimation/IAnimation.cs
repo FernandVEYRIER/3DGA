@@ -19,4 +19,8 @@
     void Slip();
 
     void Stun();
+
+    void Dance();
+
+    void Drink();
 }
