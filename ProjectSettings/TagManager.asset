@@ -11,6 +11,9 @@ TagManager:
   - Hidding
   - Exit
   - AI
+  - Bottle
+  - DanceFloor
+  - DartGame
   layers:
   - Default
   - TransparentFX

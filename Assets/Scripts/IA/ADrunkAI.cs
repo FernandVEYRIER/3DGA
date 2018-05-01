@@ -29,7 +29,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     [Range(0.0f, 1.0f)]
     protected float humor, alcool;
     [SerializeField]
-    protected GameObject hand;
+    protected GameObject hand, AiNavDirection;
     [SerializeField()]
     LocalDictionary alcoolPerAction, humorPerAction;
 
@@ -82,6 +82,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         actionMethode.Add(ActionEnum.Action.Stun, Stun);
         actionMethode.Add(ActionEnum.Action.Dance, Dance);
         actionMethode.Add(ActionEnum.Action.Drink, Drink);
+        actionMethode.Add(ActionEnum.Action.Dart, Dart);
 
         walking = false;
         anim = false;
@@ -225,6 +226,14 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     //internal usefull action of the AI
     #region usefull action
 
+    public void forceDirection(Vector3 position)
+    {
+        ActionDone();
+        AiNavDirection.transform.parent = null;
+        AiNavDirection.transform.position = position;
+        AddAction(ActionEnum.Action.Walk, AiNavDirection);
+    }
+
     protected void SetDirection()
     {
         if (actionList[0].go == null)
@@ -287,6 +296,9 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
             actionBase(ActionEnum.Action.GetBottle);
             bottle = actionList[0].go;
             bottle.GetComponent<AThrowable>().Grab(hand.transform);
+            bottle.transform.rotation = Quaternion.identity;
+            bottle.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+            bottle.GetComponent<Rigidbody>().isKinematic = true;
             bottle.tag = "Untagged";
             animations.GetBottle();
         }
@@ -300,6 +312,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         else
         {
             actionBase(ActionEnum.Action.ThrowBottle);
+            bottle.GetComponent<Rigidbody>().isKinematic = false;
             if (bottle.GetComponent<AEvent>() != null)
                 bottle.GetComponent<AEvent>().Enable = true;
             animations.ThrowBottle();
@@ -361,6 +374,12 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     {
         actionBase(ActionEnum.Action.Stun);
         animations.Drink();
+    }
+
+    protected void Dart()
+    {
+        actionBase(ActionEnum.Action.Dart);
+        animations.Dart();
     }
     #endregion Action
 }

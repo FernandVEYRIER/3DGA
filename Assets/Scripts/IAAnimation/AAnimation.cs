@@ -102,4 +102,16 @@ public abstract class AAnimation : IAnimation
     {
         AI.AnimationDone();
     }
+
+    public void Dart()
+    {
+        AI.StartCoroutine(DartAnimation(UnityEngine.Random.Range(0.0f, 5.0f)));
+    }
+
+    private IEnumerator DartAnimation(float time)
+    {
+        Debug.Log("playing dart for : " + time);
+        yield return new WaitForSeconds(time);
+        AI.AnimationDone();
+    }
 }

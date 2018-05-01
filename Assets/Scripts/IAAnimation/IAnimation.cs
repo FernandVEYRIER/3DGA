@@ -23,4 +23,6 @@
     void Dance();
 
     void Drink();
+
+    void Dart();
 }
