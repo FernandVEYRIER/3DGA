@@ -17,6 +17,11 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     [SerializeField]
     private ActionEnum.Action actiondebug;
     //serialised for debug nothing else
+
+    [SerializeField]
+    protected Animator animator;
+    public Animator AIanimator { get { return animator; } }
+
     [SerializeField]
     private GameObject destination;
     public bool forceActionDone;
@@ -89,6 +94,8 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         bottle = null;
         destination = null;
         forceActionDone = false;
+
+        animator.SetFloat("alcool", alcool);
     }
 
     // Update is called once per frame
@@ -146,8 +153,16 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
 
     public void AnimationDone()
     {
-        actionList.RemoveAt(0);
+        if (actionList.Count > 0)
+            actionList.RemoveAt(0);
         anim = false;
+        animator.SetBool("Action", false);
+        animator.SetBool("walking", false);
+        animator.SetBool("throw", false);
+        animator.SetBool("pickingUp", false);
+        animator.SetBool("drinking", false);
+        animator.SetBool("dancing", false);
+        animator.SetBool("hide", false);
     }
 
     //return true if AI got bottle
@@ -169,6 +184,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     {
         alcool += amount;
         alcool = alcool < 0 ? 0 : alcool > 1 ? 1 : alcool;
+        animator.SetFloat("alcool", alcool);
     }
 
     //every modification of humor is made here
@@ -296,7 +312,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
             actionBase(ActionEnum.Action.GetBottle);
             bottle = actionList[0].go;
             bottle.GetComponent<AThrowable>().Grab(hand.transform);
-            bottle.transform.rotation = Quaternion.identity;
+            bottle.transform.rotation = hand.transform.rotation;
             bottle.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
             bottle.GetComponent<Rigidbody>().isKinematic = true;
             bottle.tag = "Untagged";

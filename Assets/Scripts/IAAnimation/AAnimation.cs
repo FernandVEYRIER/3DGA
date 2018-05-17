@@ -19,6 +19,8 @@ public abstract class AAnimation : IAnimation
 
     public void Hide()
     {
+        AI.AIanimator.SetBool("Action", true);
+        AI.AIanimator.SetBool("hide", true);
         AI.StartCoroutine(HideAnimation(UnityEngine.Random.Range(0.0f, 5.0f)));
     }
 
@@ -42,6 +44,8 @@ public abstract class AAnimation : IAnimation
 
     public void ThrowBottle()
     {
+        AI.AIanimator.SetBool("Action", true);
+        AI.AIanimator.SetBool("throw", true);
         AI.StartCoroutine(ThrowBotlleAnimation(GameObject.FindGameObjectWithTag("Player").transform.position));
     }
 
@@ -68,6 +72,8 @@ public abstract class AAnimation : IAnimation
 
     public void Walk()
     {
+        AI.AIanimator.SetBool("Action", true);
+        AI.AIanimator.SetBool("walking", true);
         return;
     }
 
@@ -88,6 +94,8 @@ public abstract class AAnimation : IAnimation
 
     public void Dance()
     {
+        AI.AIanimator.SetBool("Action", true);
+        AI.AIanimator.SetBool("dancing", true);
         AI.StartCoroutine(DanceAnimation(UnityEngine.Random.Range(0.0f, 5.0f)));
     }
 
