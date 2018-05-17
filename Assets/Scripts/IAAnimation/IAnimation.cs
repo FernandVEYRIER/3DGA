@@ -25,4 +25,6 @@
     void Drink();
 
     void Dart();
+
+    void Fire();
 }
