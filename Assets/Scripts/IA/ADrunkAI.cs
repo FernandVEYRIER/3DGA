@@ -88,6 +88,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         actionMethode.Add(ActionEnum.Action.Dance, Dance);
         actionMethode.Add(ActionEnum.Action.Drink, Drink);
         actionMethode.Add(ActionEnum.Action.Dart, Dart);
+        actionMethode.Add(ActionEnum.Action.Fire, Fire);
 
         walking = false;
         anim = false;
@@ -381,14 +382,14 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     //Ia gonna dance
     protected void Dance()
     {
-        actionBase(ActionEnum.Action.Stun);
+        actionBase(ActionEnum.Action.Dance);
         animations.Dance();
     }
 
     //IA gonna drink is bottle
     protected void Drink()
     {
-        actionBase(ActionEnum.Action.Stun);
+        actionBase(ActionEnum.Action.Drink);
         animations.Drink();
     }
 
@@ -396,6 +397,12 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     {
         actionBase(ActionEnum.Action.Dart);
         animations.Dart();
+    }
+
+    protected void Fire()
+    {
+        actionBase(ActionEnum.Action.Fire);
+
     }
     #endregion Action
 }

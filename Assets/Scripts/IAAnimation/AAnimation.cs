@@ -122,4 +122,9 @@ public abstract class AAnimation : IAnimation
         yield return new WaitForSeconds(time);
         AI.AnimationDone();
     }
+
+    public void Fire()
+    {
+        AI.AnimationDone();
+    }
 }
