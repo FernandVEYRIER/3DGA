@@ -421,6 +421,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114438003406636134, guid: 4d1d8572f252736459512fca68a7a4bc,
+        type: 2}
+      propertyPath: _factory._effectPool.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4657380000299182, guid: 4d1d8572f252736459512fca68a7a4bc, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -453,9 +458,37 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 114438003406636134, guid: 4d1d8572f252736459512fca68a7a4bc,
+        type: 2}
+      propertyPath: _factory._effectPool.Array.data[0]
+      value: 
+      objectReference: {fileID: 757819244}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4d1d8572f252736459512fca68a7a4bc, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &757819243 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1435556092476070, guid: 4d1d8572f252736459512fca68a7a4bc,
+    type: 2}
+  m_PrefabInternal: {fileID: 757819242}
+--- !u!114 &757819244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 757819243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b125cc48558d9204d895263890487d1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _recipe:
+    _name: Kamikaze
+    _ingredients:
+    - Liquid: 5
+      Percentage: 75
+    - Liquid: 4
+      Percentage: 25
 --- !u!1001 &881095341
 Prefab:
   m_ObjectHideFlags: 0
@@ -494,6 +527,10 @@ Prefab:
     - target: {fileID: 4629171308153638, guid: ad3522b75e7cfca4fbbdb6a76e1db4f0, type: 2}
       propertyPath: m_RootOrder
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1578240923631956, guid: ad3522b75e7cfca4fbbdb6a76e1db4f0, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad3522b75e7cfca4fbbdb6a76e1db4f0, type: 2}
@@ -537,10 +574,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 114922403585228992, guid: f505bbc9cce8d864e8ccdab873489b13,
-        type: 2}
-      propertyPath: _liquid
-      value: 1
+    - target: {fileID: 1520467787741018, guid: f505bbc9cce8d864e8ccdab873489b13, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f505bbc9cce8d864e8ccdab873489b13, type: 2}
@@ -703,6 +739,40 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1122133647 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1578240923631956, guid: ad3522b75e7cfca4fbbdb6a76e1db4f0,
+    type: 2}
+  m_PrefabInternal: {fileID: 881095341}
+--- !u!114 &1122133648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1122133647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c974ab39326201f43a648fb48b08e58a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enable: 1
+  amountOfAlcool: 0
+  amountOfJoyness: 0
+  collision: 0
+  humor:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  alcool:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  actions: 
+  goOfAction: []
 --- !u!1 &1675664133
 GameObject:
   m_ObjectHideFlags: 0

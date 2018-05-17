@@ -8,7 +8,7 @@ namespace Assets.Scripts.Effects
     /// serialize it).
     /// </summary>
     [Serializable]
-    public class AEffect
+    public class AEffect : MonoBehaviour
     {
         [Tooltip("The recipe to create this effect")]
         [SerializeField] private Recipe _recipe;
@@ -21,6 +21,6 @@ namespace Assets.Scripts.Effects
         /// <summary>
         /// Activate the effect capacities.
         /// </summary>
-        public void Activate() { }
+        public virtual void Activate(AEvent ev) { }
     }
 }

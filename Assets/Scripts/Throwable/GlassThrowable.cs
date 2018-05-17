@@ -33,7 +33,7 @@ namespace Assets.Scripts.Throwable
                 Instantiate(_hitEffect, transform.position, Quaternion.identity);
             var effect = _container.GetGeneratedEffect();
             if (effect != null)
-                effect.Activate();
+                effect.Activate(GetComponent<AEvent>());
             Destroy(gameObject);
         }
 
@@ -59,7 +59,10 @@ namespace Assets.Scripts.Throwable
             {
                 var effect = _container.GetGeneratedEffect();
                 if (effect != null)
+                {
                     Debug.Log("Generated effect ==> " + effect.Recipe.Name);
+                    effect.Activate(GetComponent<AEvent>());
+                }
                 else
                     Debug.Log("No effect at the moment.");
             }

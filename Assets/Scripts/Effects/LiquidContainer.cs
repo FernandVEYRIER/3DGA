@@ -51,6 +51,7 @@ namespace Assets.Scripts.Effects
             }
             l.Percentage += fillStep;
             FillAmount += fillStep;
+            Debug.Log("Fill percent of " + liquid + " = " + l.Percentage);
         }
 
         /// <summary>

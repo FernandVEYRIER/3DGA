@@ -18,7 +18,8 @@ namespace Assets.Scripts.Effects
         [Tooltip("The corresponding color for every liquid. Should be the same size as the LIQUID_TYPE enum.")]
         [SerializeField] private Color[] liquidColors;
 
-        [SerializeField] private List<AEffect> _effectPool = new List<AEffect>();
+        [SerializeField]
+        private List<AEffect> _effectPool = new List<AEffect>();
 
         /// <summary>
         /// Retrives the corresponding effect from a list of liquids.

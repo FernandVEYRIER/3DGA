@@ -8,7 +8,7 @@ public abstract class AEvent : MonoBehaviour {
 
     [SerializeField]
     [Range(-1.0f, 1.0f)]
-    float amountOfAlcool, amountOfJoyness = 0;
+    public float amountOfAlcool, amountOfJoyness = 0;
 
     public enum CollisionType
     {
@@ -27,10 +27,16 @@ public abstract class AEvent : MonoBehaviour {
     [SerializeField] AnimationCurve alcool;
 
     [SerializeField]
-    ActionEnum.Action[] actions;
+    List<ActionEnum.Action> actions = new List<ActionEnum.Action>();
 
     [SerializeField]
-    GameObject[] goOfAction;
+    List<GameObject> goOfAction;
+
+    public void AddAction(ActionEnum.Action action, GameObject go = null)
+    {
+        actions.Add(action);
+        goOfAction.Add(go);
+    }
     
     virtual public void SetAIAction(ADrunkAI ai, float aiHumor, float aiAlcool)
     {
@@ -49,7 +55,7 @@ public abstract class AEvent : MonoBehaviour {
     virtual protected void Action(ADrunkAI ai)
     {
         ai.ActionDone();
-        for (int i = 0; i < actions.Length; i++)
+        for (int i = 0; i < actions.Count; i++)
         {
             ai.AddAction(actions[i], goOfAction[i]);
         }
