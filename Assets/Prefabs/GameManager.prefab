@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4657380000299182}
   - component: {fileID: 114438003406636134}
+  - component: {fileID: 114717703085435056}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -60,17 +61,22 @@ MonoBehaviour:
     - {r: 0.88235295, g: 0.8304498, b: 0.8304498, a: 0.222}
     - {r: 0.72813505, g: 0.7352941, b: 0.21626295, a: 0.76}
     _effectPool:
-    - _recipe:
-        _name: Kamikaze
-        _ingredients:
-        - Liquid: 5
-          Percentage: 70
-        - Liquid: 4
-          Percentage: 30
-    - _recipe:
-        _name: Cuba Libre
-        _ingredients:
-        - Liquid: 2
-          Percentage: 35
-        - Liquid: 1
-          Percentage: 65
+    - {fileID: 114717703085435056}
+--- !u!114 &114717703085435056
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1435556092476070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b125cc48558d9204d895263890487d1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _recipe:
+    _name: Kamikaze
+    _ingredients:
+    - Liquid: 5
+      Percentage: 75
+    - Liquid: 4
+      Percentage: 25
