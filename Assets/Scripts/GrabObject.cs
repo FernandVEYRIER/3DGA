@@ -95,6 +95,9 @@ public class GrabObject : MonoBehaviour {
 			if (objectInHand.GetComponent<AThrowable> () != null)
 				objectInHand.GetComponent<AThrowable> ().PlayerThrow();
 
+			if (objectInHand.GetComponent<BottleStrickEvent>())
+				objectInHand.GetComponent<BottleStrickEvent>().Enable = true;
+
 			// Release here
 
 

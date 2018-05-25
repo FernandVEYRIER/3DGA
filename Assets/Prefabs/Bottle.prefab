@@ -58,7 +58,7 @@ Transform:
   m_GameObject: {fileID: 1520467787741018}
   m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 8.96, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children:
   - {fileID: 4533069846984302}
   m_Father: {fileID: 0}
@@ -228,6 +228,7 @@ MonoBehaviour:
   - Player
   - Floor
   - Untagged
+  - AI
   _liquid: 1
   _particles: {fileID: 114137343599025134}
 --- !u!198 &198849786218056296
