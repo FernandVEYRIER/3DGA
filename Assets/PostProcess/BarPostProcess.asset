@@ -42,7 +42,7 @@ MonoBehaviour:
   ambientOcclusion:
     m_Enabled: 1
     m_Settings:
-      intensity: 1.23
+      intensity: 1.88
       radius: 0.3
       sampleCount: 10
       downsampling: 1
@@ -121,15 +121,15 @@ MonoBehaviour:
         neutralWhiteClip: 10
       basic:
         postExposure: 1
-        temperature: -13.7
+        temperature: -14.6
         tint: 40.5
         hueShift: -0
         saturation: 1.697
         contrast: 1.197
       channelMixer:
-        red: {x: 1.13, y: -0.12, z: -0.17}
-        green: {x: 0, y: 0.6, z: 0}
-        blue: {x: -0.15, y: -0.15, z: 0.51}
+        red: {x: 1.15, y: -0.18, z: -0.24}
+        green: {x: -0.09, y: 0.55, z: 0}
+        blue: {x: -0.15, y: -0.15, z: 0.21}
         currentEditingChannel: 0
       colorWheels:
         mode: 1
