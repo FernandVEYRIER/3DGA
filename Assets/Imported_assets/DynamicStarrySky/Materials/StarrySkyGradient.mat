@@ -121,7 +121,7 @@ Material:
     - _StarLayer2RotationSpeed: 0
     - _StarLayer2TwinkleAmount: 0.632
     - _StarLayer2TwinkleSpeed: 4
-    - _StarLayer3Density: 0.0015
+    - _StarLayer3Density: 0.0265
     - _StarLayer3EdgeFade: 0.696
     - _StarLayer3HDRBoost: 1
     - _StarLayer3MaxRadius: 0.047
