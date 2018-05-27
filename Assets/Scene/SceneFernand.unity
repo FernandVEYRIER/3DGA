@@ -528,10 +528,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 1578240923631956, guid: ad3522b75e7cfca4fbbdb6a76e1db4f0, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad3522b75e7cfca4fbbdb6a76e1db4f0, type: 2}
   m_IsPrefabParent: 0
@@ -739,40 +735,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1122133647 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1578240923631956, guid: ad3522b75e7cfca4fbbdb6a76e1db4f0,
-    type: 2}
-  m_PrefabInternal: {fileID: 881095341}
---- !u!114 &1122133648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1122133647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c974ab39326201f43a648fb48b08e58a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Enable: 1
-  amountOfAlcool: 0
-  amountOfJoyness: 0
-  collision: 0
-  humor:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  alcool:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  actions: 
-  goOfAction: []
 --- !u!1 &1675664133
 GameObject:
   m_ObjectHideFlags: 0
