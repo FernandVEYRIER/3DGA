@@ -21,6 +21,10 @@ GameObject:
   - component: {fileID: 4657380000299182}
   - component: {fileID: 114438003406636134}
   - component: {fileID: 114717703085435056}
+  - component: {fileID: 114875705348404484}
+  - component: {fileID: 114956355317438416}
+  - component: {fileID: 114130839038334508}
+  - component: {fileID: 114389937788029900}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -41,6 +45,46 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114130839038334508
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1435556092476070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71b1b5e8e16c54f4a8f1e5bd138a61b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _recipe:
+    _name: B52
+    _ingredients:
+    - Liquid: 6
+      Percentage: 30
+    - Liquid: 2
+      Percentage: 30
+    - Liquid: 7
+      Percentage: 40
+--- !u!114 &114389937788029900
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1435556092476070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0f6b181075ffde489457aada9b5b9b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _recipe:
+    _name: Long Island
+    _ingredients:
+    - Liquid: 4
+      Percentage: 30
+    - Liquid: 2
+      Percentage: 40
+    - Liquid: 5
+      Percentage: 30
 --- !u!114 &114438003406636134
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -60,8 +104,15 @@ MonoBehaviour:
     - {r: 0.8897059, g: 0.85045415, b: 0.85045415, a: 0.203}
     - {r: 0.88235295, g: 0.8304498, b: 0.8304498, a: 0.222}
     - {r: 0.72813505, g: 0.7352941, b: 0.21626295, a: 0.76}
+    - {r: 0.6397059, g: 0.45908305, b: 0.18814878, a: 0.622}
+    - {r: 1, g: 0.62043685, b: 0.10623918, a: 0.76}
+    - {r: 0.9191176, g: 0.89041674, b: 0.85153544, a: 0.197}
     _effectPool:
     - {fileID: 114717703085435056}
+    - {fileID: 114875705348404484}
+    - {fileID: 114956355317438416}
+    - {fileID: 114130839038334508}
+    - {fileID: 114389937788029900}
 --- !u!114 &114717703085435056
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -74,9 +125,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _recipe:
+    _name: Bacardi
+    _ingredients:
+    - Liquid: 3
+      Percentage: 100
+--- !u!114 &114875705348404484
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1435556092476070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35a8e9b1c67965746ad7e73306af6249, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _recipe:
     _name: Kamikaze
     _ingredients:
     - Liquid: 5
       Percentage: 75
     - Liquid: 4
       Percentage: 25
+--- !u!114 &114956355317438416
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1435556092476070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daca93abc96a2fd4cbb4b69c8a101846, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _recipe:
+    _name: Tequila
+    _ingredients:
+    - Liquid: 5
+      Percentage: 10
+    - Liquid: 8
+      Percentage: 90
