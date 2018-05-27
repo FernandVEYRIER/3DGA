@@ -13,7 +13,7 @@ namespace Assets.Scripts.Effects
         /// <summary>
         /// The different kinds of liquids usable.
         /// </summary>
-        public enum LIQUID_TYPE { Water, Coke, Rum, Bacardi, Vodka, LimeJuice }
+        public enum LIQUID_TYPE { Water, Coke, Rum, Bacardi, Vodka, LimeJuice, Kahlua, OrangeJuice, Tequila }
 
         [Tooltip("The corresponding color for every liquid. Should be the same size as the LIQUID_TYPE enum.")]
         [SerializeField] private Color[] liquidColors;

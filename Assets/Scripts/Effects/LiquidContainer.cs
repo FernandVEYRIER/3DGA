@@ -66,6 +66,8 @@ namespace Assets.Scripts.Effects
             {
                 colList.Add(GameManager.Instance.Factory.GetLiquidColor(liquid.Liquid));
             }
+            if (colList.Count <= 0)
+                return Color.clear;
             return Extension.CombineColors(colList);
         }
 

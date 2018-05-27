@@ -39,11 +39,12 @@ namespace Assets.Scripts.Throwable
 
         public void Fill(EffectFactory.LIQUID_TYPE liquid)
         {
+            var fa = _container.FillAmount / 100f;
             _container.Fill(liquid);
-            _liquid.SetActive(true);
-            _liquid.transform.localScale = new Vector3(1, _container.FillAmount / 100f, 1);
+            _liquid.SetActive(fa > 0);
+            _liquid.transform.localScale = new Vector3(1, fa, 1);
             _liquidMat.material.color = _container.GetContainerColor();
-            _liquidMat.material.SetColor("_Color", _container.GetContainerColor());
+            //_liquidMat.material.SetColor("_Color", _container.GetContainerColor());
         }
 
         override protected void Update()
