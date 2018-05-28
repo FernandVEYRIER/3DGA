@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="489c2aaa-846b-40e7-8244-7449e0f9f098" name="Default" comment="">
+    <list default="true" id="489c2aaa-846b-40e7-8244-7449e0f9f098" name="Default" comment="Fixed scene New bar try 3">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.3DGA/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DGA/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3DGA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DGA/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scene/NewBarTry.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scene/NewBarTry.unity" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GrabObject.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GrabObject.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GrabObject.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="77" column="30" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="30" />
+            <state relative-caret-position="781">
+              <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
               <folding>
                 <marker date="1527232803475" expanded="false" signature="6:110" ph="..." />
                 <marker date="1527232803475" expanded="true" signature="152:2441" ph="{...}" />
@@ -43,34 +45,74 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="RulesManager.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/RulesManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="628">
+              <caret line="115" column="53" selection-start-line="115" selection-start-column="53" selection-end-line="115" selection-end-column="53" />
+              <folding>
+                <marker date="1527476018292" expanded="false" signature="6:154" ph="..." />
+                <marker date="1527476018292" expanded="true" signature="197:2404" ph="{...}" />
+                <marker date="1527476018292" expanded="true" signature="537:773" ph="{...}" />
+                <marker date="1527476018292" expanded="true" signature="827:1400" ph="{...}" />
+                <marker date="1527476018292" expanded="true" signature="846:1397" ph="{...}" />
+                <marker date="1527476018292" expanded="true" signature="945:1041" ph="/* _timeMinute = (int) (Time.deltaTime / 60f); ... */" />
+                <marker date="1527476018292" expanded="true" signature="1180:1305" ph="{...}" />
+                <marker date="1527476018292" expanded="true" signature="1432:1696" ph="{...}" />
+                <marker date="1527476018292" expanded="true" signature="1746:1824" ph="{...}" />
+                <marker date="1527476018292" expanded="true" signature="1792:1821" ph="{...}" />
+                <marker date="1527476018292" expanded="true" signature="1865:1926" ph="{...}" />
+                <marker date="1527476018292" expanded="true" signature="1966:2168" ph="{...}" />
+                <marker date="1527476018292" expanded="true" signature="2193:2402" ph="{...}" />
+                <marker date="1527476018292" expanded="true" signature="2211:2399" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UIManagerMiest.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/UIManagerMiest.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+              <folding>
+                <marker date="1527475276742" expanded="false" signature="6:100" ph="..." />
+                <marker date="1527475276742" expanded="true" signature="145:761" ph="{...}" />
+                <marker date="1527475276742" expanded="true" signature="370:494" ph="{...}" />
+                <marker date="1527475276742" expanded="true" signature="549:759" ph="{...}" />
+                <marker date="1527475276742" expanded="true" signature="566:756" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="LiquidContainer.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Effects/LiquidContainer.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
+            <state relative-caret-position="781">
               <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
               <folding>
-                <marker date="1526864962540" expanded="false" signature="6:112" ph="..." />
-                <marker date="1526864962540" expanded="true" signature="146:3501" ph="{...}" />
-                <marker date="1526864962540" expanded="true" signature="153:281" ph="/// Provides a container for liquids, to handle filling and effect generation from content. ... " />
-                <marker date="1526864962540" expanded="true" signature="314:3499" ph="{...}" />
-                <marker date="1526864962540" expanded="true" signature="329:426" ph="/// True if the container is empty, false otherwise. ... " />
-                <marker date="1526864962540" expanded="true" signature="500:608" ph="/// The current filling amount of the container, from 0 to 100. ... " />
-                <marker date="1526864962540" expanded="true" signature="826:1001" ph="/// Fills the container with a certain liquid. ... " />
-                <marker date="1526864962540" expanded="true" signature="1060:1708" ph="{...}" />
-                <marker date="1526864962540" expanded="true" signature="1129:1206" ph="{...}" />
-                <marker date="1526864962540" expanded="true" signature="1302:1428" ph="{...}" />
-                <marker date="1526864962540" expanded="true" signature="1463:1549" ph="{...}" />
-                <marker date="1526864962540" expanded="true" signature="1718:1884" ph="/// Returns the global color of the container according to the current contained liquids. ... " />
-                <marker date="1526864962540" expanded="true" signature="1925:2249" ph="{...}" />
-                <marker date="1526864962540" expanded="true" signature="2069:2186" ph="{...}" />
-                <marker date="1526864962540" expanded="true" signature="2259:2483" ph="/// Fills the container with the given liquid and the given amount. ... " />
-                <marker date="1526864962540" expanded="true" signature="2556:2702" ph="{...}" />
-                <marker date="1526864962540" expanded="true" signature="2712:2801" ph="/// Depletes the container from its content. ... " />
-                <marker date="1526864962540" expanded="true" signature="2831:2952" ph="{...}" />
-                <marker date="1526864962540" expanded="true" signature="2962:3068" ph="/// Makes the container empty by removing every liquid in it. ... " />
-                <marker date="1526864962540" expanded="true" signature="3097:3184" ph="{...}" />
-                <marker date="1526864962540" expanded="true" signature="3194:3351" ph="/// Gets the effect generated according to the current content of the container. ... " />
-                <marker date="1526864962540" expanded="true" signature="3395:3493" ph="{...}" />
+                <marker date="1527428096358" expanded="false" signature="6:112" ph="..." />
+                <marker date="1527428096358" expanded="true" signature="153:281" ph="/// Provides a container for liquids, to handle filling and effect generation from content. ... " />
+                <marker date="1527428096358" expanded="true" signature="314:3571" ph="{...}" />
+                <marker date="1527428096358" expanded="true" signature="329:426" ph="/// True if the container is empty, false otherwise. ... " />
+                <marker date="1527428096358" expanded="true" signature="500:608" ph="/// The current filling amount of the container, from 0 to 100. ... " />
+                <marker date="1527428096358" expanded="true" signature="826:1001" ph="/// Fills the container with a certain liquid. ... " />
+                <marker date="1527428096358" expanded="true" signature="1060:1708" ph="{...}" />
+                <marker date="1527428096358" expanded="true" signature="1129:1206" ph="{...}" />
+                <marker date="1527428096358" expanded="true" signature="1302:1428" ph="{...}" />
+                <marker date="1527428096358" expanded="true" signature="1463:1549" ph="{...}" />
+                <marker date="1527428096358" expanded="true" signature="1718:1884" ph="/// Returns the global color of the container according to the current contained liquids. ... " />
+                <marker date="1527428096358" expanded="true" signature="1925:2321" ph="{...}" />
+                <marker date="1527428096358" expanded="true" signature="2069:2186" ph="{...}" />
+                <marker date="1527428096358" expanded="true" signature="2331:2555" ph="/// Fills the container with the given liquid and the given amount. ... " />
+                <marker date="1527428096358" expanded="true" signature="2628:2774" ph="{...}" />
+                <marker date="1527428096358" expanded="true" signature="2784:2873" ph="/// Depletes the container from its content. ... " />
+                <marker date="1527428096358" expanded="true" signature="2903:3024" ph="{...}" />
+                <marker date="1527428096358" expanded="true" signature="3034:3140" ph="/// Makes the container empty by removing every liquid in it. ... " />
+                <marker date="1527428096358" expanded="true" signature="3169:3256" ph="{...}" />
+                <marker date="1527428096358" expanded="true" signature="3266:3423" ph="/// Gets the effect generated according to the current content of the container. ... " />
+                <marker date="1527428096358" expanded="true" signature="3467:3565" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -116,13 +158,17 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IAAnimation/AAnimation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RulesManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Effects/LiquidContainer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GrabObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIManagerMiest.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/GrabObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIManagerMiest.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RulesManager.cs" />
       </list>
     </option>
   </component>
@@ -143,11 +189,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="SolutionExplorer">
-        <option name="show-file-system" value="false" />
-        <option name="show-all-items" value="false" />
-      </pane>
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -160,6 +201,11 @@
         </subPane>
         <option name="show-hidden-items" value="false" />
       </pane>
+      <pane id="SolutionExplorer">
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -198,7 +244,9 @@
       <workItem from="1526864827756" duration="741000" />
       <workItem from="1526877856924" duration="672000" />
       <workItem from="1527227810795" duration="2588000" />
-      <workItem from="1527426180297" duration="846000" />
+      <workItem from="1527426180297" duration="10036000" />
+      <workItem from="1527440495322" duration="49000" />
+      <workItem from="1527474473478" duration="2108000" />
     </task>
     <task id="LOCAL-00001" summary="Add Ia and action on Bar, modif script Grab Object">
       <created>1527232987136</created>
@@ -228,11 +276,32 @@
       <option name="project" value="LOCAL" />
       <updated>1527427824020</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fixed scene New bar try 3">
+      <created>1527427906276</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1527427906276</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fixed scene New bar try 3">
+      <created>1527428037288</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1527428037288</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Fixed scene New bar try 3">
+      <created>1527428200162</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1527428200162</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6057000" />
+    <option name="totallyTimeSpent" value="17404000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -249,13 +318,13 @@
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Errors In Solution" order="3" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="7" sideWeight="0.5010661" side_tool="true" visible="true" weight="0.59912854" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5010661" side_tool="true" weight="0.59912854" />
       <window_info anchor="bottom" id="Unit Tests" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4989339" visible="true" weight="0.59912854" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4989339" visible="true" weight="0.08496732" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16791044" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unity" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -287,6 +356,256 @@
     <option name="LAST_COMMIT_MESSAGE" value="Fixed scene New bar try 3" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GrabObject.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
+          <folding>
+            <marker date="1527232803475" expanded="false" signature="6:110" ph="..." />
+            <marker date="1527232803475" expanded="true" signature="152:2441" ph="{...}" />
+            <marker date="1527232803475" expanded="true" signature="391:463" ph="{...}" />
+            <marker date="1527232803475" expanded="true" signature="478:538" ph="{...}" />
+            <marker date="1527232803475" expanded="true" signature="586:863" ph="{...}" />
+            <marker date="1527232803475" expanded="true" signature="653:672" ph="{...}" />
+            <marker date="1527232803475" expanded="true" signature="914:949" ph="{...}" />
+            <marker date="1527232803475" expanded="true" signature="999:1034" ph="{...}" />
+            <marker date="1527232803475" expanded="true" signature="1084:1160" ph="{...}" />
+            <marker date="1527232803475" expanded="true" signature="1111:1130" ph="{...}" />
+            <marker date="1527232803475" expanded="true" signature="1189:1366" ph="{...}" />
+            <marker date="1527232803475" expanded="true" signature="1409:1536" ph="{...}" />
+            <marker date="1527232803475" expanded="true" signature="1567:2212" ph="{...}" />
+            <marker date="1527232803475" expanded="true" signature="1611:2179" ph="{...}" />
+            <marker date="1527232803475" expanded="true" signature="2228:2439" ph="{...}" />
+            <marker date="1527232803475" expanded="true" signature="2270:2331" ph="{...}" />
+            <marker date="1527232803475" expanded="true" signature="2298:2327" ph="{...}" />
+            <marker date="1527232803475" expanded="true" signature="2376:2436" ph="{...}" />
+            <marker date="1527232803475" expanded="true" signature="2401:2432" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RulesManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
+          <folding>
+            <marker date="1527476018292" expanded="false" signature="6:154" ph="..." />
+            <marker date="1527476018292" expanded="true" signature="197:2404" ph="{...}" />
+            <marker date="1527476018292" expanded="true" signature="537:773" ph="{...}" />
+            <marker date="1527476018292" expanded="true" signature="827:1400" ph="{...}" />
+            <marker date="1527476018292" expanded="true" signature="846:1397" ph="{...}" />
+            <marker date="1527476018292" expanded="true" signature="945:1041" ph="/* _timeMinute = (int) (Time.deltaTime / 60f); ... */" />
+            <marker date="1527476018292" expanded="true" signature="1180:1305" ph="{...}" />
+            <marker date="1527476018292" expanded="true" signature="1432:1696" ph="{...}" />
+            <marker date="1527476018292" expanded="true" signature="1746:1824" ph="{...}" />
+            <marker date="1527476018292" expanded="true" signature="1792:1821" ph="{...}" />
+            <marker date="1527476018292" expanded="true" signature="1865:1926" ph="{...}" />
+            <marker date="1527476018292" expanded="true" signature="1966:2168" ph="{...}" />
+            <marker date="1527476018292" expanded="true" signature="2193:2402" ph="{...}" />
+            <marker date="1527476018292" expanded="true" signature="2211:2399" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Effects/LiquidContainer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
+          <folding>
+            <marker date="1527428096358" expanded="false" signature="6:112" ph="..." />
+            <marker date="1527428096358" expanded="true" signature="153:281" ph="/// Provides a container for liquids, to handle filling and effect generation from content. ... " />
+            <marker date="1527428096358" expanded="true" signature="314:3571" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="329:426" ph="/// True if the container is empty, false otherwise. ... " />
+            <marker date="1527428096358" expanded="true" signature="500:608" ph="/// The current filling amount of the container, from 0 to 100. ... " />
+            <marker date="1527428096358" expanded="true" signature="826:1001" ph="/// Fills the container with a certain liquid. ... " />
+            <marker date="1527428096358" expanded="true" signature="1060:1708" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="1129:1206" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="1302:1428" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="1463:1549" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="1718:1884" ph="/// Returns the global color of the container according to the current contained liquids. ... " />
+            <marker date="1527428096358" expanded="true" signature="1925:2321" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="2069:2186" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="2331:2555" ph="/// Fills the container with the given liquid and the given amount. ... " />
+            <marker date="1527428096358" expanded="true" signature="2628:2774" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="2784:2873" ph="/// Depletes the container from its content. ... " />
+            <marker date="1527428096358" expanded="true" signature="2903:3024" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="3034:3140" ph="/// Makes the container empty by removing every liquid in it. ... " />
+            <marker date="1527428096358" expanded="true" signature="3169:3256" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="3266:3423" ph="/// Gets the effect generated according to the current content of the container. ... " />
+            <marker date="1527428096358" expanded="true" signature="3467:3565" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/IAAnimation/AAnimation.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="47" column="45" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
+          <folding>
+            <marker date="1526864962570" expanded="false" signature="6:92" ph="..." />
+            <marker date="1526864962570" expanded="true" signature="139:3040" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="209:238" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="267:307" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="331:515" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="566:697" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="723:783" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="806:846" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="877:1094" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="1153:1871" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="1492:1700" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="1895:2018" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="2042:2082" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="2106:2146" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="2170:2210" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="2235:2423" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="2475:2606" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="2631:2671" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="2695:2787" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="2838:2974" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="2998:3038" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UIManagerMiest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+          <folding>
+            <marker date="1527475276742" expanded="false" signature="6:100" ph="..." />
+            <marker date="1527475276742" expanded="true" signature="145:761" ph="{...}" />
+            <marker date="1527475276742" expanded="true" signature="370:494" ph="{...}" />
+            <marker date="1527475276742" expanded="true" signature="549:759" ph="{...}" />
+            <marker date="1527475276742" expanded="true" signature="566:756" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GrabObject.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
+          <folding>
+            <marker date="1527232803475" expanded="false" signature="6:110" ph="..." />
+            <marker date="1527232803475" expanded="true" signature="152:2441" ph="{...}" />
+            <marker date="1527232803475" expanded="true" signature="391:463" ph="{...}" />
+            <marker date="1527232803475" expanded="true" signature="478:538" ph="{...}" />
+            <marker date="1527232803475" expanded="true" signature="586:863" ph="{...}" />
+            <marker date="1527232803475" expanded="true" signature="653:672" ph="{...}" />
+            <marker date="1527232803475" expanded="true" signature="914:949" ph="{...}" />
+            <marker date="1527232803475" expanded="true" signature="999:1034" ph="{...}" />
+            <marker date="1527232803475" expanded="true" signature="1084:1160" ph="{...}" />
+            <marker date="1527232803475" expanded="true" signature="1111:1130" ph="{...}" />
+            <marker date="1527232803475" expanded="true" signature="1189:1366" ph="{...}" />
+            <marker date="1527232803475" expanded="true" signature="1409:1536" ph="{...}" />
+            <marker date="1527232803475" expanded="true" signature="1567:2212" ph="{...}" />
+            <marker date="1527232803475" expanded="true" signature="1611:2179" ph="{...}" />
+            <marker date="1527232803475" expanded="true" signature="2228:2439" ph="{...}" />
+            <marker date="1527232803475" expanded="true" signature="2270:2331" ph="{...}" />
+            <marker date="1527232803475" expanded="true" signature="2298:2327" ph="{...}" />
+            <marker date="1527232803475" expanded="true" signature="2376:2436" ph="{...}" />
+            <marker date="1527232803475" expanded="true" signature="2401:2432" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RulesManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
+          <folding>
+            <marker date="1527476018292" expanded="false" signature="6:154" ph="..." />
+            <marker date="1527476018292" expanded="true" signature="197:2404" ph="{...}" />
+            <marker date="1527476018292" expanded="true" signature="537:773" ph="{...}" />
+            <marker date="1527476018292" expanded="true" signature="827:1400" ph="{...}" />
+            <marker date="1527476018292" expanded="true" signature="846:1397" ph="{...}" />
+            <marker date="1527476018292" expanded="true" signature="945:1041" ph="/* _timeMinute = (int) (Time.deltaTime / 60f); ... */" />
+            <marker date="1527476018292" expanded="true" signature="1180:1305" ph="{...}" />
+            <marker date="1527476018292" expanded="true" signature="1432:1696" ph="{...}" />
+            <marker date="1527476018292" expanded="true" signature="1746:1824" ph="{...}" />
+            <marker date="1527476018292" expanded="true" signature="1792:1821" ph="{...}" />
+            <marker date="1527476018292" expanded="true" signature="1865:1926" ph="{...}" />
+            <marker date="1527476018292" expanded="true" signature="1966:2168" ph="{...}" />
+            <marker date="1527476018292" expanded="true" signature="2193:2402" ph="{...}" />
+            <marker date="1527476018292" expanded="true" signature="2211:2399" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Effects/LiquidContainer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
+          <folding>
+            <marker date="1527428096358" expanded="false" signature="6:112" ph="..." />
+            <marker date="1527428096358" expanded="true" signature="153:281" ph="/// Provides a container for liquids, to handle filling and effect generation from content. ... " />
+            <marker date="1527428096358" expanded="true" signature="314:3571" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="329:426" ph="/// True if the container is empty, false otherwise. ... " />
+            <marker date="1527428096358" expanded="true" signature="500:608" ph="/// The current filling amount of the container, from 0 to 100. ... " />
+            <marker date="1527428096358" expanded="true" signature="826:1001" ph="/// Fills the container with a certain liquid. ... " />
+            <marker date="1527428096358" expanded="true" signature="1060:1708" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="1129:1206" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="1302:1428" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="1463:1549" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="1718:1884" ph="/// Returns the global color of the container according to the current contained liquids. ... " />
+            <marker date="1527428096358" expanded="true" signature="1925:2321" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="2069:2186" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="2331:2555" ph="/// Fills the container with the given liquid and the given amount. ... " />
+            <marker date="1527428096358" expanded="true" signature="2628:2774" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="2784:2873" ph="/// Depletes the container from its content. ... " />
+            <marker date="1527428096358" expanded="true" signature="2903:3024" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="3034:3140" ph="/// Makes the container empty by removing every liquid in it. ... " />
+            <marker date="1527428096358" expanded="true" signature="3169:3256" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="3266:3423" ph="/// Gets the effect generated according to the current content of the container. ... " />
+            <marker date="1527428096358" expanded="true" signature="3467:3565" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/IAAnimation/AAnimation.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="47" column="45" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
+          <folding>
+            <marker date="1526864962570" expanded="false" signature="6:92" ph="..." />
+            <marker date="1526864962570" expanded="true" signature="139:3040" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="209:238" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="267:307" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="331:515" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="566:697" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="723:783" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="806:846" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="877:1094" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="1153:1871" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="1492:1700" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="1895:2018" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="2042:2082" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="2106:2146" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="2170:2210" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="2235:2423" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="2475:2606" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="2631:2671" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="2695:2787" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="2838:2974" ph="{...}" />
+            <marker date="1526864962570" expanded="true" signature="2998:3038" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UIManagerMiest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <marker date="1527475276742" expanded="false" signature="6:100" ph="..." />
+            <marker date="1527475276742" expanded="true" signature="145:761" ph="{...}" />
+            <marker date="1527475276742" expanded="true" signature="370:494" ph="{...}" />
+            <marker date="1527475276742" expanded="true" signature="549:759" ph="{...}" />
+            <marker date="1527475276742" expanded="true" signature="566:756" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/GrabObject.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1258">
@@ -350,28 +669,27 @@
         <state relative-caret-position="1088">
           <caret line="67" column="13" lean-forward="true" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
           <folding>
-            <marker date="1526864962540" expanded="false" signature="6:112" ph="..." />
-            <marker date="1526864962540" expanded="true" signature="146:3501" ph="{...}" />
-            <marker date="1526864962540" expanded="true" signature="153:281" ph="/// Provides a container for liquids, to handle filling and effect generation from content. ... " />
-            <marker date="1526864962540" expanded="true" signature="314:3499" ph="{...}" />
-            <marker date="1526864962540" expanded="true" signature="329:426" ph="/// True if the container is empty, false otherwise. ... " />
-            <marker date="1526864962540" expanded="true" signature="500:608" ph="/// The current filling amount of the container, from 0 to 100. ... " />
-            <marker date="1526864962540" expanded="true" signature="826:1001" ph="/// Fills the container with a certain liquid. ... " />
-            <marker date="1526864962540" expanded="true" signature="1060:1708" ph="{...}" />
-            <marker date="1526864962540" expanded="true" signature="1129:1206" ph="{...}" />
-            <marker date="1526864962540" expanded="true" signature="1302:1428" ph="{...}" />
-            <marker date="1526864962540" expanded="true" signature="1463:1549" ph="{...}" />
-            <marker date="1526864962540" expanded="true" signature="1718:1884" ph="/// Returns the global color of the container according to the current contained liquids. ... " />
-            <marker date="1526864962540" expanded="true" signature="1925:2249" ph="{...}" />
-            <marker date="1526864962540" expanded="true" signature="2069:2186" ph="{...}" />
-            <marker date="1526864962540" expanded="true" signature="2259:2483" ph="/// Fills the container with the given liquid and the given amount. ... " />
-            <marker date="1526864962540" expanded="true" signature="2556:2702" ph="{...}" />
-            <marker date="1526864962540" expanded="true" signature="2712:2801" ph="/// Depletes the container from its content. ... " />
-            <marker date="1526864962540" expanded="true" signature="2831:2952" ph="{...}" />
-            <marker date="1526864962540" expanded="true" signature="2962:3068" ph="/// Makes the container empty by removing every liquid in it. ... " />
-            <marker date="1526864962540" expanded="true" signature="3097:3184" ph="{...}" />
-            <marker date="1526864962540" expanded="true" signature="3194:3351" ph="/// Gets the effect generated according to the current content of the container. ... " />
-            <marker date="1526864962540" expanded="true" signature="3395:3493" ph="{...}" />
+            <marker date="1527428096358" expanded="false" signature="6:112" ph="..." />
+            <marker date="1527428096358" expanded="true" signature="153:281" ph="/// Provides a container for liquids, to handle filling and effect generation from content. ... " />
+            <marker date="1527428096358" expanded="true" signature="314:3571" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="329:426" ph="/// True if the container is empty, false otherwise. ... " />
+            <marker date="1527428096358" expanded="true" signature="500:608" ph="/// The current filling amount of the container, from 0 to 100. ... " />
+            <marker date="1527428096358" expanded="true" signature="826:1001" ph="/// Fills the container with a certain liquid. ... " />
+            <marker date="1527428096358" expanded="true" signature="1060:1708" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="1129:1206" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="1302:1428" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="1463:1549" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="1718:1884" ph="/// Returns the global color of the container according to the current contained liquids. ... " />
+            <marker date="1527428096358" expanded="true" signature="1925:2321" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="2069:2186" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="2331:2555" ph="/// Fills the container with the given liquid and the given amount. ... " />
+            <marker date="1527428096358" expanded="true" signature="2628:2774" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="2784:2873" ph="/// Depletes the container from its content. ... " />
+            <marker date="1527428096358" expanded="true" signature="2903:3024" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="3034:3140" ph="/// Makes the container empty by removing every liquid in it. ... " />
+            <marker date="1527428096358" expanded="true" signature="3169:3256" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="3266:3423" ph="/// Gets the effect generated according to the current content of the container. ... " />
+            <marker date="1527428096358" expanded="true" signature="3467:3565" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -520,41 +838,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UIManagerMiest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <marker date="1527475276742" expanded="false" signature="6:100" ph="..." />
+            <marker date="1527475276742" expanded="true" signature="145:761" ph="{...}" />
+            <marker date="1527475276742" expanded="true" signature="370:494" ph="{...}" />
+            <marker date="1527475276742" expanded="true" signature="549:759" ph="{...}" />
+            <marker date="1527475276742" expanded="true" signature="566:756" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Effects/LiquidContainer.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
+        <state relative-caret-position="781">
           <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
           <folding>
-            <marker date="1526864962540" expanded="false" signature="6:112" ph="..." />
-            <marker date="1526864962540" expanded="true" signature="146:3501" ph="{...}" />
-            <marker date="1526864962540" expanded="true" signature="153:281" ph="/// Provides a container for liquids, to handle filling and effect generation from content. ... " />
-            <marker date="1526864962540" expanded="true" signature="314:3499" ph="{...}" />
-            <marker date="1526864962540" expanded="true" signature="329:426" ph="/// True if the container is empty, false otherwise. ... " />
-            <marker date="1526864962540" expanded="true" signature="500:608" ph="/// The current filling amount of the container, from 0 to 100. ... " />
-            <marker date="1526864962540" expanded="true" signature="826:1001" ph="/// Fills the container with a certain liquid. ... " />
-            <marker date="1526864962540" expanded="true" signature="1060:1708" ph="{...}" />
-            <marker date="1526864962540" expanded="true" signature="1129:1206" ph="{...}" />
-            <marker date="1526864962540" expanded="true" signature="1302:1428" ph="{...}" />
-            <marker date="1526864962540" expanded="true" signature="1463:1549" ph="{...}" />
-            <marker date="1526864962540" expanded="true" signature="1718:1884" ph="/// Returns the global color of the container according to the current contained liquids. ... " />
-            <marker date="1526864962540" expanded="true" signature="1925:2249" ph="{...}" />
-            <marker date="1526864962540" expanded="true" signature="2069:2186" ph="{...}" />
-            <marker date="1526864962540" expanded="true" signature="2259:2483" ph="/// Fills the container with the given liquid and the given amount. ... " />
-            <marker date="1526864962540" expanded="true" signature="2556:2702" ph="{...}" />
-            <marker date="1526864962540" expanded="true" signature="2712:2801" ph="/// Depletes the container from its content. ... " />
-            <marker date="1526864962540" expanded="true" signature="2831:2952" ph="{...}" />
-            <marker date="1526864962540" expanded="true" signature="2962:3068" ph="/// Makes the container empty by removing every liquid in it. ... " />
-            <marker date="1526864962540" expanded="true" signature="3097:3184" ph="{...}" />
-            <marker date="1526864962540" expanded="true" signature="3194:3351" ph="/// Gets the effect generated according to the current content of the container. ... " />
-            <marker date="1526864962540" expanded="true" signature="3395:3493" ph="{...}" />
+            <marker date="1527428096358" expanded="false" signature="6:112" ph="..." />
+            <marker date="1527428096358" expanded="true" signature="153:281" ph="/// Provides a container for liquids, to handle filling and effect generation from content. ... " />
+            <marker date="1527428096358" expanded="true" signature="314:3571" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="329:426" ph="/// True if the container is empty, false otherwise. ... " />
+            <marker date="1527428096358" expanded="true" signature="500:608" ph="/// The current filling amount of the container, from 0 to 100. ... " />
+            <marker date="1527428096358" expanded="true" signature="826:1001" ph="/// Fills the container with a certain liquid. ... " />
+            <marker date="1527428096358" expanded="true" signature="1060:1708" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="1129:1206" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="1302:1428" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="1463:1549" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="1718:1884" ph="/// Returns the global color of the container according to the current contained liquids. ... " />
+            <marker date="1527428096358" expanded="true" signature="1925:2321" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="2069:2186" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="2331:2555" ph="/// Fills the container with the given liquid and the given amount. ... " />
+            <marker date="1527428096358" expanded="true" signature="2628:2774" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="2784:2873" ph="/// Depletes the container from its content. ... " />
+            <marker date="1527428096358" expanded="true" signature="2903:3024" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="3034:3140" ph="/// Makes the container empty by removing every liquid in it. ... " />
+            <marker date="1527428096358" expanded="true" signature="3169:3256" ph="{...}" />
+            <marker date="1527428096358" expanded="true" signature="3266:3423" ph="/// Gets the effect generated according to the current content of the container. ... " />
+            <marker date="1527428096358" expanded="true" signature="3467:3565" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/GrabObject.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="77" column="30" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="30" />
+        <state relative-caret-position="781">
+          <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
           <folding>
             <marker date="1527232803475" expanded="false" signature="6:110" ph="..." />
             <marker date="1527232803475" expanded="true" signature="152:2441" ph="{...}" />
@@ -575,6 +906,29 @@
             <marker date="1527232803475" expanded="true" signature="2298:2327" ph="{...}" />
             <marker date="1527232803475" expanded="true" signature="2376:2436" ph="{...}" />
             <marker date="1527232803475" expanded="true" signature="2401:2432" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RulesManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="628">
+          <caret line="115" column="53" selection-start-line="115" selection-start-column="53" selection-end-line="115" selection-end-column="53" />
+          <folding>
+            <marker date="1527476018292" expanded="false" signature="6:154" ph="..." />
+            <marker date="1527476018292" expanded="true" signature="197:2404" ph="{...}" />
+            <marker date="1527476018292" expanded="true" signature="537:773" ph="{...}" />
+            <marker date="1527476018292" expanded="true" signature="827:1400" ph="{...}" />
+            <marker date="1527476018292" expanded="true" signature="846:1397" ph="{...}" />
+            <marker date="1527476018292" expanded="true" signature="945:1041" ph="/* _timeMinute = (int) (Time.deltaTime / 60f); ... */" />
+            <marker date="1527476018292" expanded="true" signature="1180:1305" ph="{...}" />
+            <marker date="1527476018292" expanded="true" signature="1432:1696" ph="{...}" />
+            <marker date="1527476018292" expanded="true" signature="1746:1824" ph="{...}" />
+            <marker date="1527476018292" expanded="true" signature="1792:1821" ph="{...}" />
+            <marker date="1527476018292" expanded="true" signature="1865:1926" ph="{...}" />
+            <marker date="1527476018292" expanded="true" signature="1966:2168" ph="{...}" />
+            <marker date="1527476018292" expanded="true" signature="2193:2402" ph="{...}" />
+            <marker date="1527476018292" expanded="true" signature="2211:2399" ph="{...}" />
           </folding>
         </state>
       </provider>

@@ -31,6 +31,9 @@
             <e p="StarrySky.shader" t="Include" />
           </e>
         </e>
+        <e p="NeonShapes" t="Include">
+          <e p="SelfDestroyScript.cs" t="Include" />
+        </e>
         <e p="PostProcessing" t="Include">
           <e p="Editor" t="Include">
             <e p="Attributes" t="Include">
@@ -207,7 +210,11 @@
         <e p="drunk.cs" t="Include" />
         <e p="Effects" t="Include">
           <e p="AEffect.cs" t="Include" />
+          <e p="EffectAcid.cs" t="Include" />
+          <e p="EffectAOE.cs" t="Include" />
           <e p="EffectFactory.cs" t="Include" />
+          <e p="EffectFire.cs" t="Include" />
+          <e p="EffectIce.cs" t="Include" />
           <e p="EffectStun.cs" t="Include" />
           <e p="LiquidContainer.cs" t="Include" />
           <e p="Recipe.cs" t="Include" />
@@ -255,6 +262,7 @@
           <e p="ParticleHandler.cs" t="Include" />
         </e>
         <e p="PourcentageMaker.cs" t="Include" />
+        <e p="RulesManager.cs" t="Include" />
         <e p="Spawn" t="Include">
           <e p="SpawnBottle.cs" t="Include" />
           <e p="SpawnPlayerBottle.cs" t="Include" />
@@ -265,6 +273,7 @@
           <e p="BottleThrowable.cs" t="Include" />
           <e p="GlassThrowable.cs" t="Include" />
         </e>
+        <e p="UIManagerMiest.cs" t="Include" />
         <e p="Usefull" t="Include">
           <e p="DictionaryPropertyDrawer.cs" t="Include" />
           <e p="SerialisableDictionary.cs" t="Include" />
