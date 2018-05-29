@@ -5,9 +5,5 @@
     /// </summary>
     public class EffectStun : AEffect
     {
-        public override void Activate(AEvent ev)
-        {
-            ev.AddAction(ActionEnum.Action.Stun);
-        }
     }
 }

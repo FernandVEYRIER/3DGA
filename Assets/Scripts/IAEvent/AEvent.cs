@@ -21,21 +21,41 @@ public abstract class AEvent : MonoBehaviour {
     };
 
     [SerializeField] CollisionType collision;
-    public CollisionType Collision { get { return collision; } }
 
     [SerializeField] AnimationCurve humor;
     [SerializeField] AnimationCurve alcool;
 
-    [SerializeField]
-    List<ActionEnum.Action> actions = new List<ActionEnum.Action>();
+    [SerializeField] List<ActionEnum.Action> actions = new List<ActionEnum.Action>();
+    [SerializeField] List<GameObject> goOfAction = new List<GameObject>();
 
-    [SerializeField]
-    List<GameObject> goOfAction;
+    public CollisionType Collision { get { return collision; } }
+    public AnimationCurve Humor { get { return humor; } }
+    public AnimationCurve Alcool { get { return alcool; } }
+    public List<ActionEnum.Action> Actions { get { return actions; } }
+    public List<GameObject> GoOfAction { get { return goOfAction; } }
+
+    public void ResetActions()
+    {
+        actions.Clear();
+        goOfAction.Clear();
+    }
 
     public void AddAction(ActionEnum.Action action, GameObject go = null)
     {
         actions.Add(action);
         goOfAction.Add(go);
+    }
+
+    virtual public void Setup(AEvent _event)
+    {
+        amountOfAlcool = _event.amountOfAlcool;
+        amountOfJoyness = _event.amountOfJoyness;
+
+        collision = _event.Collision;
+        humor = _event.Humor;
+        alcool = _event.Alcool;
+        actions = _event.Actions;
+        goOfAction = _event.GoOfAction;
     }
     
     virtual public void SetAIAction(ADrunkAI ai, float aiHumor, float aiAlcool)

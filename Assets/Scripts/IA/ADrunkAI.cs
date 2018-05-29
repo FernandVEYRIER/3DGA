@@ -3,15 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-
-using com.Collections;
 using Assets.Scripts.Throwable;
+using UnityEngine.Events;
 
 public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
 
-    [System.Serializable()]
-    public class LocalDictionary : SerializableDictionaryBase<ActionEnum.Action, float>
-    {}
+
 
     //just for debug
     [SerializeField]
@@ -36,7 +33,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     [SerializeField]
     protected GameObject hand, AiNavDirection;
     [SerializeField()]
-    LocalDictionary alcoolPerAction, humorPerAction;
+    ActionFloatDictionary alcoolPerAction, humorPerAction;
 
     protected NavMeshAgent nav;
     protected Action<GameObject> actionCB;
@@ -354,6 +351,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     protected void Leave()
     {
         actionBase(ActionEnum.Action.Leave);
+        GameObject.Find("ElementManager").GetComponent<ElementManager>().AIdie();
         Destroy(gameObject, animations.Leave());
     }
 
