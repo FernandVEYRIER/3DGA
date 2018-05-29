@@ -35,9 +35,6 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     [SerializeField()]
     ActionFloatDictionary alcoolPerAction, humorPerAction;
 
-    [SerializeField]
-    UnityEvent dieEvent;
-
     protected NavMeshAgent nav;
     protected Action<GameObject> actionCB;
     protected Action<GameObject, ADrunkAI> actionCCB;
@@ -354,8 +351,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     protected void Leave()
     {
         actionBase(ActionEnum.Action.Leave);
-        if (dieEvent)
-            dieEvent.Invoke();
+        GameObject.Find("ElementManager").GetComponent<ElementManager>().AIdie();
         Destroy(gameObject, animations.Leave());
     }
 
