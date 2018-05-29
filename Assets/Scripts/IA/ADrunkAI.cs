@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using Assets.Scripts.Throwable;
+using UnityEngine.Events;
 
 public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
 
@@ -33,6 +34,9 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     protected GameObject hand, AiNavDirection;
     [SerializeField()]
     ActionFloatDictionary alcoolPerAction, humorPerAction;
+
+    [SerializeField]
+    UnityEvent dieEvent;
 
     protected NavMeshAgent nav;
     protected Action<GameObject> actionCB;
@@ -350,6 +354,8 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     protected void Leave()
     {
         actionBase(ActionEnum.Action.Leave);
+        if (dieEvent)
+            dieEvent.Invoke();
         Destroy(gameObject, animations.Leave());
     }
 
