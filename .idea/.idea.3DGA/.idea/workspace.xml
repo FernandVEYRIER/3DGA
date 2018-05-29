@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="489c2aaa-846b-40e7-8244-7449e0f9f098" name="Default" comment="Fixed scene New bar try 3">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.3DGA/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DGA/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="489c2aaa-846b-40e7-8244-7449e0f9f098" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3DGA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DGA/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bottle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bottle.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scene/NewBarTry.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scene/NewBarTry.unity" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RulesManager.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RulesManager.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/RulesManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="628">
-              <caret line="115" column="53" selection-start-line="115" selection-start-column="53" selection-end-line="115" selection-end-column="53" />
+            <state relative-caret-position="212">
+              <caret line="66" selection-start-line="66" selection-end-line="66" />
               <folding>
                 <marker date="1527476018292" expanded="false" signature="6:154" ph="..." />
                 <marker date="1527476018292" expanded="true" signature="197:2404" ph="{...}" />
@@ -65,6 +65,25 @@
                 <marker date="1527476018292" expanded="true" signature="1966:2168" ph="{...}" />
                 <marker date="1527476018292" expanded="true" signature="2193:2402" ph="{...}" />
                 <marker date="1527476018292" expanded="true" signature="2211:2399" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BottleThrowable.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Throwable/BottleThrowable.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <marker date="1526864962593" expanded="false" signature="6:78" ph="..." />
+                <marker date="1526864962593" expanded="true" signature="114:1476" ph="{...}" />
+                <marker date="1526864962593" expanded="true" signature="121:201" ph="/// Represents a bottle that can be thrown. ... " />
+                <marker date="1526864962593" expanded="true" signature="247:1474" ph="{...}" />
+                <marker date="1526864962593" expanded="true" signature="540:765" ph="{...}" />
+                <marker date="1526864962593" expanded="true" signature="853:1159" ph="{...}" />
+                <marker date="1526864962593" expanded="true" signature="971:1149" ph="{...}" />
+                <marker date="1526864962593" expanded="true" signature="1210:1468" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -157,6 +176,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Throwable/BottleThrowable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IAAnimation/AAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RulesManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Effects/LiquidContainer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -246,7 +266,7 @@
       <workItem from="1527227810795" duration="2588000" />
       <workItem from="1527426180297" duration="10036000" />
       <workItem from="1527440495322" duration="49000" />
-      <workItem from="1527474473478" duration="2108000" />
+      <workItem from="1527474473478" duration="2935000" />
     </task>
     <task id="LOCAL-00001" summary="Add Ia and action on Bar, modif script Grab Object">
       <created>1527232987136</created>
@@ -297,11 +317,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527428200162</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add some rules element">
+      <created>1527477054682</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1527477054682</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17404000" />
+    <option name="totallyTimeSpent" value="18231000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -314,17 +341,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Errors In Solution" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5010661" side_tool="true" weight="0.59912854" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="7" sideWeight="0.50159913" side_tool="true" visible="true" weight="0.45206973" />
       <window_info anchor="bottom" id="Unit Tests" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4989339" visible="true" weight="0.08496732" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49840087" visible="true" weight="0.45206973" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16791044" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16791044" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unity" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -353,7 +379,8 @@
     <MESSAGE value="Fixed scene New bar try" />
     <MESSAGE value="Fixed scene New bar try 2" />
     <MESSAGE value="Fixed scene New bar try 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed scene New bar try 3" />
+    <MESSAGE value="add some rules element" />
+    <option name="LAST_COMMIT_MESSAGE" value="add some rules element" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/GrabObject.cs">
@@ -912,8 +939,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/RulesManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="628">
-          <caret line="115" column="53" selection-start-line="115" selection-start-column="53" selection-end-line="115" selection-end-column="53" />
+        <state relative-caret-position="212">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
           <folding>
             <marker date="1527476018292" expanded="false" signature="6:154" ph="..." />
             <marker date="1527476018292" expanded="true" signature="197:2404" ph="{...}" />
@@ -929,6 +956,23 @@
             <marker date="1527476018292" expanded="true" signature="1966:2168" ph="{...}" />
             <marker date="1527476018292" expanded="true" signature="2193:2402" ph="{...}" />
             <marker date="1527476018292" expanded="true" signature="2211:2399" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Throwable/BottleThrowable.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <marker date="1526864962593" expanded="false" signature="6:78" ph="..." />
+            <marker date="1526864962593" expanded="true" signature="114:1476" ph="{...}" />
+            <marker date="1526864962593" expanded="true" signature="121:201" ph="/// Represents a bottle that can be thrown. ... " />
+            <marker date="1526864962593" expanded="true" signature="247:1474" ph="{...}" />
+            <marker date="1526864962593" expanded="true" signature="540:765" ph="{...}" />
+            <marker date="1526864962593" expanded="true" signature="853:1159" ph="{...}" />
+            <marker date="1526864962593" expanded="true" signature="971:1149" ph="{...}" />
+            <marker date="1526864962593" expanded="true" signature="1210:1468" ph="{...}" />
           </folding>
         </state>
       </provider>
