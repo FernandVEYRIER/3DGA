@@ -22,6 +22,8 @@ public class Dance : AAction
             return;
         }
         AI.forceDirection(dancePosition);
+        AI.AddAction(ActionEnum.Action.Dance, null);
+        AI.AddAction(ActionEnum.Action.ActionDone, null);
         AI.SetTriggerStayCB(DoDance);
     }
 
@@ -30,8 +32,6 @@ public class Dance : AAction
         if (Mathf.Abs(AI.gameObject.transform.position.x - dancePosition.x) < 0.1 && Mathf.Abs(AI.gameObject.transform.position.z - dancePosition.z) < 0.1)
         {
             AI.StopWalking();
-            AI.AddAction(ActionEnum.Action.Dance, null);
-            AI.AddAction(ActionEnum.Action.ActionDone, null);
         }
     }
 }
