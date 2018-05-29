@@ -42,7 +42,7 @@ MonoBehaviour:
   ambientOcclusion:
     m_Enabled: 1
     m_Settings:
-      intensity: 1.23
+      intensity: 1.88
       radius: 0.3
       sampleCount: 10
       downsampling: 1
@@ -100,10 +100,10 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       bloom:
-        intensity: 0.3
+        intensity: 0.2
         threshold: 1
-        softKnee: 0.149
-        radius: 3.54
+        softKnee: 0.3
+        radius: 2.53
         antiFlicker: 0
       lensDirt:
         texture: {fileID: 0}
@@ -120,23 +120,23 @@ MonoBehaviour:
         neutralWhiteLevel: 6.14
         neutralWhiteClip: 10
       basic:
-        postExposure: 1.5
-        temperature: -13.7
+        postExposure: 1
+        temperature: -14.6
         tint: 40.5
         hueShift: -0
         saturation: 1.697
         contrast: 1.197
       channelMixer:
-        red: {x: 1.13, y: -0.12, z: -0.17}
-        green: {x: 0, y: 0.6, z: 0}
-        blue: {x: -0.15, y: -0.15, z: 0.51}
+        red: {x: 1.15, y: -0.18, z: -0.24}
+        green: {x: -0.09, y: 0.55, z: 0}
+        blue: {x: -0.15, y: -0.15, z: 0.21}
         currentEditingChannel: 0
       colorWheels:
         mode: 1
         log:
           slope: {r: 0.44203895, g: 0.48797137, b: 1, a: -0.30270436}
           power: {r: 1, g: 0.7031434, b: 0.6124903, a: -0.41205475}
-          offset: {r: 0.91221946, g: 1, b: 0.64280283, a: 0.14527908}
+          offset: {r: 0.8788374, g: 1, b: 0.506966, a: 0.14527908}
         linear:
           lift: {r: 0, g: 0, b: 0, a: 0}
           gamma: {r: 0, g: 0, b: 0, a: 0}
