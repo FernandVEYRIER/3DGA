@@ -490,11 +490,19 @@
           <e p="GlassThrowable.cs" t="Include" />
         </e>
         <e p="UIManagerMiest.cs" t="Include" />
-        <e p="Usefull" t="Include">
-          <e p="DictionaryPropertyDrawer.cs" t="Include" />
-          <e p="SerialisableDictionary.cs" t="Include" />
-          <e p="SerializableDictionaryBase.cs" t="Include" />
+      </e>
+      <e p="Assets\SerializableDictionary" t="Include">
+        <e p="Editor" t="Include">
+          <e p="SerializableDictionaryPropertyDrawer.cs" t="Include" />
         </e>
+        <e p="Example" t="Include">
+          <e p="Editor" t="Include">
+            <e p="UserSerializableDictionaryPropertyDrawers.cs" t="Include" />
+          </e>
+          <e p="SerializableDictionaryExample.cs" t="Include" />
+          <e p="UserSerializableDictionaries.cs" t="Include" />
+        </e>
+        <e p="SerializableDictionary.cs" t="Include" />
       </e>
       <e p="Assets\Shaders" t="Include">
         <e p="drunk.shader" t="Include" />
