@@ -203,6 +203,222 @@
         </e>
       </e>
       <e p="Assets\LockTransform.cs" t="Include" />
+      <e p="Assets\Obi" t="Include">
+        <e p="CHANGELOG_fluid.txt" t="Include" />
+        <e p="Editor" t="Include">
+          <e p="ObiAboutWindow.cs" t="Include" />
+          <e p="ObiAerodynamicConstraintsEditor.cs" t="Include" />
+          <e p="ObiBendingConstraintsEditor.cs" t="Include" />
+          <e p="ObiBoneEditor.cs" t="Include" />
+          <e p="ObiClothParticleHandles.cs" t="Include" />
+          <e p="ObiCollider2DEditor.cs" t="Include" />
+          <e p="ObiColliderEditor.cs" t="Include" />
+          <e p="ObiConstraintParametersDrawer.cs" t="Include" />
+          <e p="ObiDistanceConstraintsEditor.cs" t="Include" />
+          <e p="ObiDistanceFieldEditor.cs" t="Include" />
+          <e p="ObiDraggableIcon.cs" t="Include" />
+          <e p="ObiEditorUtils.cs" t="Include" />
+          <e p="ObiEmitterEditor.cs" t="Include" />
+          <e p="ObiEmitterMaterialEditor.cs" t="Include" />
+          <e p="ObiEmitterShapeEditor.cs" t="Include" />
+          <e p="ObiParticleActorEditor.cs" t="Include" />
+          <e p="ObiParticleBakerEditor.cs" t="Include" />
+          <e p="ObiParticleCacheEditor.cs" t="Include" />
+          <e p="ObiParticleHandleEditor.cs" t="Include" />
+          <e p="ObiParticleRendererEditor.cs" t="Include" />
+          <e p="ObiPinConstraintsEditor.cs" t="Include" />
+          <e p="ObiSolverEditor.cs" t="Include" />
+          <e p="ObiSplineHandles.cs" t="Include" />
+          <e p="ObiStitcherEditor.cs" t="Include" />
+          <e p="ObiTetherConstraintsEditor.cs" t="Include" />
+          <e p="ObiVolumeConstraintsEditor.cs" t="Include" />
+          <e p="PreviewHelpers.cs" t="Include" />
+          <e p="Resources" t="Include">
+            <e p="DistanceFieldPreview.shader" t="Include" />
+            <e p="EditorLineShader.shader" t="Include" />
+            <e p="EditorParticle.shader" t="Include" />
+            <e p="EditorParticleRadius.shader" t="Include" />
+            <e p="FlatSurfaceShader.shader" t="Include" />
+            <e p="PropertyGradientMaterial.shader" t="Include" />
+            <e p="TopologyBorders.shader" t="Include" />
+          </e>
+        </e>
+        <e p="Plugins" t="Include">
+          <e p="liboni.bundle" t="Include">
+            <e p="contents" t="Include">
+              <e p="Resources" t="Include">
+                <e p="CMakeLists.txt" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Rendering" t="Include">
+          <e p="ObiBaseFluidRenderer.cs" t="Include" />
+          <e p="ObiDistanceFieldRenderer.cs" t="Include" />
+          <e p="ObiFluidRenderer.cs" t="Include" />
+          <e p="ObiParticleRenderer.cs" t="Include" />
+          <e p="ObiSimpleFluidRenderer.cs" t="Include" />
+          <e p="ShadowmapExposer.cs" t="Include" />
+        </e>
+        <e p="Resources" t="Include">
+          <e p="ObiMaterials" t="Include">
+            <e p="DielectricFluidShader.shader" t="Include" />
+            <e p="DistanceFieldSlice.shader" t="Include" />
+            <e p="FluidColorsBlend.shader" t="Include" />
+            <e p="FluidColorsOpaque.shader" t="Include" />
+            <e p="FluidShader.shader" t="Include" />
+            <e p="FluidThickness.shader" t="Include" />
+            <e p="LitParticles.shader" t="Include" />
+            <e p="NormalReconstruction.shader" t="Include" />
+            <e p="ObiEllipsoids.cginc" t="Include" />
+            <e p="ObiFluids.cginc" t="Include" />
+            <e p="ObiParticles.cginc" t="Include" />
+            <e p="ObiUtils.cginc" t="Include" />
+            <e p="OpaqueFluidShader.shader" t="Include" />
+            <e p="ParticleShader.shader" t="Include" />
+            <e p="ScreenSpaceCurvatureFlow.shader" t="Include" />
+            <e p="SimpleFluid.shader" t="Include" />
+            <e p="SimpleParticleShader.shader" t="Include" />
+            <e p="StandardBackfaces.shader" t="Include" />
+            <e p="StandardVertexColors.shader" t="Include" />
+            <e p="UnityStandardCoreBackfaces.cginc" t="Include" />
+            <e p="UnityStandardCoreForwardBackfaces.cginc" t="Include" />
+            <e p="UnityStandardCoreForwardSimpleBackfaces.cginc" t="Include" />
+          </e>
+        </e>
+        <e p="Sample Scenes" t="Include">
+          <e p="SampleResources" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Blinker.cs" t="Include" />
+              <e p="BucketController.cs" t="Include" />
+              <e p="CharacterController" t="Include">
+                <e p="ObiCharacter.cs" t="Include" />
+                <e p="ObiCharacterController.cs" t="Include" />
+              </e>
+              <e p="ColliderHighlighter.cs" t="Include" />
+              <e p="CollisionEventHandler.cs" t="Include" />
+              <e p="FirstPersonLauncher.cs" t="Include" />
+              <e p="FluidJetController.cs" t="Include" />
+              <e p="ObiActorTeleport.cs" t="Include" />
+              <e p="ObiFluidPropertyColorizer.cs" t="Include" />
+              <e p="ObjectDragger.cs" t="Include" />
+              <e p="ObjectLimit.cs" t="Include" />
+              <e p="SlowmoToggler.cs" t="Include" />
+              <e p="WaveGenerator.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Actors" t="Include">
+            <e p="ObiActor.cs" t="Include" />
+            <e p="ObiBone.cs" t="Include" />
+            <e p="ObiEmitter.cs" t="Include" />
+            <e p="ObiStitcher.cs" t="Include" />
+          </e>
+          <e p="Attributes" t="Include">
+            <e p="ChildrenOnly.cs" t="Include" />
+            <e p="DisplayAs.cs" t="Include" />
+            <e p="Indent.cs" t="Include" />
+            <e p="InspectorButtonAttribute.cs" t="Include" />
+            <e p="MultiDelayed.cs" t="Include" />
+            <e p="MultiPropertyAttribute.cs" t="Include" />
+            <e p="MultiRange.cs" t="Include" />
+            <e p="SerializeProperty.cs" t="Include" />
+            <e p="VisibleIf.cs" t="Include" />
+          </e>
+          <e p="Collisions" t="Include">
+            <e p="ColliderTrackers" t="Include">
+              <e p="Trackers2D" t="Include">
+                <e p="ObiBoxShapeTracker2D.cs" t="Include" />
+                <e p="ObiCapsuleShapeTracker2D.cs" t="Include" />
+                <e p="ObiCircleShapeTracker2D.cs" t="Include" />
+                <e p="ObiEdgeShapeTracker2D.cs" t="Include" />
+              </e>
+              <e p="Trackers3D" t="Include">
+                <e p="ObiBoxShapeTracker.cs" t="Include" />
+                <e p="ObiCapsuleShapeTracker.cs" t="Include" />
+                <e p="ObiDistanceFieldShapeTracker.cs" t="Include" />
+                <e p="ObiMeshShapeTracker.cs" t="Include" />
+                <e p="ObiShapeTracker.cs" t="Include" />
+                <e p="ObiSphereShapeTracker.cs" t="Include" />
+                <e p="ObiTerrainShapeTracker.cs" t="Include" />
+              </e>
+            </e>
+            <e p="ObiCollider.cs" t="Include" />
+            <e p="ObiCollider2D.cs" t="Include" />
+            <e p="ObiColliderBase.cs" t="Include" />
+            <e p="ObiCollisionMaterial.cs" t="Include" />
+            <e p="ObiDistanceField.cs" t="Include" />
+            <e p="ObiRigidbody.cs" t="Include" />
+            <e p="ObiRigidbody2D.cs" t="Include" />
+            <e p="ObiRigidbodyBase.cs" t="Include" />
+          </e>
+          <e p="Constraints" t="Include">
+            <e p="ConstraintBatches" t="Include">
+              <e p="ObiAerodynamicConstraintBatch.cs" t="Include" />
+              <e p="ObiBendConstraintBatch.cs" t="Include" />
+              <e p="ObiConstraintBatch.cs" t="Include" />
+              <e p="ObiDistanceConstraintBatch.cs" t="Include" />
+              <e p="ObiPinConstraintBatch.cs" t="Include" />
+              <e p="ObiSkinConstraintBatch.cs" t="Include" />
+              <e p="ObiTetherConstraintBatch.cs" t="Include" />
+              <e p="ObiVolumeConstraintBatch.cs" t="Include" />
+            </e>
+            <e p="ObiAerodynamicConstraints.cs" t="Include" />
+            <e p="ObiBatchedConstraints.cs" t="Include" />
+            <e p="ObiBendingConstraints.cs" t="Include" />
+            <e p="ObiDistanceConstraints.cs" t="Include" />
+            <e p="ObiPinConstraints.cs" t="Include" />
+            <e p="ObiSkinConstraints.cs" t="Include" />
+            <e p="ObiTetherConstraints.cs" t="Include" />
+            <e p="ObiVolumeConstraints.cs" t="Include" />
+          </e>
+          <e p="Coroutines" t="Include">
+            <e p="CoroutineJob.cs" t="Include" />
+            <e p="EditorCoroutine.cs" t="Include" />
+          </e>
+          <e p="DataStructures" t="Include">
+            <e p="ObiList.cs" t="Include" />
+            <e p="ObiParticleCache.cs" t="Include" />
+          </e>
+          <e p="Emitter" t="Include">
+            <e p="ObiEmitterMaterial.cs" t="Include" />
+            <e p="ObiEmitterMaterialFluid.cs" t="Include" />
+            <e p="ObiEmitterMaterialGranular.cs" t="Include" />
+            <e p="ObiEmitterShape.cs" t="Include" />
+            <e p="ObiEmitterShapeCube.cs" t="Include" />
+            <e p="ObiEmitterShapeDisk.cs" t="Include" />
+            <e p="ObiEmitterShapeEdge.cs" t="Include" />
+            <e p="ObiEmitterShapeImage.cs" t="Include" />
+            <e p="ObiEmitterShapeSphere.cs" t="Include" />
+            <e p="ObiEmitterShapeSquare.cs" t="Include" />
+            <e p="ParticleAdvector.cs" t="Include" />
+          </e>
+          <e p="Oni.cs" t="Include" />
+          <e p="Solver" t="Include">
+            <e p="IObiSolverClient.cs" t="Include" />
+            <e p="ObiAnimatorController.cs" t="Include" />
+            <e p="ObiArbiter.cs" t="Include" />
+            <e p="ObiSolver.cs" t="Include" />
+            <e p="ObiSolverData.cs" t="Include" />
+          </e>
+          <e p="Utils" t="Include">
+            <e p="Forces" t="Include">
+              <e p="ObiAmbientForceZone.cs" t="Include" />
+              <e p="ObiExternalForce.cs" t="Include" />
+              <e p="ObiSphericalForceZone.cs" t="Include" />
+            </e>
+            <e p="ObiFluidSplatter.cs" t="Include" />
+            <e p="ObiFoamGenerator.cs" t="Include" />
+            <e p="ObiKinematicVelocities.cs" t="Include" />
+            <e p="ObiParticleBaker.cs" t="Include" />
+            <e p="ObiParticleGridDebugger.cs" t="Include" />
+            <e p="ObiParticleHandle.cs" t="Include" />
+            <e p="ObiProfiler.cs" t="Include" />
+            <e p="ObiUtils.cs" t="Include" />
+          </e>
+        </e>
+      </e>
       <e p="Assets\Scripts" t="Include">
         <e p="AItester.cs" t="Include" />
         <e p="Blur.cs" t="Include" />

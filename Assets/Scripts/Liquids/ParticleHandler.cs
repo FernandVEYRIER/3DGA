@@ -1,6 +1,7 @@
 ﻿using System;
 using Assets.Scripts.Effects;
 using Assets.Scripts.Throwable;
+using Obi;
 using UnityEngine;
 
 namespace Assets.Scripts.Liquids
@@ -19,9 +20,38 @@ namespace Assets.Scripts.Liquids
         [SerializeField]
         private float maxEmission = 40;
 
-        private void Awake()
+        [SerializeField] private ObiSolver _solver;
+
+        //private void Awake()
+        //{
+        //    _particles = GetComponent<ParticleSystem>();
+        //}
+
+        private void OnEnable()
         {
-            _particles = GetComponent<ParticleSystem>();
+           // Debug.Log("solver = ");
+            _solver.OnCollision += Solver_OnCollision;
+        }
+
+        private void OnDisable()
+        {
+            _solver.OnCollision -= Solver_OnCollision;
+        }
+
+        private void Solver_OnCollision(object sender, ObiSolver.ObiCollisionEventArgs e)
+        {
+//            Debug.Log("collision obi");
+            if (OnParticleCollided != null)
+            {
+                foreach (var item in e.contacts)
+                {
+                    Component collider;
+                    if (ObiCollider.idToCollider.TryGetValue(item.other, out collider))
+                    {
+                        OnParticleCollided.Invoke(this, collider.gameObject);
+                    }
+                }
+            }
         }
 
         /// <summary>
@@ -29,33 +59,33 @@ namespace Assets.Scripts.Liquids
         /// </summary>
         public event EventParticle OnParticleCollided;
 
-        private void OnParticleCollision(GameObject other)
-        {
-            if (OnParticleCollided != null)
-                OnParticleCollided.Invoke(this, other);
-        }
+        //private void OnParticleCollision(GameObject other)
+        //{
+        //    if (OnParticleCollided != null)
+        //        OnParticleCollided.Invoke(this, other);
+        //}
 
-        private void Update()
-        {
-            var emi = _particles.emission;
-            float amount = ComputeParticleEmission();
-            emi.rateOverTime = new ParticleSystem.MinMaxCurve(amount);
-        }
+        //private void Update()
+        //{
+            //var emi = _particles.emission;
+            //float amount = ComputeParticleEmission();
+            //emi.rateOverTime = new ParticleSystem.MinMaxCurve(amount);
+        //}
 
-        public void Stop()
-        {
-            var emi = _particles.emission;
-            emi.enabled = false;
-        }
+        //public void Stop()
+        //{
+        //    var emi = _particles.emission;
+        //    emi.enabled = false;
+        //}
 
         /// <summary>
         /// Computes the particle count according to the current angle of the Relative Transform set.
         /// </summary>
         /// <returns></returns>
-        private float ComputeParticleEmission()
-        {
-            var angle = Vector3.Dot(transform.forward, Vector3.down);
-            return angle * maxEmission;
-        }
+        //private float ComputeParticleEmission()
+        //{
+        //    var angle = Vector3.Dot(transform.forward, Vector3.down);
+        //    return angle * maxEmission;
+        //}
     }
 }

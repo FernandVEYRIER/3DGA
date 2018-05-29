@@ -31,8 +31,8 @@ namespace Assets.Scripts.Throwable
             {
                 s.Fill(_liquid);
                 _container.Deplete();
-                if (_container.IsEmpty)
-                    _particles.Stop();
+                //if (_container.IsEmpty)
+                    //_particles.Stop();
             }
         }
 
