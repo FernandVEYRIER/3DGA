@@ -12,6 +12,14 @@ namespace Assets.Scripts.Throwable
         private Renderer _liquidMat;
         private readonly LiquidContainer _container = new LiquidContainer();
 
+        public string GetEffectName()
+        {
+            var effect = _container.GetGeneratedEffect();
+            if (effect == null)
+                return "None";
+            return effect.Recipe.Name;
+        }
+
         private void Start()
         {
             _liquid.SetActive(false);
