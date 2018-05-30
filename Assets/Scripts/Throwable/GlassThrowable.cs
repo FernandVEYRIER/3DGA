@@ -1,4 +1,6 @@
 ﻿using Assets.Scripts.Effects;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using UnityEngine;
 
 namespace Assets.Scripts.Throwable
@@ -20,6 +22,11 @@ namespace Assets.Scripts.Throwable
             return effect.Recipe.Name;
         }
 
+        public ReadOnlyCollection<Ingredient> GetLiquidList()
+        {
+            return _container.GetLiquids();
+        }
+
         private void Start()
         {
             _liquid.SetActive(false);
@@ -32,7 +39,7 @@ namespace Assets.Scripts.Throwable
             _liquidMat.material.DisableKeyword("_ALPHABLEND_ON");
             _liquidMat.material.EnableKeyword("_ALPHAPREMULTIPLY_ON");
             _liquidMat.material.renderQueue = 3000;
-            Debug.Log("liquid mat => " + _liquidMat.material.GetColor("_Color"));
+            //Debug.Log("liquid mat => " + _liquidMat.material.GetColor("_Color"));
         }
 
         protected override void OnObjectDestroy()

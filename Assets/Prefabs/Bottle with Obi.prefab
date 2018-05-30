@@ -215,7 +215,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1436437434780714}
   m_LocalRotation: {x: 0.022638861, y: 0.000011397948, z: -0.00050338404, w: 0.99974364}
-  m_LocalPosition: {x: 0, y: 1.57, z: -2}
+  m_LocalPosition: {x: 0, y: 2.56, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children:
   - {fileID: 224703110385965740}
@@ -454,27 +454,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   emitter: {fileID: 114748179380910434}
   color: {r: 1, g: 1, b: 1, a: 1}
-  particleSize: 0.06299605
+  particleSize: 0.07937005
   distribution:
   - position: {x: 0, y: 0, z: 0}
-    velocity: {x: 0, y: 0, z: 1}
-    color: {r: 1, g: 1, b: 1, a: 1}
-  - position: {x: 0.06299605, y: 0, z: 0}
-    velocity: {x: 0, y: 0, z: 1}
-    color: {r: 1, g: 1, b: 1, a: 1}
-  - position: {x: 0.031498022, y: 0.054556184, z: 0}
-    velocity: {x: 0, y: 0, z: 1}
-    color: {r: 1, g: 1, b: 1, a: 1}
-  - position: {x: -0.03149803, y: 0.05455618, z: 0}
-    velocity: {x: 0, y: 0, z: 1}
-    color: {r: 1, g: 1, b: 1, a: 1}
-  - position: {x: -0.06299605, y: -0.0000000055072897, z: 0}
-    velocity: {x: 0, y: 0, z: 1}
-    color: {r: 1, g: 1, b: 1, a: 1}
-  - position: {x: -0.03149802, y: -0.054556184, z: 0}
-    velocity: {x: 0, y: 0, z: 1}
-    color: {r: 1, g: 1, b: 1, a: 1}
-  - position: {x: 0.03149802, y: -0.054556184, z: 0}
     velocity: {x: 0, y: 0, z: 1}
     color: {r: 1, g: 1, b: 1, a: 1}
   radius: 0.07
@@ -521,6 +503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bc004f86e2e4234eaa507d1d434f114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _canvas: {fileID: 1593737141557788}
   _bottle: {fileID: 114701674139854170}
   _bottleNameText: {fileID: 114889362098079476}
 --- !u!114 &114701674139854170
