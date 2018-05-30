@@ -23,7 +23,9 @@ GameObject:
   - component: {fileID: 136859392455612466}
   - component: {fileID: 114527959297022212}
   - component: {fileID: 114475014794126574}
-  m_Layer: 8
+  - component: {fileID: 114931184607949200}
+  - component: {fileID: 114299592630156242}
+  m_Layer: 0
   m_Name: GlassWithFill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +42,7 @@ GameObject:
   - component: {fileID: 4686858242522570}
   - component: {fileID: 33966270285662064}
   - component: {fileID: 23246963967026328}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Glass 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,7 +59,7 @@ GameObject:
   - component: {fileID: 4245623645938882}
   - component: {fileID: 33014717954854888}
   - component: {fileID: 23022306116487986}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Liquid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,8 +86,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1578240923631956}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.168, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 16.50651, y: 2.088, z: 15.388}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 4686858242522570}
   - {fileID: 4245623645938882}
@@ -202,6 +204,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114299592630156242
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1578240923631956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62359d80fdc0e4315ab6331b78ec5b90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kinematicForParticles: 1
 --- !u!114 &114475014794126574
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -270,6 +284,23 @@ MonoBehaviour:
   _hitTags:
   - Floor
   _liquid: {fileID: 1836781699696786}
+--- !u!114 &114931184607949200
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1578240923631956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6757b231cedd544c583ef8aeaf773b2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 11400000, guid: b231b678223e044588ce32ebccbe77f3, type: 2}
+  phase: 0
+  thickness: 0
+  unityCollider: {fileID: 136859392455612466}
+  useDistanceFields: 0
+  distanceField: {fileID: 0}
 --- !u!136 &136859392455612466
 CapsuleCollider:
   m_ObjectHideFlags: 1

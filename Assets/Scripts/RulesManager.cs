@@ -65,9 +65,16 @@ public class RulesManager : MonoBehaviour
 				if (_timeMinute == 0f && _timeSeconds == 0f || nbAI == 0)
 					coreGame = false;
 
+				
+				
 			}
 	}
 
+	public void ennemyHit()
+	{
+		maxScore += 20;
+	}
+	
 	public int convertiseurTime()
 	{
 		string[] time = duration.Split(':');
