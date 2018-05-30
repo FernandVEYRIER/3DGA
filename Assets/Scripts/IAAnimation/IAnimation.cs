@@ -1,10 +1,12 @@
-﻿public interface IAnimation
+﻿using UnityEngine;
+
+public interface IAnimation
 {
     void Initialize(ADrunkAI ai);
 
     void Walk();
 
-    void GetBottle();
+    void GetBottle(GameObject bottle);
 
     void ThrowBottle();
 

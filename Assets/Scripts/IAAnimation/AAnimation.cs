@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assets.Scripts.Throwable;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,10 +7,12 @@ using UnityEngine;
 public abstract class AAnimation : IAnimation
 {
     protected ADrunkAI AI;
+    protected Animator animator;
 
     public void Initialize(ADrunkAI ai)
     {
         AI = ai;
+        animator = AI.gameObject.GetComponent<Animator>();
     }
 
     private void StopCoroutines()
@@ -17,10 +20,33 @@ public abstract class AAnimation : IAnimation
         AI.StopAllCoroutines();
     }
 
-    public void GetBottle()
+    public void GetBottle(GameObject bottle)
     {
         StopCoroutines();
+        AI.AIanimator.SetBool("Action", true);
+        AI.AIanimator.SetBool("pickingUp", true);
+        AI.StartCoroutine(GetBottleAnimation(bottle));
+    }
+
+    protected virtual IEnumerator GetBottleAnimation(GameObject bottle)
+    {
+        Debug.Log("start picking up");
+        while (!animator.GetCurrentAnimatorStateInfo(0).IsTag("PickingUp"))
+            yield return new WaitForFixedUpdate();
+        AI.AIanimator.SetBool("pickingUp", false);
+        yield return new WaitForSeconds(0.5f);
+        AI.Bottle = bottle;
+        bottle.GetComponent<AThrowable>().Grab(AI.Hand.transform);
+        bottle.transform.rotation = AI.Hand.transform.rotation;
+        bottle.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorClipInfo(0)[0].clip.length - 0.5f);
+
+        /*while (!animator.GetCurrentAnimatorStateInfo(0).IsTag("Default"))
+        {
+            yield return new WaitForFixedUpdate();
+        }*/
         AI.AnimationDone();
+        yield return 0;
     }
 
     public void Hide()
@@ -31,7 +57,7 @@ public abstract class AAnimation : IAnimation
         AI.StartCoroutine(HideAnimation(UnityEngine.Random.Range(0.0f, 5.0f)));
     }
 
-    private IEnumerator HideAnimation(float time)
+    protected virtual IEnumerator HideAnimation(float time)
     {
         Debug.Log("waiting for : " + time);
         yield return new WaitForSeconds(time);
@@ -59,7 +85,7 @@ public abstract class AAnimation : IAnimation
         AI.StartCoroutine(ThrowBotlleAnimation(GameObject.FindGameObjectWithTag("Player").transform.position));
     }
 
-    private IEnumerator ThrowBotlleAnimation(Vector3 pos)
+    protected virtual IEnumerator ThrowBotlleAnimation(Vector3 pos)
     {
         float time = 0;
         float second = 0;
@@ -68,6 +94,7 @@ public abstract class AAnimation : IAnimation
         lookPos.y = 0;
         Quaternion rotation = Quaternion.LookRotation(lookPos);
         Quaternion myRotation = AI.gameObject.transform.rotation;
+
         // les secondes c'est yolo
         second = Mathf.Abs(rotation.eulerAngles.y - myRotation.eulerAngles.y);
         second = Mathf.Abs(360 + rotation.eulerAngles.y - myRotation.eulerAngles.y) < second ? Mathf.Abs(360 + rotation.eulerAngles.y - myRotation.eulerAngles.y) : second;
@@ -79,8 +106,11 @@ public abstract class AAnimation : IAnimation
             time += Time.deltaTime;
             yield return new WaitForFixedUpdate();
         }
-        yield return new WaitForFixedUpdate();
-        AI.ThrowThisBottle(GameObject.FindGameObjectWithTag("Player").transform.position);
+        while (!animator.GetCurrentAnimatorStateInfo(0).IsTag("Throw"))
+            yield return new WaitForFixedUpdate();
+        AI.AIanimator.SetBool("throw", false);
+        while (!animator.GetCurrentAnimatorStateInfo(0).IsTag("Default"))
+            yield return new WaitForFixedUpdate();
         AI.AnimationDone();
         yield return 0;
     }
@@ -119,7 +149,7 @@ public abstract class AAnimation : IAnimation
         AI.StartCoroutine(DanceAnimation(UnityEngine.Random.Range(0.0f, 5.0f)));
     }
 
-    private IEnumerator DanceAnimation(float time)
+    protected virtual IEnumerator DanceAnimation(float time)
     {
         Debug.Log("dancing for : " + time);
         yield return new WaitForSeconds(time);
@@ -139,7 +169,7 @@ public abstract class AAnimation : IAnimation
         AI.StartCoroutine(DartAnimation(UnityEngine.Random.Range(0.0f, 5.0f)));
     }
 
-    private IEnumerator DartAnimation(float time)
+    protected virtual IEnumerator DartAnimation(float time)
     {
         Debug.Log("playing dart for : " + time);
         yield return new WaitForSeconds(time);

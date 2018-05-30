@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using Assets.Scripts.Throwable;
 using UnityEngine.Events;
+using UnityEditor.Animations;
 
 public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
 
@@ -27,11 +28,12 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     protected string[] ActionClassName;
     [SerializeField]
     protected string AnimationClassName;
-    [SerializeField] 
+    [SerializeField]
     [Range(0.0f, 1.0f)]
     protected float humor, alcool;
     [SerializeField]
     protected GameObject hand, AiNavDirection;
+    public GameObject Hand { get { return hand; } }
     [SerializeField()]
     ActionFloatDictionary alcoolPerAction, humorPerAction;
 
@@ -51,6 +53,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     public AIComportement Comportement { get { return comportement; } }
 
     protected GameObject bottle;
+    public GameObject Bottle { set { bottle = value; }}
     protected bool walking;
     protected bool anim;
 
@@ -169,11 +172,11 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         return bottle != null ? true : false;
     }
 
-    public void ThrowThisBottle(Vector3 pos)
+    public void ThrowThisBottle()
     {
         if (bottle == null)
             return;
-        bottle.GetComponent<AThrowable>().Throw(pos);
+        bottle.GetComponent<AThrowable>().Throw(GameObject.FindGameObjectWithTag("Player").transform.position);
         bottle = null;
     }
 
@@ -308,13 +311,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         else
         {
             actionBase(ActionEnum.Action.GetBottle);
-            bottle = actionList[0].go;
-            bottle.GetComponent<AThrowable>().Grab(hand.transform);
-            bottle.transform.rotation = hand.transform.rotation;
-            bottle.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
-            //bottle.GetComponent<Rigidbody>().isKinematic = true;
-            //bottle.tag = "Untagged";
-            animations.GetBottle();
+            animations.GetBottle(actionList[0].go);
         }
     }
 
