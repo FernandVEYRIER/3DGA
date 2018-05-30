@@ -126,19 +126,55 @@ public abstract class AAnimation : IAnimation
     public void Kick()
     {
         StopCoroutines();
+        AI.AIanimator.SetBool("Action", true);
+        AI.AIanimator.SetBool("kick", true);
+        AI.StartCoroutine(KickAnimation());
+    }
+
+    protected virtual IEnumerator KickAnimation()
+    {
+        while (!animator.GetCurrentAnimatorStateInfo(0).IsTag("Kick"))
+            yield return new WaitForFixedUpdate();
+        AI.AIanimator.SetBool("kick", false);
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorClipInfo(0)[0].clip.length);
         AI.AnimationDone();
+        yield return 0;
     }
 
     public void Slip()
     {
         StopCoroutines();
+        AI.AIanimator.SetBool("Action", true);
+        AI.AIanimator.SetBool("slip", true);
+        AI.StartCoroutine(SlipAnimation());
+    }
+
+    protected virtual IEnumerator SlipAnimation()
+    {
+        while (!animator.GetCurrentAnimatorStateInfo(0).IsTag("Slip"))
+            yield return new WaitForFixedUpdate();
+        AI.AIanimator.SetBool("slip", false);
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorClipInfo(0)[0].clip.length);
         AI.AnimationDone();
+        yield return 0;
     }
 
     public void Stun()
     {
         StopCoroutines();
+        AI.AIanimator.SetBool("Action", true);
+        AI.AIanimator.SetBool("stun", true);
+        AI.StartCoroutine(StunAnimation());
+    }
+
+    protected virtual IEnumerator StunAnimation()
+    {
+        while (!animator.GetCurrentAnimatorStateInfo(0).IsTag("Stun"))
+            yield return new WaitForFixedUpdate();
+        AI.AIanimator.SetBool("stun", false);
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorClipInfo(0)[0].clip.length);
         AI.AnimationDone();
+        yield return 0;
     }
 
     public void Dance()

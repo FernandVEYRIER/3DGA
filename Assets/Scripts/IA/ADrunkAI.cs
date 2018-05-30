@@ -137,9 +137,10 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         actiondebug = ActionEnum.Action.Nothing; //to delete, juste for debug
         StopWalking();
         actionCB = null;
-        anim = false;
         ResetCallback();
         actionList.Clear();
+        AnimationDone();
+        StopAllCoroutines();
     }
 
     public void StopWalking()
@@ -164,6 +165,9 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         animator.SetBool("drinking", false);
         animator.SetBool("dancing", false);
         animator.SetBool("hide", false);
+        animator.SetBool("kick", false);
+        animator.SetBool("stun", false);
+        animator.SetBool("slip", false);
     }
 
     //return true if AI got bottle
@@ -174,7 +178,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
 
     public void ThrowThisBottle()
     {
-        if (bottle == null)
+        if (bottle == null || actionList[0].type != ActionEnum.Action.ThrowBottle)
             return;
         bottle.GetComponent<AThrowable>().Throw(GameObject.FindGameObjectWithTag("Player").transform.position);
         bottle = null;
@@ -323,9 +327,6 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         else
         {
             actionBase(ActionEnum.Action.ThrowBottle);
-            //bottle.GetComponent<Rigidbody>().isKinematic = false;
-            if (bottle.GetComponent<AEvent>() != null)
-                bottle.GetComponent<AEvent>().Enable = true;
             animations.ThrowBottle();
         }
     }
