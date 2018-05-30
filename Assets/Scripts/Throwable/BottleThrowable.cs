@@ -1,4 +1,5 @@
-﻿using Assets.Scripts.Effects;
+﻿using System;
+using Assets.Scripts.Effects;
 using Assets.Scripts.Liquids;
 using UnityEngine;
 
@@ -13,6 +14,7 @@ namespace Assets.Scripts.Throwable
         [SerializeField] private ParticleHandler _particles;
 
         private readonly LiquidContainer _container = new LiquidContainer();
+
         private ParticleHandler _particleHandler;
 
         private void Start()
@@ -42,6 +44,11 @@ namespace Assets.Scripts.Throwable
                 Instantiate(_hitEffect, transform.position, Quaternion.identity);
             _particleHandler.OnParticleCollided -= ParticleHandler_OnParticleCollided;
             Destroy(gameObject);
+        }
+
+        public string GetLiquidName()
+        {
+            return _container.GetLiquids()[0].Liquid.ToString();
         }
     }
 }

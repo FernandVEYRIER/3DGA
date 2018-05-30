@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Assets.Scripts.Extensions;
+using System;
+using System.Collections.ObjectModel;
 
 namespace Assets.Scripts.Effects
 {
@@ -14,6 +16,11 @@ namespace Assets.Scripts.Effects
         /// True if the container is empty, false otherwise.
         /// </summary>
         public bool IsEmpty { get { return FillAmount <= 0; } }
+
+        public ReadOnlyCollection<Ingredient> GetLiquids()
+        {
+            return _containedLiquids.AsReadOnly();
+        }
 
         /// <summary>
         /// The current filling amount of the container, from 0 to 100.
