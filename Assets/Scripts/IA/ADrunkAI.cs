@@ -270,7 +270,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         {
             float biggestValue = 0;
             float value = (float)(UnityEngine.Random.Range(0, 101)) / 100.0f;
-            print("random value: " + value + "chance was: " + actions[i].GetPourcentage(humor, alcool));
+            //print("random value: " + value + "chance was: " + actions[i].GetPourcentage(humor, alcool));
             if (value < actions[i].GetPourcentage(humor, alcool))
             {
                 if (biggestValue < value /*+ actions[i].GetPourcentage(humor, alcool)*/)
@@ -312,8 +312,8 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
             bottle.GetComponent<AThrowable>().Grab(hand.transform);
             bottle.transform.rotation = hand.transform.rotation;
             bottle.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
-            bottle.GetComponent<Rigidbody>().isKinematic = true;
-            bottle.tag = "Untagged";
+            //bottle.GetComponent<Rigidbody>().isKinematic = true;
+            //bottle.tag = "Untagged";
             animations.GetBottle();
         }
     }
@@ -326,7 +326,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         else
         {
             actionBase(ActionEnum.Action.ThrowBottle);
-            bottle.GetComponent<Rigidbody>().isKinematic = false;
+            //bottle.GetComponent<Rigidbody>().isKinematic = false;
             if (bottle.GetComponent<AEvent>() != null)
                 bottle.GetComponent<AEvent>().Enable = true;
             animations.ThrowBottle();
