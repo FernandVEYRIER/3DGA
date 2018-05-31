@@ -33,8 +33,9 @@ public abstract class AAnimation : IAnimation
         Debug.Log("start picking up");
         while (!animator.GetCurrentAnimatorStateInfo(0).IsTag("PickingUp"))
             yield return new WaitForFixedUpdate();
-        AI.AIanimator.SetBool("pickingUp", false);
+//        AI.AIanimator.SetBool("pickingUp", false);
         yield return new WaitForSeconds(0.5f);
+        bottle.GetComponent<Rigidbody>().isKinematic = true;
         AI.Bottle = bottle;
         bottle.GetComponent<AThrowable>().Grab(AI.Hand.transform);
         bottle.transform.rotation = AI.Hand.transform.rotation;
@@ -184,15 +185,17 @@ public abstract class AAnimation : IAnimation
     public void Dance()
     {
         StopCoroutines();
+        AI.AIanimator.SetInteger("danceNbr", UnityEngine.Random.Range(0, 4));
         AI.AIanimator.SetBool("Action", true);
         AI.AIanimator.SetBool("dancing", true);
-        AI.StartCoroutine(DanceAnimation(UnityEngine.Random.Range(0.0f, 5.0f)));
+        AI.StartCoroutine(DanceAnimation());
     }
 
-    protected virtual IEnumerator DanceAnimation(float time)
+    protected virtual IEnumerator DanceAnimation()
     {
-        Debug.Log("dancing for : " + time);
-        yield return new WaitForSeconds(time);
+        while (!animator.GetCurrentAnimatorStateInfo(0).IsTag("Dance"))
+            yield return new WaitForFixedUpdate();
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorClipInfo(0)[0].clip.length);
         AI.AnimationDone();
         yield return 0;
     }
@@ -200,7 +203,18 @@ public abstract class AAnimation : IAnimation
     public void Drink()
     {
         StopCoroutines();
+        AI.AIanimator.SetBool("Action", true);
+        AI.AIanimator.SetBool("drinking", true);
+        AI.StartCoroutine(DrinkAnimation());
+    }
+
+    protected virtual IEnumerator DrinkAnimation()
+    {
+        while (!animator.GetCurrentAnimatorStateInfo(0).IsTag("Drinking"))
+            yield return new WaitForFixedUpdate();
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorClipInfo(0)[0].clip.length);
         AI.AnimationDone();
+        yield return 0;
     }
 
     public void Dart()

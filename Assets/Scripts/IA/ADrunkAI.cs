@@ -196,6 +196,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     {
         if (bottle == null || actionList[0].type != ActionEnum.Action.ThrowBottle)
             return;
+        bottle.GetComponent<Rigidbody>().isKinematic = false;
         bottle.GetComponent<AThrowable>().Throw(GameObject.FindGameObjectWithTag("Player").transform.position);
         bottle = null;
     }
@@ -343,6 +344,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         else
         {
             actionBase(ActionEnum.Action.ThrowBottle);
+            state = IAState.UNINTERACTEABLE;
             animations.ThrowBottle();
         }
     }
