@@ -20,13 +20,13 @@ public abstract class AEvent : MonoBehaviour {
         TriggerExit
     };
 
-    [SerializeField] CollisionType collision;
+    [SerializeField] protected CollisionType collision;
 
-    [SerializeField] AnimationCurve humor;
-    [SerializeField] AnimationCurve alcool;
+    [SerializeField] protected AnimationCurve humor;
+    [SerializeField] protected AnimationCurve alcool;
 
-    [SerializeField] List<ActionEnum.Action> actions = new List<ActionEnum.Action>();
-    [SerializeField] List<GameObject> goOfAction = new List<GameObject>();
+    [SerializeField] protected List<ActionEnum.Action> actions = new List<ActionEnum.Action>();
+    [SerializeField] protected List<GameObject> goOfAction = new List<GameObject>();
 
     public CollisionType Collision { get { return collision; } }
     public AnimationCurve Humor { get { return humor; } }
@@ -67,7 +67,8 @@ public abstract class AEvent : MonoBehaviour {
                 print("event proc, modification of the actions !!");
                 ai.GetDrunk(amountOfAlcool);
                 ai.GetHappy(amountOfJoyness);
-                Action(ai);
+                if (ai.State == ADrunkAI.IAState.INTERACTEABLE)
+                    Action(ai);
             }
         }
     }

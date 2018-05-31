@@ -9,6 +9,11 @@ using UnityEditor.Animations;
 
 public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
 
+    public enum IAState
+    {
+        INTERACTEABLE,
+        UNINTERACTEABLE
+    }
 
 
     //just for debug
@@ -51,11 +56,15 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     protected Dictionary<ActionEnum.Action, Action> actionMethode;
     protected AIComportement comportement;
     public AIComportement Comportement { get { return comportement; } }
+    protected CapsuleCollider collider;
 
     protected GameObject bottle;
     public GameObject Bottle { set { bottle = value; }}
     protected bool walking;
     protected bool anim;
+
+    private IAState state = IAState.INTERACTEABLE;
+    public IAState State { get { return state; } }
 
     // Use this for initialization
     protected virtual void Start() {
@@ -65,6 +74,11 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         actionMethode = new Dictionary<ActionEnum.Action, Action>();
         actions = new List<AAction>();
         comportement = gameObject.GetComponent<AIComportement>();
+        foreach(CapsuleCollider col in gameObject.GetComponents<CapsuleCollider>())
+        {
+            if (!col.isTrigger)
+                collider = col;
+        }
 
         animations = (AAnimation)Activator.CreateInstance(Type.GetType(AnimationClassName));
         animations.Initialize(this);
@@ -168,6 +182,8 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         animator.SetBool("kick", false);
         animator.SetBool("stun", false);
         animator.SetBool("slip", false);
+        state = IAState.INTERACTEABLE;
+        collider.enabled = true;
     }
 
     //return true if AI got bottle
@@ -365,6 +381,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     protected void Slip()
     {
         actionBase(ActionEnum.Action.Slip);
+        state = IAState.UNINTERACTEABLE;
         animations.Slip();
     }
 
@@ -372,6 +389,8 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     protected void Stun()
     {
         actionBase(ActionEnum.Action.Stun);
+        state = IAState.UNINTERACTEABLE;
+        collider.enabled = false;
         animations.Stun();
     }
 

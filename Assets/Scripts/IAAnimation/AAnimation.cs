@@ -154,7 +154,9 @@ public abstract class AAnimation : IAnimation
         while (!animator.GetCurrentAnimatorStateInfo(0).IsTag("Slip"))
             yield return new WaitForFixedUpdate();
         AI.AIanimator.SetBool("slip", false);
-        yield return new WaitForSeconds(animator.GetCurrentAnimatorClipInfo(0)[0].clip.length);
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorClipInfo(0)[0].clip.length + 0.1f);
+        if (animator.GetCurrentAnimatorStateInfo(0).IsTag("Slip"))
+            yield return new WaitForSeconds(animator.GetCurrentAnimatorClipInfo(0)[0].clip.length);
         AI.AnimationDone();
         yield return 0;
     }
@@ -172,7 +174,9 @@ public abstract class AAnimation : IAnimation
         while (!animator.GetCurrentAnimatorStateInfo(0).IsTag("Stun"))
             yield return new WaitForFixedUpdate();
         AI.AIanimator.SetBool("stun", false);
-        yield return new WaitForSeconds(animator.GetCurrentAnimatorClipInfo(0)[0].clip.length);
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorClipInfo(0)[0].clip.length + 0.1f);
+        if (animator.GetCurrentAnimatorStateInfo(0).IsTag("Stun"))
+            yield return new WaitForSeconds(animator.GetCurrentAnimatorClipInfo(0)[0].clip.length);
         AI.AnimationDone();
         yield return 0;
     }
