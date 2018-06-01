@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 223604578779044572}
   - component: {fileID: 114767458880974026}
   - component: {fileID: 114750977253045364}
+  - component: {fileID: 225481476197006092}
   m_Layer: 5
   m_Name: CanvasAlcohol
   m_TagString: Untagged
@@ -504,6 +505,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _canvas: {fileID: 1593737141557788}
+  _fadeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: -0.02439706
+      outSlope: 0
+      tangentMode: 69
+    - serializedVersion: 2
+      time: 0.1
+      value: 1
+      inSlope: -0
+      outSlope: -2.9569864
+      tangentMode: 5
+    - serializedVersion: 2
+      time: 0.3981695
+      value: 0.13642523
+      inSlope: -1.5040524
+      outSlope: -0.5249388
+      tangentMode: 1
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: -0.009643137
+      outSlope: -0.009643137
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  DistanceForDisplay: 10
   _bottle: {fileID: 114701674139854170}
   _bottleNameText: {fileID: 114889362098079476}
 --- !u!114 &114701674139854170
@@ -16227,3 +16259,14 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 1.753352}
   m_SizeDelta: {x: 50, y: 20}
   m_Pivot: {x: 0, y: 0}
+--- !u!225 &225481476197006092
+CanvasGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1593737141557788}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
