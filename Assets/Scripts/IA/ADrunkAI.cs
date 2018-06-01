@@ -56,7 +56,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     protected Dictionary<ActionEnum.Action, Action> actionMethode;
     protected AIComportement comportement;
     public AIComportement Comportement { get { return comportement; } }
-    protected CapsuleCollider collider;
+    //protected CapsuleCollider collider;
 
     protected GameObject bottle;
     public GameObject Bottle { set { bottle = value; }}
@@ -74,11 +74,11 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         actionMethode = new Dictionary<ActionEnum.Action, Action>();
         actions = new List<AAction>();
         comportement = gameObject.GetComponent<AIComportement>();
-        foreach(CapsuleCollider col in gameObject.GetComponents<CapsuleCollider>())
+        /*foreach(CapsuleCollider col in gameObject.GetComponents<CapsuleCollider>())
         {
             if (!col.isTrigger)
                 collider = col;
-        }
+        }*/ //maybe later, was use to disable the collider when AI fall
 
         animations = (AAnimation)Activator.CreateInstance(Type.GetType(AnimationClassName));
         animations.Initialize(this);
@@ -99,6 +99,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         actionMethode.Add(ActionEnum.Action.Kick, Kick);
         actionMethode.Add(ActionEnum.Action.Slip, Slip);
         actionMethode.Add(ActionEnum.Action.Stun, Stun);
+        actionMethode.Add(ActionEnum.Action.BottleStrick, BottleStrick);
         actionMethode.Add(ActionEnum.Action.Dance, Dance);
         actionMethode.Add(ActionEnum.Action.Drink, Drink);
         actionMethode.Add(ActionEnum.Action.Dart, Dart);
@@ -183,7 +184,6 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         animator.SetBool("stun", false);
         animator.SetBool("slip", false);
         state = IAState.INTERACTEABLE;
-        collider.enabled = true;
     }
 
     //return true if AI got bottle
@@ -391,8 +391,12 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     protected void Stun()
     {
         actionBase(ActionEnum.Action.Stun);
-        state = IAState.UNINTERACTEABLE;
-        collider.enabled = false;
+        animations.BottleStrick();
+    }
+
+    protected void BottleStrick()
+    {
+        actionBase(ActionEnum.Action.BottleStrick);
         animations.Stun();
     }
 

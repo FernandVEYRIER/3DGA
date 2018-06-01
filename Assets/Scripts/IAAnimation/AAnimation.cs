@@ -182,6 +182,23 @@ public abstract class AAnimation : IAnimation
         yield return 0;
     }
 
+    public void BottleStrick()
+    {
+        StopCoroutines();
+        AI.AIanimator.SetBool("Action", true);
+        AI.AIanimator.SetBool("bottleStrick", true);
+        AI.StartCoroutine(BottleStrickAnimation());
+    }
+
+    protected virtual IEnumerator BottleStrickAnimation()
+    {
+        while (!animator.GetCurrentAnimatorStateInfo(0).IsTag("BottleStrick"))
+            yield return new WaitForFixedUpdate();
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorClipInfo(0)[0].clip.length);
+        AI.AnimationDone();
+        yield return 0;
+    }
+
     public void Dance()
     {
         StopCoroutines();

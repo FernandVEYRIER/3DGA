@@ -22,6 +22,8 @@ public interface IAnimation
 
     void Stun();
 
+    void BottleStrick();
+
     void Dance();
 
     void Drink();
