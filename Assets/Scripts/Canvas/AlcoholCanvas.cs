@@ -4,7 +4,7 @@ namespace Assets.Scripts.Canvas
 {
     public abstract class AlcoholCanvas : MonoBehaviour
     {
-        [SerializeField] private GameObject _canvas;
+        [SerializeField] protected GameObject _canvas;
 
         virtual protected void Update()
         {
