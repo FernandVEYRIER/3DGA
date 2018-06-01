@@ -21,6 +21,11 @@ namespace Assets.Scripts.Canvas
         override protected void Update()
         {
             base.Update();
+            if (_glass.IsGrabbed || _glass.HasBeenThrown)
+            {
+                _canvas.SetActive(false);
+                return;
+            }
             _powerUpText.text = _glass.GetEffectName();
             var itemList = _glass.GetLiquidList();
             for (int i = 0; i < _alcoholObj.Length; ++i)

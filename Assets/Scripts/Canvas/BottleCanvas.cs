@@ -12,6 +12,11 @@ namespace Assets.Scripts.Canvas
         override protected void Update()
         {
             base.Update();
+            if (_bottle.IsGrabbed || _bottle.HasBeenThrown)
+            {
+                _canvas.SetActive(false);
+                return;
+            }
             _bottleNameText.text = _bottle.GetLiquidName();
         }
     }
