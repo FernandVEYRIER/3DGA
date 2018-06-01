@@ -182,6 +182,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         animator.SetBool("hide", false);
         animator.SetBool("kick", false);
         animator.SetBool("stun", false);
+        animator.SetBool("bottleStrick", false);
         animator.SetBool("slip", false);
         state = IAState.INTERACTEABLE;
     }
@@ -391,13 +392,13 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     protected void Stun()
     {
         actionBase(ActionEnum.Action.Stun);
-        animations.BottleStrick();
+        animations.Stun();
     }
 
     protected void BottleStrick()
     {
         actionBase(ActionEnum.Action.BottleStrick);
-        animations.Stun();
+        animations.BottleStrick();
     }
 
     //Ia gonna dance
