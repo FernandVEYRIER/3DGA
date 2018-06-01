@@ -10,6 +10,9 @@ namespace Assets.Scripts.Canvas
         [SerializeField] protected AnimationCurve _fadeCurve;
         [SerializeField] protected float DistanceForDisplay;
 
+        private float animTime = 0;
+        [SerializeField] private Animator _animator;
+
         private CanvasGroup _canvasGroup;
 
         private void Awake()
@@ -30,8 +33,11 @@ namespace Assets.Scripts.Canvas
             if (distance > DistanceForDisplay)
             {
                 _canvas.SetActive(false);
+                //_animator.SetFloat("PlayVel", -1f);
+                Debug.Log("Here !!" + _animator.GetFloat("PlayVel"));
                 return;
             }
+            //_animator.SetFloat("PlayVel", 1f);
             _canvas.SetActive(true);
             var posInScreen = _camera.WorldToViewportPoint(_canvas.transform.position);
             posInScreen.z = 0;
