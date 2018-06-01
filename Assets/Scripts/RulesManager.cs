@@ -80,7 +80,6 @@ public class RulesManager : MonoBehaviour
 		string[] time = duration.Split(':');
 
 		_timeMinute = float.Parse(time[0], CultureInfo.InvariantCulture.NumberFormat);
-		
 		_timeSeconds = float.Parse(time[1], CultureInfo.InvariantCulture.NumberFormat);
 
 		if (_timeSeconds > 60)
