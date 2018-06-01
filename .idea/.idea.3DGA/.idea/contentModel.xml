@@ -484,7 +484,9 @@
         <e p="Liquids" t="Include">
           <e p="ParticleHandler.cs" t="Include" />
         </e>
+        <e p="PlayerController.cs" t="Include" />
         <e p="PourcentageMaker.cs" t="Include" />
+        <e p="RespawnOBJ.cs" t="Include" />
         <e p="RulesManager.cs" t="Include" />
         <e p="Spawn" t="Include">
           <e p="SpawnBottle.cs" t="Include" />
