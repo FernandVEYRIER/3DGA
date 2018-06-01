@@ -33,8 +33,11 @@ namespace Assets.Scripts.Throwable
         {
             if (_isGrabbed)
             {
-                _throwForce = ComputeThrowingForce();
-                transform.position = _attachedTransform.position;
+                if (_attachedTransform != null)
+                {
+                    _throwForce = ComputeThrowingForce();
+                    transform.position = _attachedTransform.position;
+                }
             }
 
             if (Input.GetKeyDown(KeyCode.N))
