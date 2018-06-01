@@ -423,6 +423,7 @@
         <e p="AItester.cs" t="Include" />
         <e p="Blur.cs" t="Include" />
         <e p="BlurControl.cs" t="Include" />
+        <e p="blurGestion.cs" t="Include" />
         <e p="BottleCollid.cs" t="Include" />
         <e p="Canvas" t="Include">
           <e p="AlcoholCanvas.cs" t="Include" />

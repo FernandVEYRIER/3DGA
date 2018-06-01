@@ -11,7 +11,9 @@ public class GrabObject : MonoBehaviour {
 	private SteamVR_TrackedObject trackedObj;
 
 	private GameObject collidingObject; 
-	private GameObject objectInHand; 
+	private GameObject objectInHand;
+
+	private BoxCollider _myBox;
 
 	private SteamVR_Controller.Device Controller
 	{
@@ -113,7 +115,8 @@ public class GrabObject : MonoBehaviour {
 			if (collidingObject)
 			{
 				_GrabObject();
-				objectInHand.GetComponent<BoxCollider>().isTrigger = objectInHand.GetComponent<BottleCollid>().setTrigger(objectInHand);
+				_myBox = objectInHand.GetComponent<BoxCollider>();
+				_myBox.enabled = false;
 			}
 		}
 
@@ -123,6 +126,7 @@ public class GrabObject : MonoBehaviour {
 			if (objectInHand)
 			{
 				ReleaseObject();
+				_myBox.enabled = true;
 			}
 		}
 	}
