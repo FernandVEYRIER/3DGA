@@ -236,7 +236,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
-  actions: 09000000
+  actions: 0a000000
   goOfAction:
   - {fileID: 0}
 --- !u!114 &114646268444722438

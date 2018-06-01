@@ -15,6 +15,7 @@ public class ActionEnum {
         Kick,
         Slip,
         Stun,
+        BottleStrick,
         Drink,
         Dance,
         Dart,
