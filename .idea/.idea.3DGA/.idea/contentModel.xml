@@ -423,6 +423,12 @@
         <e p="AItester.cs" t="Include" />
         <e p="Blur.cs" t="Include" />
         <e p="BlurControl.cs" t="Include" />
+        <e p="BottleCollid.cs" t="Include" />
+        <e p="Canvas" t="Include">
+          <e p="AlcoholCanvas.cs" t="Include" />
+          <e p="BottleCanvas.cs" t="Include" />
+          <e p="GlassCanvas.cs" t="Include" />
+        </e>
         <e p="drunk.cs" t="Include" />
         <e p="Effects" t="Include">
           <e p="AEffect.cs" t="Include" />
@@ -463,6 +469,7 @@
         </e>
         <e p="IAAnimation" t="Include">
           <e p="AAnimation.cs" t="Include" />
+          <e p="AnimationTriggerEvent.cs" t="Include" />
           <e p="BasicGuyAnimation.cs" t="Include" />
           <e p="IAnimation.cs" t="Include" />
         </e>
@@ -487,6 +494,7 @@
         <e p="Throwable" t="Include">
           <e p="AThrowable.cs" t="Include" />
           <e p="BottleThrowable.cs" t="Include" />
+          <e p="ClassicBottle.cs" t="Include" />
           <e p="GlassThrowable.cs" t="Include" />
         </e>
         <e p="UIManagerMiest.cs" t="Include" />

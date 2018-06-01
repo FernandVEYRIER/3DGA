@@ -113,6 +113,7 @@ public class GrabObject : MonoBehaviour {
 			if (collidingObject)
 			{
 				_GrabObject();
+				objectInHand.GetComponent<BoxCollider>().isTrigger = objectInHand.GetComponent<BottleCollid>().setTrigger(objectInHand);
 			}
 		}
 
@@ -125,4 +126,6 @@ public class GrabObject : MonoBehaviour {
 			}
 		}
 	}
+
+
 }
