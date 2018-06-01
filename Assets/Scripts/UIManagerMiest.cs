@@ -14,7 +14,7 @@ public class UIManagerMiest : MonoBehaviour
 	public Text _displayScoreEnd;
 	public Text _scoreEndText;
 
-	private bool endGame;
+	public bool endGame;
 	
 	// Use this for initialization
 	void Start ()
