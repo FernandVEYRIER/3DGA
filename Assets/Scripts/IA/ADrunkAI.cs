@@ -3,15 +3,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-
-using com.Collections;
 using Assets.Scripts.Throwable;
+using UnityEngine.Events;
+using UnityEditor.Animations;
 
 public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
 
-    [System.Serializable()]
-    public class LocalDictionary : SerializableDictionaryBase<ActionEnum.Action, float>
-    {}
+    public enum IAState
+    {
+        INTERACTEABLE,
+        UNINTERACTEABLE
+    }
+
 
     //just for debug
     [SerializeField]
@@ -30,13 +33,14 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     protected string[] ActionClassName;
     [SerializeField]
     protected string AnimationClassName;
-    [SerializeField] 
+    [SerializeField]
     [Range(0.0f, 1.0f)]
     protected float humor, alcool;
     [SerializeField]
     protected GameObject hand, AiNavDirection;
+    public GameObject Hand { get { return hand; } }
     [SerializeField()]
-    LocalDictionary alcoolPerAction, humorPerAction;
+    ActionFloatDictionary alcoolPerAction, humorPerAction;
 
     protected NavMeshAgent nav;
     protected Action<GameObject> actionCB;
@@ -52,10 +56,15 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     protected Dictionary<ActionEnum.Action, Action> actionMethode;
     protected AIComportement comportement;
     public AIComportement Comportement { get { return comportement; } }
+    //protected CapsuleCollider collider;
 
     protected GameObject bottle;
+    public GameObject Bottle { set { bottle = value; }}
     protected bool walking;
     protected bool anim;
+
+    private IAState state = IAState.INTERACTEABLE;
+    public IAState State { get { return state; } }
 
     // Use this for initialization
     protected virtual void Start() {
@@ -65,6 +74,11 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         actionMethode = new Dictionary<ActionEnum.Action, Action>();
         actions = new List<AAction>();
         comportement = gameObject.GetComponent<AIComportement>();
+        /*foreach(CapsuleCollider col in gameObject.GetComponents<CapsuleCollider>())
+        {
+            if (!col.isTrigger)
+                collider = col;
+        }*/ //maybe later, was use to disable the collider when AI fall
 
         animations = (AAnimation)Activator.CreateInstance(Type.GetType(AnimationClassName));
         animations.Initialize(this);
@@ -85,6 +99,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         actionMethode.Add(ActionEnum.Action.Kick, Kick);
         actionMethode.Add(ActionEnum.Action.Slip, Slip);
         actionMethode.Add(ActionEnum.Action.Stun, Stun);
+        actionMethode.Add(ActionEnum.Action.BottleStrick, BottleStrick);
         actionMethode.Add(ActionEnum.Action.Dance, Dance);
         actionMethode.Add(ActionEnum.Action.Drink, Drink);
         actionMethode.Add(ActionEnum.Action.Dart, Dart);
@@ -137,9 +152,10 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         actiondebug = ActionEnum.Action.Nothing; //to delete, juste for debug
         StopWalking();
         actionCB = null;
-        anim = false;
         ResetCallback();
         actionList.Clear();
+        AnimationDone();
+        StopAllCoroutines();
     }
 
     public void StopWalking()
@@ -164,6 +180,11 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         animator.SetBool("drinking", false);
         animator.SetBool("dancing", false);
         animator.SetBool("hide", false);
+        animator.SetBool("kick", false);
+        animator.SetBool("stun", false);
+        animator.SetBool("bottleStrick", false);
+        animator.SetBool("slip", false);
+        state = IAState.INTERACTEABLE;
     }
 
     //return true if AI got bottle
@@ -172,11 +193,12 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         return bottle != null ? true : false;
     }
 
-    public void ThrowThisBottle(Vector3 pos)
+    public void ThrowThisBottle()
     {
-        if (bottle == null)
+        if (bottle == null || actionList[0].type != ActionEnum.Action.ThrowBottle)
             return;
-        bottle.GetComponent<AThrowable>().Throw(pos);
+        bottle.GetComponent<Rigidbody>().isKinematic = false;
+        bottle.GetComponent<AThrowable>().Throw(GameObject.FindGameObjectWithTag("Player").transform.position);
         bottle = null;
     }
 
@@ -273,7 +295,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         {
             float biggestValue = 0;
             float value = (float)(UnityEngine.Random.Range(0, 101)) / 100.0f;
-            print("random value: " + value + "chance was: " + actions[i].GetPourcentage(humor, alcool));
+            //print("random value: " + value + "chance was: " + actions[i].GetPourcentage(humor, alcool));
             if (value < actions[i].GetPourcentage(humor, alcool))
             {
                 if (biggestValue < value /*+ actions[i].GetPourcentage(humor, alcool)*/)
@@ -311,13 +333,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         else
         {
             actionBase(ActionEnum.Action.GetBottle);
-            bottle = actionList[0].go;
-            bottle.GetComponent<AThrowable>().Grab(hand.transform);
-            bottle.transform.rotation = hand.transform.rotation;
-            bottle.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
-            bottle.GetComponent<Rigidbody>().isKinematic = true;
-            bottle.tag = "Untagged";
-            animations.GetBottle();
+            animations.GetBottle(actionList[0].go);
         }
     }
 
@@ -329,9 +345,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         else
         {
             actionBase(ActionEnum.Action.ThrowBottle);
-            bottle.GetComponent<Rigidbody>().isKinematic = false;
-            if (bottle.GetComponent<AEvent>() != null)
-                bottle.GetComponent<AEvent>().Enable = true;
+            state = IAState.UNINTERACTEABLE;
             animations.ThrowBottle();
         }
     }
@@ -354,6 +368,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     protected void Leave()
     {
         actionBase(ActionEnum.Action.Leave);
+        GameObject.Find("ElementManager").GetComponent<ElementManager>().AIdie();
         Destroy(gameObject, animations.Leave());
     }
 
@@ -369,6 +384,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     protected void Slip()
     {
         actionBase(ActionEnum.Action.Slip);
+        state = IAState.UNINTERACTEABLE;
         animations.Slip();
     }
 
@@ -377,6 +393,12 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     {
         actionBase(ActionEnum.Action.Stun);
         animations.Stun();
+    }
+
+    protected void BottleStrick()
+    {
+        actionBase(ActionEnum.Action.BottleStrick);
+        animations.BottleStrick();
     }
 
     //Ia gonna dance

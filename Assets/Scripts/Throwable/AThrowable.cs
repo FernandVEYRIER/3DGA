@@ -21,6 +21,9 @@ namespace Assets.Scripts.Throwable
         private Vector3 _previousPosition;
         private Vector3 _throwForce;
 
+        public bool IsGrabbed { get { return _isGrabbed; } }
+        public bool HasBeenThrown { get { return _hasBeenThrown; } }
+
         private void Awake()
         {
             _rigidBody = GetComponent<Rigidbody>();
@@ -30,8 +33,11 @@ namespace Assets.Scripts.Throwable
         {
             if (_isGrabbed)
             {
-                _throwForce = ComputeThrowingForce();
-                transform.position = _attachedTransform.position;
+                if (_attachedTransform != null)
+                {
+                    _throwForce = ComputeThrowingForce();
+                    transform.position = _attachedTransform.position;
+                }
             }
 
             if (Input.GetKeyDown(KeyCode.N))
@@ -137,6 +143,14 @@ namespace Assets.Scripts.Throwable
             transform.SetParent(parent);
             _previousPosition = transform.position;
             _attachedTransform = parent;
+        }
+
+        /// <summary>
+        /// Grab for the player.
+        /// </summary>
+        public virtual void PlayerGrab()
+        {
+            _isGrabbed = true;
         }
     }
 }

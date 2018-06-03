@@ -8,6 +8,6 @@ public class BottleStrickEvent : AEvent {
     {
         print("bottle strick the IA !");
         base.Action(ai);
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
 }

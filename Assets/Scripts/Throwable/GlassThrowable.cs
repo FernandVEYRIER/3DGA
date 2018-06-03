@@ -1,4 +1,6 @@
 ﻿using Assets.Scripts.Effects;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using UnityEngine;
 
 namespace Assets.Scripts.Throwable
@@ -12,6 +14,19 @@ namespace Assets.Scripts.Throwable
         private Renderer _liquidMat;
         private readonly LiquidContainer _container = new LiquidContainer();
 
+        public string GetEffectName()
+        {
+            var effect = _container.GetGeneratedEffect();
+            if (effect == null)
+                return "None";
+            return effect.Recipe.Name;
+        }
+
+        public ReadOnlyCollection<Ingredient> GetLiquidList()
+        {
+            return _container.GetLiquids();
+        }
+
         private void Start()
         {
             _liquid.SetActive(false);
@@ -24,16 +39,16 @@ namespace Assets.Scripts.Throwable
             _liquidMat.material.DisableKeyword("_ALPHABLEND_ON");
             _liquidMat.material.EnableKeyword("_ALPHAPREMULTIPLY_ON");
             _liquidMat.material.renderQueue = 3000;
-            Debug.Log("liquid mat => " + _liquidMat.material.GetColor("_Color"));
+            //Debug.Log("liquid mat => " + _liquidMat.material.GetColor("_Color"));
         }
 
         protected override void OnObjectDestroy()
         {
             if (_hitEffect != null)
                 Instantiate(_hitEffect, transform.position, Quaternion.identity);
-            var effect = _container.GetGeneratedEffect();
+            /*var effect = _container.GetGeneratedEffect();
             if (effect != null)
-                effect.Activate(GetComponent<AEvent>());
+                effect.Activate(gameObject);*/
             Destroy(gameObject);
         }
 
@@ -62,7 +77,7 @@ namespace Assets.Scripts.Throwable
                 if (effect != null)
                 {
                     Debug.Log("Generated effect ==> " + effect.Recipe.Name);
-                    effect.Activate(GetComponent<AEvent>());
+                    effect.Activate(gameObject);
                 }
                 else
                     Debug.Log("No effect at the moment.");

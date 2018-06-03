@@ -1,20 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ElementManager : MonoBehaviour {
+
+    [SerializeField]
+    private UnityEvent AIdieEvent;
 
     private GameObject[] hiddingSpot;
     private GameObject[] exits;
     private GameObject[] danceFloors;
     private GameObject[] dartGames;
-
+    
     private void Start()
     {
         hiddingSpot = GameObject.FindGameObjectsWithTag("Hidding");
         exits = GameObject.FindGameObjectsWithTag("Exit");
         danceFloors = GameObject.FindGameObjectsWithTag("DanceFloor");
         dartGames = GameObject.FindGameObjectsWithTag("DartGame");
+    }
+
+    public void AIdie()
+    {
+        AIdieEvent.Invoke();
     }
 
     public Vector3 getPlaceToPlayDart(Vector3 position)

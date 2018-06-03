@@ -20,22 +20,42 @@ public abstract class AEvent : MonoBehaviour {
         TriggerExit
     };
 
-    [SerializeField] CollisionType collision;
+    [SerializeField] protected CollisionType collision;
+
+    [SerializeField] protected AnimationCurve humor;
+    [SerializeField] protected AnimationCurve alcool;
+
+    [SerializeField] protected List<ActionEnum.Action> actions = new List<ActionEnum.Action>();
+    [SerializeField] protected List<GameObject> goOfAction = new List<GameObject>();
+
     public CollisionType Collision { get { return collision; } }
+    public AnimationCurve Humor { get { return humor; } }
+    public AnimationCurve Alcool { get { return alcool; } }
+    public List<ActionEnum.Action> Actions { get { return actions; } }
+    public List<GameObject> GoOfAction { get { return goOfAction; } }
 
-    [SerializeField] AnimationCurve humor;
-    [SerializeField] AnimationCurve alcool;
-
-    [SerializeField]
-    List<ActionEnum.Action> actions = new List<ActionEnum.Action>();
-
-    [SerializeField]
-    List<GameObject> goOfAction;
+    public void ResetActions()
+    {
+        actions.Clear();
+        goOfAction.Clear();
+    }
 
     public void AddAction(ActionEnum.Action action, GameObject go = null)
     {
         actions.Add(action);
         goOfAction.Add(go);
+    }
+
+    virtual public void Setup(AEvent _event)
+    {
+        amountOfAlcool = _event.amountOfAlcool;
+        amountOfJoyness = _event.amountOfJoyness;
+
+        collision = _event.Collision;
+        humor = _event.Humor;
+        alcool = _event.Alcool;
+        actions = _event.Actions;
+        goOfAction = _event.GoOfAction;
     }
     
     virtual public void SetAIAction(ADrunkAI ai, float aiHumor, float aiAlcool)
@@ -47,7 +67,8 @@ public abstract class AEvent : MonoBehaviour {
                 print("event proc, modification of the actions !!");
                 ai.GetDrunk(amountOfAlcool);
                 ai.GetHappy(amountOfJoyness);
-                Action(ai);
+                if (ai.State == ADrunkAI.IAState.INTERACTEABLE)
+                    Action(ai);
             }
         }
     }

@@ -11,7 +11,9 @@ public class GrabObject : MonoBehaviour {
 	private SteamVR_TrackedObject trackedObj;
 
 	private GameObject collidingObject; 
-	private GameObject objectInHand; 
+	private GameObject objectInHand;
+
+	private BoxCollider _myBox;
 
 	private SteamVR_Controller.Device Controller
 	{
@@ -68,7 +70,8 @@ public class GrabObject : MonoBehaviour {
 		var joint = AddFixedJoint();
 		joint.connectedBody = objectInHand.GetComponent<Rigidbody>();
 
-
+		if (objectInHand.GetComponent<AThrowable> () != null)
+			objectInHand.GetComponent<AThrowable> ().PlayerGrab();
 	}
 
 	// 3
@@ -92,8 +95,11 @@ public class GrabObject : MonoBehaviour {
 			objectInHand.GetComponent<Rigidbody>().velocity = Controller.velocity * forceRelase;
 			objectInHand.GetComponent<Rigidbody>().angularVelocity = Controller.angularVelocity * forceRelase;
 
-			if (objectInHand.GetComponent<AThrowable> () != null)
-				objectInHand.GetComponent<AThrowable> ().PlayerThrow();
+			if (objectInHand.GetComponent<AThrowable>() != null)
+			{
+				objectInHand.GetComponent<AThrowable>().PlayerThrow();
+				//_myBox.enabled = true;
+			}
 
 			if (objectInHand.GetComponent<BottleStrickEvent>())
 				objectInHand.GetComponent<BottleStrickEvent>().Enable = true;
@@ -113,16 +119,29 @@ public class GrabObject : MonoBehaviour {
 			if (collidingObject)
 			{
 				_GrabObject();
+				_myBox = objectInHand.GetComponent<BoxCollider>();
+				_myBox.enabled = false;
 			}
 		}
 
 		// 2
 		if (Controller.GetHairTriggerUp())
 		{
+			
 			if (objectInHand)
 			{
 				ReleaseObject();
+				StartCoroutine(reactiveCollider());
+
 			}
 		}
+	}
+
+	//IEnumerator to Activate the collider
+
+	IEnumerator reactiveCollider()
+	{
+		yield return  new WaitForSeconds(0.1f);
+		_myBox.enabled = true;
 	}
 }
