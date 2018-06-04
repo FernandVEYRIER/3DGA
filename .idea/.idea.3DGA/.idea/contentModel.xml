@@ -243,15 +243,6 @@
             <e p="TopologyBorders.shader" t="Include" />
           </e>
         </e>
-        <e p="Plugins" t="Include">
-          <e p="liboni.bundle" t="Include">
-            <e p="contents" t="Include">
-              <e p="Resources" t="Include">
-                <e p="CMakeLists.txt" t="Include" />
-              </e>
-            </e>
-          </e>
-        </e>
         <e p="Rendering" t="Include">
           <e p="ObiBaseFluidRenderer.cs" t="Include" />
           <e p="ObiDistanceFieldRenderer.cs" t="Include" />
@@ -485,6 +476,7 @@
           <e p="ParticleHandler.cs" t="Include" />
         </e>
         <e p="PlayerController.cs" t="Include" />
+        <e p="PlayerLife.cs" t="Include" />
         <e p="PourcentageMaker.cs" t="Include" />
         <e p="RespawnOBJ.cs" t="Include" />
         <e p="RulesManager.cs" t="Include" />
@@ -493,6 +485,7 @@
           <e p="SpawnPlayerBottle.cs" t="Include" />
         </e>
         <e p="SpawnManager.cs" t="Include" />
+        <e p="TestBottleGenerator.cs" t="Include" />
         <e p="Throwable" t="Include">
           <e p="AThrowable.cs" t="Include" />
           <e p="BottleThrowable.cs" t="Include" />

@@ -13,6 +13,8 @@ public class RulesManager : MonoBehaviour
 	public int maxScore;
 	public int nbAIMax;
 
+	private int nbAIMaxInGame;
+	
 	private float _timeMinute;
 	private float _timeSeconds;
 
@@ -36,14 +38,17 @@ public class RulesManager : MonoBehaviour
 		_spawnAI = true;
 		coreGame = true;
 
+		nbAIMaxInGame = nbAIMax;
+		
 		StartCoroutine("LostTime");
 	}
 	void Update ()
 	{
+		_ui._score.text = maxScore.ToString();
+		_ui.enemyLeft.text = nbAI.ToString();
 		if (coreGame)
 			{	
-				_ui._score.text = maxScore.ToString();
-				_ui.enemyLeft.text = nbAI.ToString();
+				
 
 				//_timeMinute = (int) (Time.deltaTime / 60f);
 				//_timeSeconds = (int) (Time.deltaTime % 60f);
@@ -51,14 +56,14 @@ public class RulesManager : MonoBehaviour
 
 				//StartCoroutine("LostTime");
 
-				if (_spawnAI)
+				if (_spawnAI && nbAI < nbAIMax)
 				{
-					float timeUntilNewSpawnAI = Random.Range(2, 5);
+					float timeUntilNewSpawnAI = Random.Range(10, 15);
 
 					StartCoroutine(waitToSpawnAI(timeUntilNewSpawnAI));
 				}
 
-				if (_timeMinute == 0f && _timeSeconds == 0f ||  nbAIMax == 0)
+				if (_timeMinute == 0f && _timeSeconds == 0f ||  nbAIMaxInGame == 0)
 					coreGame = false;	
 			}
 	}
@@ -66,6 +71,8 @@ public class RulesManager : MonoBehaviour
 	public void ennemyHit()
 	{
 		maxScore += 20;
+		nbAI -= 1;
+		nbAIMaxInGame -= 1;
 	}
 	
 	public int convertiseurTime()
