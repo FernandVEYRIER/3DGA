@@ -24,6 +24,7 @@ public class ThrowBottles : AAction {
             {
                 AI.AddAction(ActionEnum.Action.Walk, bottle);
                 AI.SetCollisionCB(getBottle);
+                AI.SetTriggerCB(getBottleInPile);
             }
         }
         else
@@ -36,6 +37,20 @@ public class ThrowBottles : AAction {
         {
             Debug.Log("getBottle callback");
             AI.SetCollisionCB(null);
+            AI.SetTriggerCB(null);
+            AI.StopWalking();
+            AI.AddAction(ActionEnum.Action.GetBottle, col);
+            ThrowThisBottle();
+        }
+    }
+
+    private void getBottleInPile(GameObject col, ADrunkAI ai)
+    {
+        if (bottle == col)
+        {
+            Debug.Log("getBottlePile callback");
+            AI.SetCollisionCB(null);
+            AI.SetTriggerCB(null);
             AI.StopWalking();
             AI.AddAction(ActionEnum.Action.GetBottle, col);
             ThrowThisBottle();
