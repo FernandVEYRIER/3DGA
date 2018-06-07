@@ -34,7 +34,6 @@ namespace Assets.Scripts.Throwable
         {
             if (HasBeenThrown)
                 LetsDisco();
-            LetsDisco(); //to delete
         }
 
         private void LetsDisco()
