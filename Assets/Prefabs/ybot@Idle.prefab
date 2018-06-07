@@ -1565,7 +1565,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1089788481001274}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.84, y: -1.4733, z: 14.93}
+  m_LocalPosition: {x: 25.785297, y: -1.497169, z: -1.2662916}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 4954746252411310}
@@ -2542,11 +2542,30 @@ MonoBehaviour:
   hand: {fileID: 1663018816156782}
   AiNavDirection: {fileID: 1655292700496214}
   alcoolPerAction:
-    m_keys: 
-    m_values: []
+    m_keys: 00000000030000000400000008000000090000000b0000000c0000000d000000
+    m_values:
+    - -0.01
+    - -0.01
+    - -0.01
+    - -0.05
+    - -0.05
+    - 0.1
+    - -0.05
+    - -0.02
   humorPerAction:
-    m_keys: 
-    m_values: []
+    m_keys: 010000000200000003000000040000000700000008000000090000000a0000000b0000000c0000000d000000
+    m_values:
+    - 0.01
+    - 0.05
+    - -0.02
+    - -0.02
+    - 0.05
+    - -0.05
+    - -0.05
+    - -0.02
+    - 0.1
+    - 0.02
+    - 0.02
 --- !u!114 &114957115316056788
 MonoBehaviour:
   m_ObjectHideFlags: 1
