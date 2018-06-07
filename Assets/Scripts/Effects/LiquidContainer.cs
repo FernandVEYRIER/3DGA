@@ -45,16 +45,16 @@ namespace Assets.Scripts.Effects
                 Empty();
                 return;
             }
+            if (FillAmount >= 100)
+            {
+                FillAmount = 100;
+                return;
+            }
             var l = _containedLiquids.Find(x => x.Liquid == liquid);
             if (l == null)
             {
                 l = new Ingredient { Liquid = liquid };
                 _containedLiquids.Add(l);
-            }
-            if (FillAmount >= 100)
-            {
-                FillAmount = 100;
-                return;
             }
             l.Percentage += fillStep;
             FillAmount += fillStep;

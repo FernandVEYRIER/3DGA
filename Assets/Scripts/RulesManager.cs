@@ -8,10 +8,13 @@ using JetBrains.Annotations;
 public class RulesManager : MonoBehaviour
 {
 	public string duration;
+	
 	public int nbAI;
 	public int maxScore;
-	
+	public int nbAIMax;
 
+	private int nbAIMaxInGame;
+	
 	private float _timeMinute;
 	private float _timeSeconds;
 
@@ -21,11 +24,9 @@ public class RulesManager : MonoBehaviour
 	public Transform spawneur2;
 
 	public GameObject AI;
-	// Use this for initialization
 
 	private bool _spawnAI;
-	private bool coreGame;
-	
+	private bool coreGame;	
 	
 	void Start ()
 	{
@@ -37,17 +38,17 @@ public class RulesManager : MonoBehaviour
 		_spawnAI = true;
 		coreGame = true;
 
+		nbAIMaxInGame = nbAIMax;
+		
 		StartCoroutine("LostTime");
 	}
-	
-	// Update is called once per frame
 	void Update ()
 	{
+		_ui._score.text = maxScore.ToString();
+		_ui.enemyLeft.text = nbAI.ToString();
 		if (coreGame)
-			{
-		
-				_ui._score.text = maxScore.ToString();
-				_ui.enemyLeft.text = nbAI.ToString();
+			{	
+				
 
 				//_timeMinute = (int) (Time.deltaTime / 60f);
 				//_timeSeconds = (int) (Time.deltaTime % 60f);
@@ -55,24 +56,23 @@ public class RulesManager : MonoBehaviour
 
 				//StartCoroutine("LostTime");
 
-				if (_spawnAI)
+				if (_spawnAI && nbAI < nbAIMax)
 				{
-					float timeUntilNewSpawnAI = Random.Range(10, 20);
+					float timeUntilNewSpawnAI = Random.Range(10, 15);
 
 					StartCoroutine(waitToSpawnAI(timeUntilNewSpawnAI));
 				}
 
-				if (_timeMinute == 0f && _timeSeconds == 0f || nbAI == 0)
-					coreGame = false;
-
-				
-				
+				if (_timeMinute == 0f && _timeSeconds == 0f ||  nbAIMaxInGame == 0)
+					coreGame = false;	
 			}
 	}
 
 	public void ennemyHit()
 	{
 		maxScore += 20;
+		nbAI -= 1;
+		nbAIMaxInGame -= 1;
 	}
 	
 	public int convertiseurTime()
@@ -80,12 +80,10 @@ public class RulesManager : MonoBehaviour
 		string[] time = duration.Split(':');
 
 		_timeMinute = float.Parse(time[0], CultureInfo.InvariantCulture.NumberFormat);
-		
 		_timeSeconds = float.Parse(time[1], CultureInfo.InvariantCulture.NumberFormat);
 
 		if (_timeSeconds > 60)
 			return 1;
-
 		return 0;
 	}
 
@@ -112,6 +110,7 @@ public class RulesManager : MonoBehaviour
 		else 
 			spawnOneAI(spawneur2);
 		_spawnAI = true;
+		nbAI++;
 	}
 
 	IEnumerator LostTime()
