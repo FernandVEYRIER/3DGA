@@ -11,7 +11,7 @@ namespace Assets.Scripts.Canvas
         [SerializeField] protected float DistanceForDisplay;
 
         private float animTime = 0;
-        [SerializeField] private Animator _animator;
+        //[SerializeField] private Animator _animator;
 
         private CanvasGroup _canvasGroup;
 
@@ -34,7 +34,7 @@ namespace Assets.Scripts.Canvas
             {
                 _canvas.SetActive(false);
                 //_animator.SetFloat("PlayVel", -1f);
-                Debug.Log("Here !!" + _animator.GetFloat("PlayVel"));
+                //Debug.Log("Here !!" + _animator.GetFloat("PlayVel"));
                 return;
             }
             //_animator.SetFloat("PlayVel", 1f);
