@@ -1,24 +1,32 @@
 fileFormatVersion: 2
-guid: f5fd592abfabc124291ead33df5b6471
-timeCreated: 1528166479
+guid: 0b0c035c3f9616543bbffc5b2106053f
+timeCreated: 1527838662
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Glass 3
-    100002: //RootNode
-    100004: Liquid
-    400000: Glass 3
-    400002: //RootNode
-    400004: Liquid
-    2100000: Cup
+    100000: polySurface1
+    100002: polySurface2
+    100004: polySurface3
+    100006: //RootNode
+    100008: transform1
+    400000: polySurface1
+    400002: polySurface2
+    400004: polySurface3
+    400006: //RootNode
+    400008: transform1
+    2100000: beer tap plastic
     2100002: lambert1
-    2300000: Glass 3
-    2300002: Liquid
-    3300000: Glass 3
-    3300002: Liquid
-    4300000: Glass 3
-    4300002: Liquid
+    2100004: beer tap metallic
+    2300000: polySurface1
+    2300002: polySurface2
+    2300004: polySurface3
+    3300000: polySurface1
+    3300002: polySurface2
+    3300004: polySurface3
+    4300000: polySurface1
+    4300002: polySurface2
+    4300004: polySurface3
     9500000: //RootNode
   externalObjects: {}
   materials:
