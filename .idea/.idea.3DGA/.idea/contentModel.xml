@@ -469,6 +469,7 @@
           <e p="AttractCocktail.cs" t="Include" />
           <e p="BottleEvent.cs" t="Include" />
           <e p="BottleStrickEvent.cs" t="Include" />
+          <e p="DiscoBallEvent.cs" t="Include" />
           <e p="kickSomeoneEvent.cs" t="Include" />
           <e p="SlipingEvent.cs" t="Include" />
         </e>
@@ -480,7 +481,21 @@
         <e p="PourcentageMaker.cs" t="Include" />
         <e p="RespawnOBJ.cs" t="Include" />
         <e p="RulesManager.cs" t="Include" />
+        <e p="SerializableDictionary" t="Include">
+          <e p="Editor" t="Include">
+            <e p="SerializableDictionaryPropertyDrawer.cs" t="Include" />
+          </e>
+          <e p="Example" t="Include">
+            <e p="Editor" t="Include">
+              <e p="UserSerializableDictionaryPropertyDrawers.cs" t="Include" />
+            </e>
+            <e p="SerializableDictionaryExample.cs" t="Include" />
+            <e p="UserSerializableDictionaries.cs" t="Include" />
+          </e>
+          <e p="SerializableDictionary.cs" t="Include" />
+        </e>
         <e p="Spawn" t="Include">
+          <e p="BottlePileSpawner.cs" t="Include" />
           <e p="SpawnBottle.cs" t="Include" />
           <e p="SpawnPlayerBottle.cs" t="Include" />
         </e>
@@ -490,22 +505,11 @@
           <e p="AThrowable.cs" t="Include" />
           <e p="BottleThrowable.cs" t="Include" />
           <e p="ClassicBottle.cs" t="Include" />
+          <e p="DiscoBall.cs" t="Include" />
+          <e p="FillingBottle.cs" t="Include" />
           <e p="GlassThrowable.cs" t="Include" />
         </e>
         <e p="UIManagerMiest.cs" t="Include" />
-      </e>
-      <e p="Assets\SerializableDictionary" t="Include">
-        <e p="Editor" t="Include">
-          <e p="SerializableDictionaryPropertyDrawer.cs" t="Include" />
-        </e>
-        <e p="Example" t="Include">
-          <e p="Editor" t="Include">
-            <e p="UserSerializableDictionaryPropertyDrawers.cs" t="Include" />
-          </e>
-          <e p="SerializableDictionaryExample.cs" t="Include" />
-          <e p="UserSerializableDictionaries.cs" t="Include" />
-        </e>
-        <e p="SerializableDictionary.cs" t="Include" />
       </e>
       <e p="Assets\Shaders" t="Include">
         <e p="drunk.shader" t="Include" />

@@ -6,7 +6,7 @@ namespace Assets.Scripts.Canvas
 {
     public class BottleCanvas : AlcoholCanvas
     {
-        [SerializeField] private BottleThrowable _bottle;
+        [SerializeField] private FillingBottle _bottle;
         [SerializeField] private Text _bottleNameText;
 
         override protected void Update()

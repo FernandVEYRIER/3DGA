@@ -17,6 +17,7 @@ namespace Assets.Scripts.Throwable
 
         private Vector3 originPosition;
         private Quaternion originRotation;
+        private Rigidbody _rigidbody;
 
         private void Start()
         {
@@ -25,6 +26,7 @@ namespace Assets.Scripts.Throwable
             _container.Fill(_liquid, 100f);
             _particleHandler = GetComponentInChildren<ParticleHandler>();
             _particleHandler.OnParticleCollided += ParticleHandler_OnParticleCollided;
+            _rigidbody = GetComponent<Rigidbody>();
         }
 
         private void ParticleHandler_OnParticleCollided(object sender, GameObject obj)
@@ -47,6 +49,9 @@ namespace Assets.Scripts.Throwable
                 Instantiate(_hitEffect, transform.position, Quaternion.identity);
             transform.position = originPosition;
             transform.rotation = originRotation;
+            _rigidbody.velocity = Vector3.zero;
+            _rigidbody.angularVelocity = Vector3.zero;
+            HasBeenThrown = false;
         }
 
         public string GetLiquidName()

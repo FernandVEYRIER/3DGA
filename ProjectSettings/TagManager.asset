@@ -17,6 +17,7 @@ TagManager:
   - Solver
   - Hand
   - BottlePile
+  - Bar
   layers:
   - Default
   - TransparentFX

@@ -22,7 +22,7 @@ namespace Assets.Scripts.Throwable
         private Vector3 _throwForce;
 
         public bool IsGrabbed { get { return _isGrabbed; } }
-        public bool HasBeenThrown { get { return _hasBeenThrown; } }
+        public bool HasBeenThrown { get { return _hasBeenThrown; } set { _hasBeenThrown = value; }}
 
         private void Awake()
         {
