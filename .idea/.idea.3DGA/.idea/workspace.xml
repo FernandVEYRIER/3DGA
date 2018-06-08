@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="489c2aaa-846b-40e7-8244-7449e0f9f098" name="Default" comment="fixed merge">
+    <list default="true" id="489c2aaa-846b-40e7-8244-7449e0f9f098" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3DGA/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DGA/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3DGA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DGA/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BottleObiFinal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BottleObiFinal.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/DiscoBall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/DiscoBall.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GlassWithFill.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GlassWithFill.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scene/NewBarTry.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scene/NewBarTry.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Canvas/BottleCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Canvas/BottleCanvas.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Effects/LiquidContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Effects/LiquidContainer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RulesManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RulesManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Throwable/AThrowable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Throwable/AThrowable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Throwable/FillingBottle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Throwable/FillingBottle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -56,23 +48,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AlcoholCanvas.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Canvas/AlcoholCanvas.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
-              <folding>
-                <marker date="1528443571780" expanded="false" signature="6:32" ph="..." />
-                <marker date="1528443571780" expanded="true" signature="123:2036" ph="{...}" />
-                <marker date="1528443571780" expanded="true" signature="1085:1176" ph="{...}" />
-                <marker date="1528443571780" expanded="true" signature="1085:1691" ph="{...}" />
-                <marker date="1528443571780" expanded="true" signature="1394:1568" ph="/* Debug.Log(&quot;Position in screen =&gt; &quot; + posInScreen); ... */" />
-                <marker date="1528443571780" expanded="true" signature="1726:2030" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="RulesManager.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/RulesManager.cs">
           <provider selected="true" editor-type-id="text-editor">
@@ -98,7 +73,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpawnBottle.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SpawnBottle.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Spawn/SpawnBottle.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
@@ -109,6 +84,36 @@
                 <marker date="1524809963743" expanded="true" signature="305:370" ph="{...}" />
                 <marker date="1524809963743" expanded="true" signature="430:647" ph="{...}" />
                 <marker date="1524809963743" expanded="true" signature="478:644" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RespawnGlass.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/RespawnGlass.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <marker date="1528456784790" expanded="false" signature="6:78" ph="..." />
+                <marker date="1528456784790" expanded="true" signature="121:453" ph="{...}" />
+                <marker date="1528456784790" expanded="true" signature="246:451" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GlassCollid.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GlassCollid.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+              <folding>
+                <marker date="1528456761358" expanded="false" signature="6:78" ph="..." />
+                <marker date="1528456761358" expanded="true" signature="120:496" ph="{...}" />
+                <marker date="1528456761358" expanded="true" signature="216:308" ph="{...}" />
+                <marker date="1528456761358" expanded="true" signature="357:494" ph="{...}" />
+                <marker date="1528456761358" expanded="true" signature="402:491" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -170,22 +175,6 @@
                 <marker date="1528454373878" expanded="true" signature="4603:4838" ph="{...}" />
                 <marker date="1528454373878" expanded="true" signature="4848:4917" ph="/// Grab for the player. ... " />
                 <marker date="1528454373878" expanded="true" signature="4958:5009" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UIManagerMiest.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/UIManagerMiest.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-              <folding>
-                <marker date="1527846793044" expanded="false" signature="6:100" ph="..." />
-                <marker date="1527846793044" expanded="true" signature="145:760" ph="{...}" />
-                <marker date="1527846793044" expanded="true" signature="369:493" ph="{...}" />
-                <marker date="1527846793044" expanded="true" signature="548:758" ph="{...}" />
-                <marker date="1527846793044" expanded="true" signature="565:755" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -284,7 +273,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RulesManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IA/ADrunkAI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Liquids/ParticleHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RespawnGlass.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIManagerMiest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GlassCollid.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawn/SpawnBottle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Effects/LiquidContainer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -306,6 +297,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Canvas/BottleCanvas.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Throwable/FillingBottle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Throwable/AThrowable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GlassCollid.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RespawnGlass.cs" />
       </list>
     </option>
   </component>
@@ -507,7 +500,7 @@
       <workItem from="1528070469349" duration="2423000" />
       <workItem from="1528148658493" duration="685000" />
       <workItem from="1528443417240" duration="1511000" />
-      <workItem from="1528452823748" duration="2151000" />
+      <workItem from="1528452823748" duration="4552000" />
     </task>
     <task id="LOCAL-00001" summary="Add Ia and action on Bar, modif script Grab Object">
       <created>1527232987136</created>
@@ -684,11 +677,18 @@
       <option name="project" value="LOCAL" />
       <updated>1528443557035</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="fixe spawn bottle , disco ball ...">
+      <created>1528455109782</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1528455109782</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44493000" />
+    <option name="totallyTimeSpent" value="46894000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -700,8 +700,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Errors In Solution" order="3" />
@@ -754,55 +753,10 @@
     <MESSAGE value="modif Rules" />
     <MESSAGE value="modif implementation" />
     <MESSAGE value="fixed merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed merge" />
+    <MESSAGE value="fixe spawn bottle , disco ball ..." />
+    <option name="LAST_COMMIT_MESSAGE" value="fixe spawn bottle , disco ball ..." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UIManagerMiest.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <marker date="1527846793044" expanded="false" signature="6:100" ph="..." />
-            <marker date="1527846793044" expanded="true" signature="145:760" ph="{...}" />
-            <marker date="1527846793044" expanded="true" signature="369:493" ph="{...}" />
-            <marker date="1527846793044" expanded="true" signature="548:758" ph="{...}" />
-            <marker date="1527846793044" expanded="true" signature="565:755" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Effects/LiquidContainer.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="60" column="40" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
-          <folding>
-            <marker date="1528453882399" expanded="false" signature="6:164" ph="..." />
-            <marker date="1528453882399" expanded="true" signature="198:3758" ph="{...}" />
-            <marker date="1528453882399" expanded="true" signature="205:333" ph="/// Provides a container for liquids, to handle filling and effect generation from content. ... " />
-            <marker date="1528453882399" expanded="true" signature="366:3756" ph="{...}" />
-            <marker date="1528453882399" expanded="true" signature="381:478" ph="/// True if the container is empty, false otherwise. ... " />
-            <marker date="1528453882399" expanded="true" signature="602:673" ph="{...}" />
-            <marker date="1528453882399" expanded="true" signature="683:791" ph="/// The current filling amount of the container, from 0 to 100. ... " />
-            <marker date="1528453882399" expanded="true" signature="1009:1184" ph="/// Fills the container with a certain liquid. ... " />
-            <marker date="1528453882399" expanded="true" signature="1243:1893" ph="{...}" />
-            <marker date="1528453882399" expanded="true" signature="1312:1389" ph="{...}" />
-            <marker date="1528453882399" expanded="true" signature="1424:1510" ph="{...}" />
-            <marker date="1528453882399" expanded="true" signature="1606:1732" ph="{...}" />
-            <marker date="1528453882399" expanded="true" signature="1903:2069" ph="/// Returns the global color of the container according to the current contained liquids. ... " />
-            <marker date="1528453882399" expanded="true" signature="2110:2506" ph="{...}" />
-            <marker date="1528453882399" expanded="true" signature="2254:2371" ph="{...}" />
-            <marker date="1528453882399" expanded="true" signature="2516:2740" ph="/// Fills the container with the given liquid and the given amount. ... " />
-            <marker date="1528453882399" expanded="true" signature="2813:2959" ph="{...}" />
-            <marker date="1528453882399" expanded="true" signature="2969:3058" ph="/// Depletes the container from its content. ... " />
-            <marker date="1528453882399" expanded="true" signature="3088:3209" ph="{...}" />
-            <marker date="1528453882399" expanded="true" signature="3219:3325" ph="/// Makes the container empty by removing every liquid in it. ... " />
-            <marker date="1528453882399" expanded="true" signature="3354:3441" ph="{...}" />
-            <marker date="1528453882399" expanded="true" signature="3451:3608" ph="/// Gets the effect generated according to the current content of the container. ... " />
-            <marker date="1528453882399" expanded="true" signature="3652:3750" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/IAAnimation/AAnimation.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
@@ -1787,6 +1741,32 @@
             <marker date="1524809963743" expanded="true" signature="305:370" ph="{...}" />
             <marker date="1524809963743" expanded="true" signature="430:647" ph="{...}" />
             <marker date="1524809963743" expanded="true" signature="478:644" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GlassCollid.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <marker date="1528456761358" expanded="false" signature="6:78" ph="..." />
+            <marker date="1528456761358" expanded="true" signature="120:496" ph="{...}" />
+            <marker date="1528456761358" expanded="true" signature="216:308" ph="{...}" />
+            <marker date="1528456761358" expanded="true" signature="357:494" ph="{...}" />
+            <marker date="1528456761358" expanded="true" signature="402:491" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RespawnGlass.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <marker date="1528456784790" expanded="false" signature="6:78" ph="..." />
+            <marker date="1528456784790" expanded="true" signature="121:453" ph="{...}" />
+            <marker date="1528456784790" expanded="true" signature="246:451" ph="{...}" />
           </folding>
         </state>
       </provider>
