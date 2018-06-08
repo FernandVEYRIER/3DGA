@@ -325,7 +325,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     //get the bootle in the actionList
     protected void GetBottle()
     {
-        if (actionList[0].go.GetComponent<AThrowable>() == null)
+        if (actionList[0].go.GetComponent<AThrowable>() == null && actionList[0].go.GetComponent<BottlePileSpawner>() == null)
         {
             Destroy(actionList[0].go);
             AnimationDone();
@@ -333,7 +333,10 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         else
         {
             actionBase(ActionEnum.Action.GetBottle);
-            animations.GetBottle(actionList[0].go);
+            if (!actionList[0].go.GetComponent<BottlePileSpawner>())
+                animations.GetBottle(actionList[0].go);
+            else
+                animations.GetBottle(actionList[0].go.GetComponent<BottlePileSpawner>().GetBottle()); 
         }
     }
 

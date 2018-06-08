@@ -12,6 +12,7 @@ public class ElementManager : MonoBehaviour {
     private GameObject[] exits;
     private GameObject[] danceFloors;
     private GameObject[] dartGames;
+    private GameObject[] bottlePile;
     
     private void Start()
     {
@@ -19,6 +20,7 @@ public class ElementManager : MonoBehaviour {
         exits = GameObject.FindGameObjectsWithTag("Exit");
         danceFloors = GameObject.FindGameObjectsWithTag("DanceFloor");
         dartGames = GameObject.FindGameObjectsWithTag("DartGame");
+        bottlePile = GameObject.FindGameObjectsWithTag("BottlePile");
     }
 
     public void AIdie()
@@ -38,7 +40,13 @@ public class ElementManager : MonoBehaviour {
 
     public  GameObject getNearestThrowableObject(Vector3 position)
     {
-        return (getNearestObjectFromList(position, GameObject.FindGameObjectsWithTag("Throwable")));
+        GameObject pile = getNearestObjectFromList(position, bottlePile);
+        GameObject bottle = getNearestObjectFromList(position, GameObject.FindGameObjectsWithTag("Throwable"));
+        if (pile == null)
+            return bottle;
+        if (bottle == null)
+            return pile;
+        return Vector3.Distance(pile.transform.position, position) < Vector3.Distance(bottle.transform.position, position) ? pile : bottle;
     }
 
     public GameObject GetNearestHiddingSpot(Vector3 position)

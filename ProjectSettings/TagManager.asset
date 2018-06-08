@@ -16,6 +16,7 @@ TagManager:
   - DartGame
   - Solver
   - Hand
+  - BottlePile
   layers:
   - Default
   - TransparentFX

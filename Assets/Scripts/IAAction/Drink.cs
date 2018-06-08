@@ -23,6 +23,7 @@ public class Drink : AAction
             else
             {
                 AI.AddAction(ActionEnum.Action.Walk, bottle);
+                AI.SetTriggerCB(getBottleInPile);
                 AI.SetCollisionCB(drink);
             }
         }
@@ -37,12 +38,27 @@ public class Drink : AAction
     {
         if (col == bottle)
         {
+            AI.SetCollisionCB(null);
             AI.SetTriggerCB(null);
-            AI.SetTriggerStayCB(null);
             AI.StopWalking();
             AI.AddAction(ActionEnum.Action.GetBottle, col);
             AI.AddAction(ActionEnum.Action.Drink, null);
             AI.AddAction(ActionEnum.Action.ActionDone, null);
+        }
+    }
+
+    private void getBottleInPile(GameObject col, ADrunkAI ai)
+    {
+        if (bottle == col)
+        {
+            Debug.Log("getBottlePile callback");
+            AI.SetCollisionCB(null);
+            AI.SetTriggerCB(null);
+            AI.StopWalking();
+            AI.AddAction(ActionEnum.Action.GetBottle, col);
+            AI.AddAction(ActionEnum.Action.Drink, null);
+            AI.AddAction(ActionEnum.Action.ActionDone, null);
+
         }
     }
 }
