@@ -18,6 +18,7 @@ namespace Assets.Scripts.Throwable
         [SerializeField] float radius;
 
         private Rigidbody rigidbody;
+        private Quaternion originRotation;
 
         private void Start()
         {
@@ -40,6 +41,7 @@ namespace Assets.Scripts.Throwable
         {
             rigidbody.velocity = Vector3.zero;
             rigidbody.angularVelocity = Vector3.zero;
+            transform.rotation = originRotation;
             rigidbody.isKinematic = true;
             Invoke("OnObjectDestroy", lifeTimer);
             StartCoroutine(MovingAnimation());
