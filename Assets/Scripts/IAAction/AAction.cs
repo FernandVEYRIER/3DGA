@@ -4,6 +4,8 @@ using UnityEngine;
 
 public abstract class AAction : IAction
 {
+    public ActionEnum.Action Action { get { return action; } }
+
     protected ActionEnum.Action action;
     protected ADrunkAI AI;
     protected ElementManager elementManager;

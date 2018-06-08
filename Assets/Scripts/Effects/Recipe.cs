@@ -5,6 +5,17 @@ using UnityEngine;
 
 namespace Assets.Scripts.Effects
 {
+    public enum DrinkName
+    {
+        NOTHING,
+        BEER,
+        KAMIKAZE,
+        LONGISLAND,
+        TEQUILA,
+        BACARDI,
+        B52,
+    }
+
     /// <summary>
     /// Holds a recipe to make a cocktail.
     /// </summary>
@@ -15,8 +26,10 @@ namespace Assets.Scripts.Effects
         /// Name of the recipe.
         /// </summary>
         public string Name { get { return _name; } }
+        public DrinkName DrinkName { get { return dringName; } }
 
         [SerializeField] private string _name;
+        [SerializeField] private DrinkName dringName;
         [SerializeField] private List<Ingredient> _ingredients = new List<Ingredient>();
 
         /// <summary>

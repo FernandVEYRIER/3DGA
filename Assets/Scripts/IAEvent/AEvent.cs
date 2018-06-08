@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Assets.Scripts.Effects;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -46,7 +47,7 @@ public abstract class AEvent : MonoBehaviour {
         goOfAction.Add(go);
     }
 
-    virtual public void Setup(AEvent _event)
+    virtual public void Setup(AEvent _event, Recipe recipe)
     {
         amountOfAlcool = _event.amountOfAlcool;
         amountOfJoyness = _event.amountOfJoyness;

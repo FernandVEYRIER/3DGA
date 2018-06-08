@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using Assets.Scripts.Throwable;
+using Assets.Scripts.Effects;
 using UnityEngine.Events;
 using UnityEditor.Animations;
 
@@ -18,7 +19,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
 
     //just for debug
     [SerializeField]
-    private ActionEnum.Action actiondebug;
+    private ActionEnum.Action currentAction;
     //serialised for debug nothing else
 
     [SerializeField]
@@ -62,6 +63,8 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     public GameObject Bottle { set { bottle = value; }}
     protected bool walking;
     protected bool anim;
+    protected DrinkName DrinkWanted;
+    protected bool forceLiving;
 
     private IAState state = IAState.INTERACTEABLE;
     public IAState State { get { return state; } }
@@ -110,6 +113,8 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         bottle = null;
         destination = null;
         forceActionDone = false;
+        DrinkWanted = DrinkName.NOTHING;
+        forceLiving = false;
 
         animator.SetFloat("alcool", alcool);
     }
@@ -124,7 +129,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
             ActionDone();
         if (!walking && !anim && actionList.Count != 0)
         {
-            actiondebug = actionList[0].type; //to delete, juste for debug
+            currentAction = actionList[0].type; //to delete, juste for debug
             actionMethode[actionList[0].type]();
         }
         if (actionList.Count == 0)
@@ -149,7 +154,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
 
     public void ActionDone()
     {
-        actiondebug = ActionEnum.Action.Nothing; //to delete, juste for debug
+        currentAction = ActionEnum.Action.Nothing; //to delete, juste for debug
         StopWalking();
         actionCB = null;
         ResetCallback();
@@ -160,7 +165,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
 
     public void StopWalking()
     {
-        actiondebug = ActionEnum.Action.Nothing; //to delete, juste for debug
+        currentAction = ActionEnum.Action.Nothing; //to delete, juste for debug
         destination = null;
         nav.SetDestination(gameObject.transform.position);
         walking = false;
@@ -215,6 +220,14 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     {
         humor += amount;
         humor = humor < 0 ? 0 : humor > 1 ? 1 : humor;
+    }
+
+    public void DrinkTypeEffect(DrinkName name)
+    {
+        if (name == DrinkName.NOTHING)
+            return;
+        else if (DrinkWanted == name)
+            forceLiving = true;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -291,17 +304,31 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
     {
         int actionToPlay = -1;
 
-        for (int i = 0; i < actions.Count; i++)
+        if (forceLiving == true)
         {
-            float biggestValue = 0;
-            float value = (float)(UnityEngine.Random.Range(0, 101)) / 100.0f;
-            //print("random value: " + value + "chance was: " + actions[i].GetPourcentage(humor, alcool));
-            if (value < actions[i].GetPourcentage(humor, alcool))
+            for (int i = 0; i < actions.Count; i++)
             {
-                if (biggestValue < value /*+ actions[i].GetPourcentage(humor, alcool)*/)
+                if (actions[i].Action == ActionEnum.Action.Leave)
                 {
-                    biggestValue = value /*+ actions[i].GetPourcentage(humor, alcool)*/;
                     actionToPlay = i;
+                    break;
+                }
+            }
+        }
+        else
+        {
+            for (int i = 0; i < actions.Count; i++)
+            {
+                float biggestValue = 0;
+                float value = (float)(UnityEngine.Random.Range(0, 101)) / 100.0f;
+                //print("random value: " + value + "chance was: " + actions[i].GetPourcentage(humor, alcool));
+                if (value < actions[i].GetPourcentage(humor, alcool))
+                {
+                    if (biggestValue < value /*+ actions[i].GetPourcentage(humor, alcool)*/)
+                    {
+                        biggestValue = value /*+ actions[i].GetPourcentage(humor, alcool)*/;
+                        actionToPlay = i;
+                    }
                 }
             }
         }

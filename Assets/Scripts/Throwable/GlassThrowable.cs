@@ -14,6 +14,8 @@ namespace Assets.Scripts.Throwable
         private Renderer _liquidMat;
         private readonly LiquidContainer _container = new LiquidContainer();
 
+        private AEvent drinkEvent;
+
         public string GetEffectName()
         {
             var effect = _container.GetGeneratedEffect();
@@ -59,6 +61,20 @@ namespace Assets.Scripts.Throwable
             _liquid.SetActive(fa > 0);
             _liquid.transform.localScale = new Vector3(1, fa, 1);
             _liquidMat.material.color = _container.GetContainerColor();
+            if (fa >= 1 && drinkEvent == null)
+            {
+                var effect = _container.GetGeneratedEffect();
+                if (effect != null)
+                {
+                    drinkEvent = effect.Activate(gameObject);
+                }
+            }
+            else if (fa < 1 && drinkEvent != null)
+            {
+                Destroy(drinkEvent);
+                drinkEvent = null;
+            }
+
             //_liquidMat.material.SetColor("_Color", _container.GetContainerColor());
         }
 
@@ -74,10 +90,10 @@ namespace Assets.Scripts.Throwable
             if (Input.GetKeyDown(KeyCode.M))
             {
                 var effect = _container.GetGeneratedEffect();
-                if (effect != null)
+                if (effect != null && drinkEvent == null)
                 {
                     Debug.Log("Generated effect ==> " + effect.Recipe.Name);
-                    effect.Activate(gameObject);
+                    drinkEvent = effect.Activate(gameObject);
                 }
                 else
                     Debug.Log("No effect at the moment.");

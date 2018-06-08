@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class BasicDrunk : ADrunkAI {
 
+
+
 	// Use this for initialization
 	protected override void  Start () {
         base.Start();

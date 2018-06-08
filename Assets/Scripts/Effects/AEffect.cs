@@ -25,12 +25,14 @@ namespace Assets.Scripts.Effects
         /// <summary>
         /// Activate the effect capacities.
         /// </summary>
-        public virtual void Activate(GameObject go)
+        public virtual AEvent Activate(GameObject go)
         {
             go.AddComponent(_event.GetType());
             AEvent tmp = go.GetComponent<AEvent>();
 
-            tmp.Setup(_event);
+            if (tmp == null)
+                return null;
+            tmp.Setup(_event, _recipe);
             if (actions != null && actions.Count > 0)
             {
                 tmp.ResetActions();
@@ -39,6 +41,7 @@ namespace Assets.Scripts.Effects
                     tmp.AddAction(actions[i], goOfActions[i]);
                 }
             }
+            return tmp;
         }
     }
 }
