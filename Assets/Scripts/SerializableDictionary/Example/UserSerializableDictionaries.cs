@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System;
 using UnityEngine;
+using Assets.Scripts.Effects;
 
 [Serializable]
 public class StringStringDictionary : SerializableDictionary<string, string> {}
@@ -17,6 +18,9 @@ public class StringColorArrayDictionary : SerializableDictionary<string, Color[]
 
 [Serializable]
 public class ActionFloatDictionary : SerializableDictionary<ActionEnum.Action, float> { }
+
+[Serializable]
+public class DrinkSpriteDictionary : SerializableDictionary<DrinkName, Sprite> { }
 
 [Serializable]
 public class MyClass
