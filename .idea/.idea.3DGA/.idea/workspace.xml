@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="489c2aaa-846b-40e7-8244-7449e0f9f098" name="Default" comment="modif Rules">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.3DGA/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DGA/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.3DGA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DGA/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/x86_64.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/x86_64.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/x86_64/libOni.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/x86_64/libOni.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scene/NewBarTry.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scene/NewBarTry.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RulesManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RulesManager.cs" afterDir="false" />
-    </list>
+    <list default="true" id="489c2aaa-846b-40e7-8244-7449e0f9f098" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +11,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GrabObject.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GrabObject.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GrabObject.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="196">
@@ -53,7 +46,7 @@
       <file leaf-file-name="AlcoholCanvas.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Canvas/AlcoholCanvas.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
+            <state relative-caret-position="595">
               <caret line="36" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <marker date="1527848231867" expanded="false" signature="6:32" ph="..." />
@@ -70,10 +63,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RulesManager.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RulesManager.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/RulesManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="1020">
               <caret line="65" column="19" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
               <folding>
                 <marker date="1528075884292" expanded="false" signature="6:154" ph="..." />
@@ -309,6 +302,7 @@
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
       </pane>
+      <pane id="Scratches" />
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -326,319 +320,11 @@
         </subPane>
         <option name="show-hidden-items" value="false" />
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Imported_assets/Lamps pack/Prefabs/Materials/Lamp_2 Mat.mat</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/PostProcess/BarPostProcess.asset</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Scene/NewBarTry.unity</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/Android.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/Android/armeabi-v7a.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/Android/armeabi-v7a/libOni.so</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/Android/armeabi-v7a/libOni.so.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/Android/armeabi-v7a/libc++_shared.so</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/Android/armeabi-v7a/libc++_shared.so.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/Android/x86.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/Android/x86/libOni.so</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/Android/x86/libOni.so.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/Android/x86/libc++_shared.so</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/Android/x86/libc++_shared.so.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/iOS.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/iOS/Oni.h</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/iOS/Oni.h.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/iOS/OniHelpers.h</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/iOS/OniHelpers.h.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/iOS/libOni.a</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/iOS/libOni.a.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Info.plist</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Info.plist.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/MacOS.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/MacOS/Oni</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/MacOS/Oni.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/CMakeLists.txt</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/CMakeLists.txt.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/Cholesky</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/Cholesky.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/CholmodSupport</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/CholmodSupport.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/Core</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/Core.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/Dense</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/Dense.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/Eigen</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/Eigen.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/Eigenvalues</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/Eigenvalues.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/Geometry</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/Geometry.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/Householder</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/Householder.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/IterativeLinearSolvers</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/IterativeLinearSolvers.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/Jacobi</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/Jacobi.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/LU</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/LU.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/MetisSupport</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/MetisSupport.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/OrderingMethods</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/OrderingMethods.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/PaStiXSupport</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/PaStiXSupport.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/PardisoSupport</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/PardisoSupport.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/QR</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/QR.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/QtAlignedMalloc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/QtAlignedMalloc.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/SPQRSupport</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/SPQRSupport.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/SVD</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/SVD.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/Sparse</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/Sparse.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/SparseCholesky</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/SparseCholesky.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/SparseCore</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/SparseCore.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/SparseLU</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/SparseLU.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/SparseQR</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/SparseQR.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/StdDeque</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/StdDeque.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/StdList</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/StdList.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/StdVector</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/StdVector.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/SuperLUSupport</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/SuperLUSupport.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/UmfPackSupport</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/Resources/UmfPackSupport.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/_CodeSignature.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/_CodeSignature/CodeResources</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/liboni.bundle/contents/_CodeSignature/CodeResources.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/x86.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/x86/libOni.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/x86/libOni.dll.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/x86_64.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/x86_64/libOni.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Plugins/x86_64/libOni.dll.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Prefabs/BottleObiFinal.prefab</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Prefabs/BottleObiFinal.prefab.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Scene/NewBarTry2.unity</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Scene/NewBarTry2.unity.meta</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/Android.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/Android/armeabi-v7a.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/Android/armeabi-v7a/libOni.so</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/Android/armeabi-v7a/libOni.so.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/Android/armeabi-v7a/libc++_shared.so</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/Android/armeabi-v7a/libc++_shared.so.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/Android/x86.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/Android/x86/libOni.so</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/Android/x86/libOni.so.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/Android/x86/libc++_shared.so</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/Android/x86/libc++_shared.so.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/iOS.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/iOS/Oni.h</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/iOS/Oni.h.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/iOS/OniHelpers.h</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/iOS/OniHelpers.h.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/iOS/libOni.a</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/iOS/libOni.a.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Info.plist</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Info.plist.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/MacOS.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/MacOS/Oni</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/MacOS/Oni.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/CMakeLists.txt</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/CMakeLists.txt.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/Cholesky</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/Cholesky.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/CholmodSupport</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/CholmodSupport.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/Core</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/Core.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/Dense</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/Dense.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/Eigen</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/Eigen.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/Eigenvalues</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/Eigenvalues.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/Geometry</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/Geometry.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/Householder</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/Householder.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/IterativeLinearSolvers</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/IterativeLinearSolvers.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/Jacobi</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/Jacobi.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/LU</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/LU.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/MetisSupport</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/MetisSupport.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/OrderingMethods</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/OrderingMethods.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/PaStiXSupport</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/PaStiXSupport.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/PardisoSupport</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/PardisoSupport.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/QR</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/QR.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/QtAlignedMalloc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/QtAlignedMalloc.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/SPQRSupport</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/SPQRSupport.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/SVD</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/SVD.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/Sparse</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/Sparse.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/SparseCholesky</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/SparseCholesky.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/SparseCore</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/SparseCore.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/SparseLU</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/SparseLU.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/SparseQR</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/SparseQR.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/StdDeque</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/StdDeque.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/StdList</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/StdList.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/StdVector</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/StdVector.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/SuperLUSupport</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/SuperLUSupport.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/UmfPackSupport</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/Resources/UmfPackSupport.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/_CodeSignature.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/_CodeSignature/CodeResources</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/liboni.bundle/contents/_CodeSignature/CodeResources.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/x86.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/x86/libOni.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/x86/libOni.dll.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/x86_64.meta</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/x86_64/libOni.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Assets/Obi/plugins/x86_64/libOni.dll.meta</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -679,6 +365,7 @@
       <workItem from="1527593695962" duration="74000" />
       <workItem from="1527829631076" duration="13449000" />
       <workItem from="1528070469349" duration="2423000" />
+      <workItem from="1528148658493" duration="685000" />
     </task>
     <task id="LOCAL-00001" summary="Add Ia and action on Bar, modif script Grab Object">
       <created>1527232987136</created>
@@ -834,11 +521,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527848215063</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="modif implementation">
+      <created>1528148741661</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1528148741661</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40146000" />
+    <option name="totallyTimeSpent" value="40831000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -854,13 +548,13 @@
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Errors In Solution" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.5042644" side_tool="true" visible="true" weight="0.37799564" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50479746" side_tool="true" visible="true" weight="0.37799564" />
       <window_info anchor="bottom" id="Unit Tests" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="13" sideWeight="0.49573562" visible="true" weight="0.37799564" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="13" sideWeight="0.49520257" visible="true" weight="0.37799564" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17430703" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17590618" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unity" order="9" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -901,7 +595,8 @@
     <MESSAGE value="Some Modif on UI" />
     <MESSAGE value="modif UI" />
     <MESSAGE value="modif Rules" />
-    <option name="LAST_COMMIT_MESSAGE" value="modif Rules" />
+    <MESSAGE value="modif implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="modif implementation" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Liquids/ParticleHandler.cs">
@@ -1031,10 +726,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="47" column="45" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
-          <folding>
-            <marker date="1527838599299" expanded="true" signature="8348:8382" ph="{...}" />
-            <marker date="1527838599299" expanded="true" signature="8348:8384" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1195,10 +886,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="47" column="45" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
-          <folding>
-            <marker date="1527838599299" expanded="true" signature="8348:8382" ph="{...}" />
-            <marker date="1527838599299" expanded="true" signature="8348:8384" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1325,10 +1012,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="47" column="45" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
-          <folding>
-            <marker date="1527838599299" expanded="true" signature="8348:8382" ph="{...}" />
-            <marker date="1527838599299" expanded="true" signature="8348:8384" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1435,10 +1118,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="47" column="45" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
-          <folding>
-            <marker date="1527838599299" expanded="true" signature="8348:8382" ph="{...}" />
-            <marker date="1527838599299" expanded="true" signature="8348:8384" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1541,10 +1220,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="47" column="45" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
-          <folding>
-            <marker date="1527838599299" expanded="true" signature="8348:8382" ph="{...}" />
-            <marker date="1527838599299" expanded="true" signature="8348:8384" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1596,10 +1271,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="47" column="45" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
-          <folding>
-            <marker date="1527838599299" expanded="true" signature="8348:8382" ph="{...}" />
-            <marker date="1527838599299" expanded="true" signature="8348:8384" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1664,10 +1335,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="47" column="45" lean-forward="true" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
-          <folding>
-            <marker date="1527838599299" expanded="true" signature="8348:8382" ph="{...}" />
-            <marker date="1527838599299" expanded="true" signature="8348:8384" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1735,10 +1402,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1428">
           <caret line="84" column="45" selection-start-line="84" selection-start-column="45" selection-end-line="84" selection-end-column="45" />
-          <folding>
-            <marker date="1527838599299" expanded="true" signature="8348:8382" ph="{...}" />
-            <marker date="1527838599299" expanded="true" signature="8348:8384" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1880,6 +1543,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Canvas/AlcoholCanvas.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <marker date="1527848231867" expanded="false" signature="6:32" ph="..." />
+            <marker date="1527848231867" expanded="true" signature="65:2034" ph="{...}" />
+            <marker date="1527848231867" expanded="true" signature="123:2032" ph="{...}" />
+            <marker date="1527848231867" expanded="true" signature="504:646" ph="{...}" />
+            <marker date="1527848231867" expanded="true" signature="687:760" ph="{...}" />
+            <marker date="1527848231867" expanded="true" signature="796:1687" ph="{...}" />
+            <marker date="1527848231867" expanded="true" signature="954:1172" ph="{...}" />
+            <marker date="1527848231867" expanded="true" signature="1390:1564" ph="/* Debug.Log(&quot;Position in screen =&gt; &quot; + posInScreen); ... */" />
+            <marker date="1527848231867" expanded="true" signature="1722:2026" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RulesManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="65" column="19" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
+          <folding>
+            <marker date="1528075884292" expanded="false" signature="6:154" ph="..." />
+            <marker date="1528075884292" expanded="true" signature="197:2533" ph="{...}" />
+            <marker date="1528075884292" expanded="true" signature="555:821" ph="{...}" />
+            <marker date="1528075884292" expanded="true" signature="837:1437" ph="{...}" />
+            <marker date="1528075884292" expanded="true" signature="937:1434" ph="{...}" />
+            <marker date="1528075884292" expanded="true" signature="954:1050" ph="/* _timeMinute = (int) (Time.deltaTime / 60f); ... */" />
+            <marker date="1528075884292" expanded="true" signature="1207:1332" ph="{...}" />
+            <marker date="1528075884292" expanded="true" signature="1463:1522" ph="{...}" />
+            <marker date="1528075884292" expanded="true" signature="1555:1815" ph="{...}" />
+            <marker date="1528075884292" expanded="true" signature="1865:1943" ph="{...}" />
+            <marker date="1528075884292" expanded="true" signature="1911:1940" ph="{...}" />
+            <marker date="1528075884292" expanded="true" signature="1984:2045" ph="{...}" />
+            <marker date="1528075884292" expanded="true" signature="2085:2297" ph="{...}" />
+            <marker date="1528075884292" expanded="true" signature="2322:2531" ph="{...}" />
+            <marker date="1528075884292" expanded="true" signature="2340:2528" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/GrabObject.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -1906,48 +1611,6 @@
             <marker date="1527838886107" expanded="true" signature="2638:2743" ph="{...}" />
             <marker date="1527838886107" expanded="true" signature="2667:2739" ph="{...}" />
             <marker date="1527838886107" expanded="true" signature="2820:2893" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Canvas/AlcoholCanvas.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <marker date="1527848231867" expanded="false" signature="6:32" ph="..." />
-            <marker date="1527848231867" expanded="true" signature="65:2034" ph="{...}" />
-            <marker date="1527848231867" expanded="true" signature="123:2032" ph="{...}" />
-            <marker date="1527848231867" expanded="true" signature="504:646" ph="{...}" />
-            <marker date="1527848231867" expanded="true" signature="687:760" ph="{...}" />
-            <marker date="1527848231867" expanded="true" signature="796:1687" ph="{...}" />
-            <marker date="1527848231867" expanded="true" signature="954:1172" ph="{...}" />
-            <marker date="1527848231867" expanded="true" signature="1390:1564" ph="/* Debug.Log(&quot;Position in screen =&gt; &quot; + posInScreen); ... */" />
-            <marker date="1527848231867" expanded="true" signature="1722:2026" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RulesManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="65" column="19" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
-          <folding>
-            <marker date="1528075884292" expanded="false" signature="6:154" ph="..." />
-            <marker date="1528075884292" expanded="true" signature="197:2533" ph="{...}" />
-            <marker date="1528075884292" expanded="true" signature="555:821" ph="{...}" />
-            <marker date="1528075884292" expanded="true" signature="837:1437" ph="{...}" />
-            <marker date="1528075884292" expanded="true" signature="937:1434" ph="{...}" />
-            <marker date="1528075884292" expanded="true" signature="954:1050" ph="/* _timeMinute = (int) (Time.deltaTime / 60f); ... */" />
-            <marker date="1528075884292" expanded="true" signature="1207:1332" ph="{...}" />
-            <marker date="1528075884292" expanded="true" signature="1463:1522" ph="{...}" />
-            <marker date="1528075884292" expanded="true" signature="1555:1815" ph="{...}" />
-            <marker date="1528075884292" expanded="true" signature="1865:1943" ph="{...}" />
-            <marker date="1528075884292" expanded="true" signature="1911:1940" ph="{...}" />
-            <marker date="1528075884292" expanded="true" signature="1984:2045" ph="{...}" />
-            <marker date="1528075884292" expanded="true" signature="2085:2297" ph="{...}" />
-            <marker date="1528075884292" expanded="true" signature="2322:2531" ph="{...}" />
-            <marker date="1528075884292" expanded="true" signature="2340:2528" ph="{...}" />
           </folding>
         </state>
       </provider>
