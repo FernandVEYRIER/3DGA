@@ -17,7 +17,6 @@ public class BasicDrunk : ADrunkAI {
         base.Start();
         print("basic drunk start");
         AskForDrink();
-        image.enabled = false;
     }
 
     // Update is called once per frame
