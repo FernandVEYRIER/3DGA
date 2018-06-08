@@ -48,13 +48,7 @@ public class RulesManager : MonoBehaviour
 		_ui.enemyLeft.text = nbAI.ToString();
 		if (coreGame)
 			{	
-				
-
-				//_timeMinute = (int) (Time.deltaTime / 60f);
-				//_timeSeconds = (int) (Time.deltaTime % 60f);
 				_ui._time.text = _timeMinute.ToString("00") + ":" + _timeSeconds.ToString("00");
-
-				//StartCoroutine("LostTime");
 
 				if (_spawnAI && nbAI < nbAIMax)
 				{
