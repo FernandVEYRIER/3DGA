@@ -440,6 +440,7 @@
         <e p="Game" t="Include">
           <e p="GameManager.cs" t="Include" />
         </e>
+        <e p="GlassCollid.cs" t="Include" />
         <e p="GrabObject.cs" t="Include" />
         <e p="IA" t="Include">
           <e p="ADrunkAI.cs" t="Include" />
@@ -479,6 +480,7 @@
         <e p="PlayerController.cs" t="Include" />
         <e p="PlayerLife.cs" t="Include" />
         <e p="PourcentageMaker.cs" t="Include" />
+        <e p="RespawnGlass.cs" t="Include" />
         <e p="RespawnOBJ.cs" t="Include" />
         <e p="RulesManager.cs" t="Include" />
         <e p="SerializableDictionary" t="Include">

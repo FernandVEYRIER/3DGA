@@ -298,9 +298,10 @@ GameObject:
   - component: {fileID: 114299592630156242}
   - component: {fileID: 65262532112190802}
   - component: {fileID: 114421697863985508}
+  - component: {fileID: 114396690311395722}
   m_Layer: 0
   m_Name: GlassWithFill
-  m_TagString: Untagged
+  m_TagString: Throwable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -578,8 +579,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1578240923631956}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.168, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.13, y: 3.5446205, z: 1.572}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 4686858242522570}
@@ -983,6 +984,19 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Whiskey
+--- !u!114 &114396690311395722
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1578240923631956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cfedb476285ba54d877fbe3a68ae46f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  getAttribues: {fileID: 0}
+  id_glass: 0
 --- !u!114 &114421697863985508
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1025,7 +1039,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
-  DistanceForDisplay: 3.5
+  DistanceForDisplay: 5
   _powerUpText: {fileID: 114609101545182506}
   _alcoholObj:
   - RootObj: {fileID: 1368958844282818}
@@ -1110,6 +1124,7 @@ MonoBehaviour:
     m_RotationOrder: 0
   actions: 
   goOfAction: []
+  drinkName: 0
 --- !u!114 &114527959297022212
 MonoBehaviour:
   m_ObjectHideFlags: 1
