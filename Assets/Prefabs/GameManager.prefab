@@ -56,10 +56,8 @@ GameObject:
   - component: {fileID: 114956355317438416}
   - component: {fileID: 114130839038334508}
   - component: {fileID: 114389937788029900}
-  - component: {fileID: 114844794847044386}
-  - component: {fileID: 114004325094425668}
-  - component: {fileID: 114166836303402990}
-  - component: {fileID: 114379572939857618}
+  - component: {fileID: 114336263096317210}
+  - component: {fileID: 114997424374365256}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -108,24 +106,6 @@ Transform:
   m_Father: {fileID: 4657380000299182}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114004325094425668
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1435556092476070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cc5d31d7e9c38f49ab69864456d12be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  duration: 1:05
-  nbAI: 0
-  maxScore: 0
-  nbAIMax: 20
-  spawneur1: {fileID: 0}
-  spawneur2: {fileID: 0}
-  AI: {fileID: 1089788481001274, guid: fca166c24044cde40bb1cb38e9ec38df, type: 2}
 --- !u!114 &114130839038334508
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -150,24 +130,6 @@ MonoBehaviour:
   _event: {fileID: 114247664932878216}
   actions: 
   goOfActions: []
---- !u!114 &114166836303402990
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1435556092476070}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ce06c2ea0cb2ad429873cd9210acd62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _time: {fileID: 0}
-  _score: {fileID: 0}
-  enemyLeft: {fileID: 0}
-  _gameOver: {fileID: 0}
-  _displayScoreEnd: {fileID: 0}
-  _scoreEndText: {fileID: 0}
-  endGame: 0
 --- !u!114 &114247664932878216
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -223,24 +185,24 @@ MonoBehaviour:
   goOfAction:
   - {fileID: 0}
   drinkName: 0
---- !u!114 &114379572939857618
+--- !u!114 &114336263096317210
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1435556092476070}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cc5d31d7e9c38f49ab69864456d12be, type: 3}
+  m_Script: {fileID: 11500000, guid: 9ce06c2ea0cb2ad429873cd9210acd62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 1:05
-  nbAI: 20
-  maxScore: 0
-  nbAIMax: 0
-  spawneur1: {fileID: 0}
-  spawneur2: {fileID: 0}
-  AI: {fileID: 1089788481001274, guid: fca166c24044cde40bb1cb38e9ec38df, type: 2}
+  _time: {fileID: 0}
+  _score: {fileID: 0}
+  enemyLeft: {fileID: 0}
+  _gameOver: {fileID: 0}
+  _displayScoreEnd: {fileID: 0}
+  _scoreEndText: {fileID: 0}
+  endGame: 0
 --- !u!114 &114389937788029900
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -306,31 +268,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _recipe:
     _name: Bacardi
-    dringName: 4
+    dringName: 5
     _ingredients:
     - Liquid: 3
       Percentage: 100
   _event: {fileID: 114247664932878216}
   actions: 
   goOfActions: []
---- !u!114 &114844794847044386
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1435556092476070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ce06c2ea0cb2ad429873cd9210acd62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _time: {fileID: 0}
-  _score: {fileID: 0}
-  enemyLeft: {fileID: 0}
-  _gameOver: {fileID: 0}
-  _displayScoreEnd: {fileID: 0}
-  _scoreEndText: {fileID: 0}
-  endGame: 0
 --- !u!114 &114875705348404484
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -375,3 +319,21 @@ MonoBehaviour:
   _event: {fileID: 114247664932878216}
   actions: 
   goOfActions: []
+--- !u!114 &114997424374365256
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1435556092476070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cc5d31d7e9c38f49ab69864456d12be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 1:05
+  nbAI: 0
+  maxScore: 0
+  nbAIMax: 20
+  spawneur1: {fileID: 0}
+  spawneur2: {fileID: 0}
+  AI: {fileID: 1089788481001274, guid: fca166c24044cde40bb1cb38e9ec38df, type: 2}

@@ -31,7 +31,7 @@ namespace Assets.Scripts.Effects
         private readonly List<Ingredient> _containedLiquids = new List<Ingredient>();
 
         [SerializeField]
-        private float fillStep = 0.02f;
+        private float fillStep = 0.01f;
 
         /// <summary>
         /// Fills the container with a certain liquid.

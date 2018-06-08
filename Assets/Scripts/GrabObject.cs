@@ -15,6 +15,8 @@ public class GrabObject : MonoBehaviour {
 
 	private BoxCollider _myBox;
 
+	private bool objectDiff = false;
+
 	private SteamVR_Controller.Device Controller
 	{
 		get { return SteamVR_Controller.Input((int)trackedObj.index); }
@@ -119,8 +121,16 @@ public class GrabObject : MonoBehaviour {
 			if (collidingObject)
 			{
 				_GrabObject();
-				_myBox = objectInHand.GetComponent<BoxCollider>();
-				_myBox.enabled = false;
+
+				if (objectInHand.GetComponent<BoxCollider>() == null)
+				{
+					objectDiff = true;
+				}
+				else
+				{
+					_myBox = objectInHand.GetComponent<BoxCollider>();
+					_myBox.enabled = false;
+				}
 			}
 		}
 
@@ -131,7 +141,10 @@ public class GrabObject : MonoBehaviour {
 			if (objectInHand)
 			{
 				ReleaseObject();
-				StartCoroutine(reactiveCollider());
+				if (objectDiff)
+					objectDiff = false;
+				else
+					StartCoroutine(reactiveCollider());
 
 			}
 		}
