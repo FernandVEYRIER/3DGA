@@ -122,7 +122,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &1129519638130964
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
@@ -145,6 +145,24 @@ GameObject:
   - component: {fileID: 4075330698137682}
   m_Layer: 0
   m_Name: mixamorig:RightHandThumb2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1133394798590928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224272685139208520}
+  - component: {fileID: 223278228920537364}
+  - component: {fileID: 114677956648735182}
+  - component: {fileID: 114470925638681902}
+  m_Layer: 0
+  m_Name: Canvas (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -189,7 +207,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4013093772856796}
   - component: {fileID: 95811775136812276}
-  - component: {fileID: 114911415617693510}
+  - component: {fileID: 114939949082588840}
   - component: {fileID: 114061219206059700}
   - component: {fileID: 195106620531807390}
   - component: {fileID: 54847174840518092}
@@ -809,24 +827,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1613055157544822
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 224296738202224268}
-  - component: {fileID: 223002170078930336}
-  - component: {fileID: 114915424452830052}
-  - component: {fileID: 114201792970934378}
-  m_Layer: 0
-  m_Name: Canvas
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1613176881736990
 GameObject:
   m_ObjectHideFlags: 1
@@ -912,6 +912,23 @@ GameObject:
   - component: {fileID: 4212663312576396}
   m_Layer: 0
   m_Name: mixamorig:LeftToe_End
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1727875198113076
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224933731102835380}
+  - component: {fileID: 222148327003562522}
+  - component: {fileID: 114298383146815726}
+  m_Layer: 0
+  m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1207,7 +1224,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1179408342517116}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.84, y: -1.4733, z: 14.93}
+  m_LocalPosition: {x: 3.9813213, y: -1.497169, z: 1.4964666}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 4718232281478708}
@@ -1216,8 +1233,7 @@ Transform:
   - {fileID: 4812692881509194}
   - {fileID: 4880910865795098}
   - {fileID: 4807466898333632}
-  - {fileID: 4680891759101430}
-  - {fileID: 224296738202224268}
+  - {fileID: 224272685139208520}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1731,6 +1747,7 @@ Transform:
   - {fileID: 4219345137611992}
   - {fileID: 4798613634256636}
   - {fileID: 4357416619202980}
+  - {fileID: 4680891759101430}
   m_Father: {fileID: 4355512029213430}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -2.9595275, y: -6.2180653, z: -1.2814952}
@@ -1909,13 +1926,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1129519638130964}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 1.766, z: 0.038}
-  m_LocalScale: {x: 0.21508165, y: 0.19697648, z: 0.21090548}
+  m_LocalRotation: {x: -0.021751657, y: -0.00047609024, z: -0.0021252793, w: 0.9997611}
+  m_LocalPosition: {x: 0.00010946579, y: 0.17406885, z: 0.006817952}
+  m_LocalScale: {x: 0.21508165, y: 0.1969765, z: 0.21090546}
   m_Children:
   - {fileID: 4504130865193974}
-  m_Father: {fileID: 4013093772856796}
-  m_RootOrder: 6
+  m_Father: {fileID: 4543546200208894}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4682705057695444
 Transform:
@@ -2386,7 +2403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56bf2f23114fe33409b006475f249b26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  action: 0200000006000000040000000b0000000a000000
+  action: 0200000006000000040000000b0000000c000000
   humor:
   - serializedVersion: 2
     m_Curve:
@@ -2477,16 +2494,16 @@ MonoBehaviour:
   - serializedVersion: 2
     m_Curve:
     - serializedVersion: 2
-      time: -0.001876831
-      value: 0.19946289
-      inSlope: 0.5615244
-      outSlope: 0.5615244
+      time: -0.0037612915
+      value: -0.0011138916
+      inSlope: -0.012015994
+      outSlope: -0.012015994
       tangentMode: 0
     - serializedVersion: 2
-      time: 1.002544
-      value: 0.0012473464
-      inSlope: 0.0827447
-      outSlope: 0.0827447
+      time: 1.000652
+      value: 0.19985574
+      inSlope: -0.08618661
+      outSlope: -0.08618661
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -2566,14 +2583,14 @@ MonoBehaviour:
     - serializedVersion: 2
       time: 0.5487012
       value: 0.20118776
-      inSlope: 0.06484774
-      outSlope: 0.06484774
+      inSlope: 0.024621217
+      outSlope: 0.024621217
       tangentMode: 0
     - serializedVersion: 2
       time: 1.0041485
       value: 0.00092091877
-      inSlope: -1.8159933
-      outSlope: -1.8159933
+      inSlope: -0.94953436
+      outSlope: -0.94953436
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -2582,35 +2599,19 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 2
       time: 0
-      value: 0.5
+      value: 0.0991478
       inSlope: 0
       outSlope: 0
       tangentMode: 0
     - serializedVersion: 2
-      time: 1
-      value: 0.5
+      time: 0.9942627
+      value: 0.20034409
       inSlope: 0
       outSlope: 0
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &114201792970934378
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1613055157544822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
 --- !u!114 &114237894462067802
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2622,6 +2623,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fefdadf51e83e354695189aef2b6be2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114298383146815726
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1727875198113076}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 9d98494ad74118d4e995b6fdb35dedb6, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!114 &114470925638681902
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1133394798590928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!114 &114666338234563700
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2634,8 +2678,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enable: 1
-  amountOfAlcool: 0
-  amountOfJoyness: 0
+  amountOfAlcool: -0.02
+  amountOfJoyness: -0.05
   collision: 3
   humor:
     serializedVersion: 2
@@ -2676,93 +2720,13 @@ MonoBehaviour:
   actions: 07000000
   goOfAction:
   - {fileID: 0}
-  thisAI: {fileID: 114911415617693510}
---- !u!114 &114873363321872016
+  thisAI: {fileID: 114939949082588840}
+--- !u!114 &114677956648735182
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1270240750423834}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a2f07ff406af794182976e5d660a4a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  action:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 114911415617693510}
-        m_MethodName: ThrowThisBottle
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  tags:
-  - Hand
---- !u!114 &114911415617693510
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1179408342517116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cc30a68ce65578429064b0868926b28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentAction: 0
-  animator: {fileID: 95811775136812276}
-  destination: {fileID: 1857964054795344}
-  forceActionDone: 0
-  ActionClassName:
-  - ThrowBottles
-  - Hide
-  - LeaveBar
-  - Dance
-  - Drink
-  AnimationClassName: BasicGuyAnimation
-  humor: 0.7
-  alcool: 0.7
-  hand: {fileID: 1005667767370388}
-  AiNavDirection: {fileID: 1857964054795344}
-  alcoolPerAction:
-    m_keys: 00000000030000000400000008000000090000000b0000000c0000000d000000
-    m_values:
-    - -0.01
-    - -0.01
-    - -0.01
-    - -0.05
-    - -0.05
-    - 0.1
-    - -0.05
-    - -0.02
-  humorPerAction:
-    m_keys: 010000000200000003000000040000000700000008000000090000000a0000000b0000000c0000000d000000
-    m_values:
-    - 0.01
-    - 0.05
-    - -0.02
-    - -0.02
-    - 0.05
-    - -0.05
-    - -0.05
-    - -0.02
-    - 0.1
-    - 0.02
-    - 0.02
---- !u!114 &114915424452830052
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1613055157544822}
+  m_GameObject: {fileID: 1133394798590928}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -2778,6 +2742,87 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &114873363321872016
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1270240750423834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a2f07ff406af794182976e5d660a4a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: ThrowThisBottle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  tags:
+  - Hand
+--- !u!114 &114939949082588840
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1179408342517116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbadd2bf76fb07f4ab08ae19be385b85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentAction: 0
+  animator: {fileID: 95811775136812276}
+  destination: {fileID: 1857964054795344}
+  forceActionDone: 0
+  ActionClassName:
+  - ThrowBottles
+  - Hide
+  - LeaveBar
+  - Dance
+  - Drink
+  AnimationClassName: BasicGuyAnimation
+  humor: 0.6
+  alcool: 0.45
+  hand: {fileID: 1005667767370388}
+  AiNavDirection: {fileID: 1857964054795344}
+  alcoolPerAction:
+    m_keys: 000000000300000008000000090000000b0000000d000000
+    m_values:
+    - -0.01
+    - -0.01
+    - -0.02
+    - -0.1
+    - 0.08
+    - -0.01
+  humorPerAction:
+    m_keys: 01000000020000000700000008000000090000000a0000000b0000000c0000000d000000
+    m_values:
+    - 0.1
+    - 0.07
+    - 0.05
+    - -0.1
+    - -0.1
+    - -0.01
+    - 0.12
+    - 0.05
+    - 0.05
+  image: {fileID: 114298383146815726}
+  askingTimeMin: 2
+  askingTimeMax: 10
+  askingTimeDuration: 30
+  numberOfTequila: 2
 --- !u!136 &136463543088634816
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -3021,12 +3066,18 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!223 &223002170078930336
+--- !u!222 &222148327003562522
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1727875198113076}
+--- !u!223 &223278228920537364
 Canvas:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1613055157544822}
+  m_GameObject: {fileID: 1133394798590928}
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
@@ -3041,21 +3092,40 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!224 &224296738202224268
+--- !u!224 &224272685139208520
 RectTransform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1613055157544822}
+  m_GameObject: {fileID: 1133394798590928}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.1366667}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-  m_Children: []
+  m_Children:
+  - {fileID: 224933731102835380}
   m_Father: {fileID: 4013093772856796}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 12.246666, y: 2.136}
+  m_AnchoredPosition: {x: 0, y: 2.1360004}
   m_SizeDelta: {x: 2, y: 2}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224933731102835380
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1727875198113076}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_Children: []
+  m_Father: {fileID: 224272685139208520}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 10, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}

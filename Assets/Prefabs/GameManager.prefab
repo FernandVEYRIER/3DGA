@@ -36,7 +36,23 @@ GameObject:
   - component: {fileID: 4177769140781260}
   - component: {fileID: 114247664932878216}
   m_Layer: 0
-  m_Name: BottleEvent
+  m_Name: BacardiBottleEvent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1395598484754290
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4752940383993830}
+  - component: {fileID: 114508229952160710}
+  m_Layer: 0
+  m_Name: TequillaBottleEvent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -65,6 +81,54 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1517466020309132
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4509127529306052}
+  - component: {fileID: 114980016310064490}
+  m_Layer: 0
+  m_Name: KamikazeBottleEvent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1558271959837694
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4970477936873234}
+  - component: {fileID: 114906184734008186}
+  m_Layer: 0
+  m_Name: LongIslandBottleEvent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1848979036581212
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4985707507831552}
+  - component: {fileID: 114063058864930846}
+  m_Layer: 0
+  m_Name: B52ExplosionEvent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &4177769140781260
 Transform:
   m_ObjectHideFlags: 1
@@ -77,6 +141,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4692492368250022}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4509127529306052
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1517466020309132}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4692492368250022}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4657380000299182
 Transform:
@@ -103,47 +180,66 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4177769140781260}
+  - {fileID: 4985707507831552}
+  - {fileID: 4752940383993830}
+  - {fileID: 4509127529306052}
+  - {fileID: 4970477936873234}
   m_Father: {fileID: 4657380000299182}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114130839038334508
+--- !u!4 &4752940383993830
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1395598484754290}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4692492368250022}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4970477936873234
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1558271959837694}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4692492368250022}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4985707507831552
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1848979036581212}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4692492368250022}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114063058864930846
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1435556092476070}
+  m_GameObject: {fileID: 1848979036581212}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71b1b5e8e16c54f4a8f1e5bd138a61b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _recipe:
-    _name: B52
-    dringName: 6
-    _ingredients:
-    - Liquid: 6
-      Percentage: 30
-    - Liquid: 2
-      Percentage: 30
-    - Liquid: 7
-      Percentage: 40
-  _event: {fileID: 114247664932878216}
-  actions: 
-  goOfActions: []
---- !u!114 &114247664932878216
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1269205327589286}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c974ab39326201f43a648fb48b08e58a, type: 3}
+  m_Script: {fileID: 11500000, guid: 9660428f9d68cde4ebb33d2ecfead060, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Enable: 0
-  amountOfAlcool: 0
-  amountOfJoyness: 0
+  amountOfAlcool: 0.4
+  amountOfJoyness: -0.2
   collision: 0
   humor:
     serializedVersion: 2
@@ -181,7 +277,86 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
-  actions: 0a000000
+  actions: 09000000
+  goOfAction:
+  - {fileID: 0}
+  drinkName: 0
+--- !u!114 &114130839038334508
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1435556092476070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71b1b5e8e16c54f4a8f1e5bd138a61b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _recipe:
+    _name: B52
+    dringName: 6
+    _ingredients:
+    - Liquid: 6
+      Percentage: 30
+    - Liquid: 2
+      Percentage: 30
+    - Liquid: 7
+      Percentage: 40
+  _event: {fileID: 114063058864930846}
+  actions: 
+  goOfActions: []
+--- !u!114 &114247664932878216
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1269205327589286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c974ab39326201f43a648fb48b08e58a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enable: 0
+  amountOfAlcool: 0.8
+  amountOfJoyness: -0.4
+  collision: 0
+  humor:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  alcool:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  actions: 09000000
   goOfAction:
   - {fileID: 0}
   drinkName: 0
@@ -224,7 +399,7 @@ MonoBehaviour:
       Percentage: 40
     - Liquid: 5
       Percentage: 30
-  _event: {fileID: 114247664932878216}
+  _event: {fileID: 114906184734008186}
   actions: 
   goOfActions: []
 --- !u!114 &114438003406636134
@@ -255,6 +430,61 @@ MonoBehaviour:
     - {fileID: 114956355317438416}
     - {fileID: 114130839038334508}
     - {fileID: 114389937788029900}
+--- !u!114 &114508229952160710
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1395598484754290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c974ab39326201f43a648fb48b08e58a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enable: 0
+  amountOfAlcool: 0.6
+  amountOfJoyness: 0.1
+  collision: 0
+  humor:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  alcool:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  actions: 0a000000
+  goOfAction:
+  - {fileID: 0}
+  drinkName: 0
 --- !u!114 &114717703085435056
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -294,9 +524,64 @@ MonoBehaviour:
       Percentage: 75
     - Liquid: 4
       Percentage: 25
-  _event: {fileID: 114247664932878216}
+  _event: {fileID: 114980016310064490}
   actions: 
   goOfActions: []
+--- !u!114 &114906184734008186
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1558271959837694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c974ab39326201f43a648fb48b08e58a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enable: 0
+  amountOfAlcool: 0.5
+  amountOfJoyness: -0.2
+  collision: 0
+  humor:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  alcool:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  actions: 08000000
+  goOfAction:
+  - {fileID: 0}
+  drinkName: 0
 --- !u!114 &114956355317438416
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -316,9 +601,64 @@ MonoBehaviour:
       Percentage: 10
     - Liquid: 8
       Percentage: 90
-  _event: {fileID: 114247664932878216}
+  _event: {fileID: 114508229952160710}
   actions: 
   goOfActions: []
+--- !u!114 &114980016310064490
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1517466020309132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c974ab39326201f43a648fb48b08e58a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enable: 0
+  amountOfAlcool: 0.3
+  amountOfJoyness: -0.1
+  collision: 0
+  humor:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  alcool:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  actions: 0c000000
+  goOfAction:
+  - {fileID: 0}
+  drinkName: 0
 --- !u!114 &114997424374365256
 MonoBehaviour:
   m_ObjectHideFlags: 1
