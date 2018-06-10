@@ -415,11 +415,13 @@
         <e p="Blur.cs" t="Include" />
         <e p="BlurControl.cs" t="Include" />
         <e p="blurGestion.cs" t="Include" />
+        <e p="BottleCollid.cs" t="Include" />
         <e p="Canvas" t="Include">
           <e p="AlcoholCanvas.cs" t="Include" />
           <e p="BottleCanvas.cs" t="Include" />
           <e p="GlassCanvas.cs" t="Include" />
         </e>
+        <e p="CartoonEffectAI.cs" t="Include" />
         <e p="drunk.cs" t="Include" />
         <e p="Effects" t="Include">
           <e p="AEffect.cs" t="Include" />
@@ -512,6 +514,8 @@
           <e p="GlassThrowable.cs" t="Include" />
         </e>
         <e p="UIManagerMiest.cs" t="Include" />
+        <e p="VRUIInput.cs" t="Include" />
+        <e p="VRUIItem.cs" t="Include" />
       </e>
       <e p="Assets\Shaders" t="Include">
         <e p="drunk.shader" t="Include" />

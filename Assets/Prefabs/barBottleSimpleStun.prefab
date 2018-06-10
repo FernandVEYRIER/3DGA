@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 54968908229889430}
   - component: {fileID: 65693888442591176}
   - component: {fileID: 114646268444722438}
+  - component: {fileID: 114247852021074472}
   m_Layer: 0
   m_Name: barBottleSimpleStun
   m_TagString: Throwable
@@ -185,6 +186,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.6483943, y: 1.4676437, z: 0.6700184}
   m_Center: {x: 0.0038298666, y: 0.3087921, z: 0.0054735243}
+--- !u!114 &114247852021074472
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1093491555562036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c983ae9748dab1345b27db6aa38b9f3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114470253393386478
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -239,6 +251,7 @@ MonoBehaviour:
   actions: 0a000000
   goOfAction:
   - {fileID: 0}
+  drinkName: 0
 --- !u!114 &114646268444722438
 MonoBehaviour:
   m_ObjectHideFlags: 1

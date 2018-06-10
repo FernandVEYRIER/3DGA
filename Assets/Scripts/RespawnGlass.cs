@@ -5,6 +5,7 @@ using UnityEngine;
 public class RespawnGlass : MonoBehaviour
 {
 	public GameObject glassOriginal;
+	public GameObject WhiteSmoke;
 	
 	public Transform[] transformToRespawn;
 
@@ -13,5 +14,13 @@ public class RespawnGlass : MonoBehaviour
 		var tmp = Instantiate(glassOriginal, transformToRespawn[id].position, Quaternion.identity);
 		tmp.GetComponent<GlassCollid>().reAttributesScript();
 		tmp.GetComponent<GlassCollid>().id_glass = id;
+		StartCoroutine(displayWhiteSmoke());
+	}
+
+	IEnumerator displayWhiteSmoke()
+	{
+		WhiteSmoke.SetActive(true);
+		yield return new WaitForSeconds(0.5f);
+		WhiteSmoke.SetActive(false);
 	}
 }

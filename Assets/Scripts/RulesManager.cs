@@ -26,7 +26,9 @@ public class RulesManager : MonoBehaviour
 	public GameObject AI;
 
 	private bool _spawnAI;
-	private bool coreGame;	
+	private bool coreGame;
+	
+	private SteamVR_Controller.Device Controller;
 	
 	void Start ()
 	{
@@ -44,6 +46,8 @@ public class RulesManager : MonoBehaviour
 	}
 	void Update ()
 	{
+
+		
 		_ui._score.text = maxScore.ToString();
 		_ui.enemyLeft.text = nbAI.ToString();
 		if (coreGame)
@@ -57,8 +61,11 @@ public class RulesManager : MonoBehaviour
 					StartCoroutine(waitToSpawnAI(timeUntilNewSpawnAI));
 				}
 
-				if (_timeMinute == 0f && _timeSeconds == 0f ||  nbAIMaxInGame == 0)
-					coreGame = false;	
+				if (_timeMinute == 0f && _timeSeconds == 0f || nbAIMaxInGame == 0)
+				{
+					coreGame = false;
+					_ui.endGame = true;
+				}
 			}
 	}
 

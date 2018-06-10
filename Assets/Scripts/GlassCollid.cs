@@ -15,6 +15,9 @@ public class GlassCollid : MonoBehaviour
 
 	private void OnCollisionEnter(Collision other)
 	{
+		if (other.collider.CompareTag("AI"))
+			StartCoroutine(other.gameObject.GetComponent<CartoonEffectAI>().playEffect());
+		
 		if (other.collider.CompareTag("Floor"))
 		{
 			getAttribues.RespawnGlassOnRightplace(id_glass);

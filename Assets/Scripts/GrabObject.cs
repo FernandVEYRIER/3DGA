@@ -21,10 +21,15 @@ public class GrabObject : MonoBehaviour {
 	{
 		get { return SteamVR_Controller.Input((int)trackedObj.index); }
 	}
+	
+	private bool UIisDisplay;
+
+	public GameObject displayUI;
 
 	void Awake()
 	{
 		trackedObj = GetComponent<SteamVR_TrackedObject>();
+		UIisDisplay = true;
 	}
 
 	private void SetCollidingObject(Collider col)
@@ -146,6 +151,21 @@ public class GrabObject : MonoBehaviour {
 				else
 					StartCoroutine(reactiveCollider());
 
+			}
+		}
+		
+		// 3
+		if (displayUI)
+		{
+			if (Controller.GetPressDown(SteamVR_Controller.ButtonMask.Grip) && UIisDisplay)
+			{
+				UIisDisplay = false;
+				displayUI.SetActive(false);
+			}
+			else if (Controller.GetPressDown(SteamVR_Controller.ButtonMask.Grip) && !UIisDisplay)
+			{
+				UIisDisplay = true;
+				displayUI.SetActive(true);
 			}
 		}
 	}
