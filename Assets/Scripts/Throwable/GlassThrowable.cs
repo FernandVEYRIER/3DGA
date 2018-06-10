@@ -51,7 +51,7 @@ namespace Assets.Scripts.Throwable
             /*var effect = _container.GetGeneratedEffect();
             if (effect != null)
                 effect.Activate(gameObject);*/
-            Destroy(gameObject);
+            Destroy(gameObject, 0.01f);
         }
 
         public void Fill(EffectFactory.LIQUID_TYPE liquid)
