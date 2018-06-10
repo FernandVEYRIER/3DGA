@@ -1600,7 +1600,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1089788481001274}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 35.9, y: -1.4733, z: 11.52}
+  m_LocalPosition: {x: 25.785297, y: -1.497169, z: -1.2662916}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 4954746252411310}
@@ -2352,7 +2352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56bf2f23114fe33409b006475f249b26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  action: 0200000006000000040000000b0000000a000000
+  action: 0200000006000000040000000b0000000c000000
   humor:
   - serializedVersion: 2
     m_Curve:
@@ -2443,14 +2443,14 @@ MonoBehaviour:
   - serializedVersion: 2
     m_Curve:
     - serializedVersion: 2
-      time: -0.001876831
-      value: 0.19946289
-      inSlope: 0.5615244
-      outSlope: 0.5615244
+      time: -0.013183594
+      value: 0.0015106201
+      inSlope: -0.0062894393
+      outSlope: -0.0062894393
       tangentMode: 0
     - serializedVersion: 2
-      time: 1.002544
-      value: 0.0012473464
+      time: 0.9968678
+      value: 0.20049661
       inSlope: 0.0827447
       outSlope: 0.0827447
       tangentMode: 0
@@ -2548,13 +2548,13 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 2
       time: 0
-      value: 0.5
+      value: 0.049991608
       inSlope: 0
       outSlope: 0
       tangentMode: 0
     - serializedVersion: 2
-      time: 1
-      value: 0.5
+      time: 0.99504244
+      value: 0.25185925
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -2594,8 +2594,8 @@ MonoBehaviour:
   - Dance
   - Drink
   AnimationClassName: BasicGuyAnimation
-  humor: 0.7
-  alcool: 0.7
+  humor: 0.5
+  alcool: 0.3
   hand: {fileID: 1663018816156782}
   AiNavDirection: {fileID: 1655292700496214}
   alcoolPerAction:
@@ -2624,13 +2624,17 @@ MonoBehaviour:
     - 0.02
     - 0.02
   image: {fileID: 114775850654810712}
-  askingTimeMin: 2
-  askingTimeMax: 5
-  askingTimeDuration: 40
+  askingTimeMin: 1
+  askingTimeMax: 3
+  askingTimeDuration: 2
   drinksSelection:
-    m_keys: 02000000
+    m_keys: 0200000003000000040000000500000006000000
     m_values:
     - {fileID: 21300000, guid: 32c8b114fe2fe634fa0de5da5f7fde8b, type: 3}
+    - {fileID: 21300000, guid: f1f5a1eb660b8dd40b7097760ceee60b, type: 3}
+    - {fileID: 21300000, guid: 9d98494ad74118d4e995b6fdb35dedb6, type: 3}
+    - {fileID: 21300000, guid: 9d34e422cc4d13f4d933338d5ad6d7e9, type: 3}
+    - {fileID: 21300000, guid: 1fa2a4c752cb1cf42afae17b868cf8c9, type: 3}
 --- !u!114 &114775850654810712
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2650,7 +2654,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 32c8b114fe2fe634fa0de5da5f7fde8b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9d98494ad74118d4e995b6fdb35dedb6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2686,8 +2690,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enable: 1
-  amountOfAlcool: 0
-  amountOfJoyness: 0
+  amountOfAlcool: -0.02
+  amountOfJoyness: -0.05
   collision: 3
   humor:
     serializedVersion: 2

@@ -222,7 +222,7 @@ public abstract class ADrunkAI : MonoBehaviour, IDrunkAI {
         humor = humor < 0 ? 0 : humor > 1 ? 1 : humor;
     }
 
-    public void DrinkTypeEffect(DrinkName name)
+    public virtual void DrinkTypeEffect(DrinkName name)
     {
         if (name == DrinkName.NOTHING)
             return;
