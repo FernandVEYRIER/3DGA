@@ -449,6 +449,7 @@
           <e p="AIComportement.cs" t="Include" />
           <e p="BasicDrunk.cs" t="Include" />
           <e p="IDrunkAI.cs" t="Include" />
+          <e p="MexicanAI.cs" t="Include" />
         </e>
         <e p="IAAction" t="Include">
           <e p="AAction.cs" t="Include" />
@@ -473,6 +474,7 @@
           <e p="BottleEvent.cs" t="Include" />
           <e p="BottleStrickEvent.cs" t="Include" />
           <e p="DiscoBallEvent.cs" t="Include" />
+          <e p="ExplosionEvent.cs" t="Include" />
           <e p="kickSomeoneEvent.cs" t="Include" />
           <e p="SlipingEvent.cs" t="Include" />
         </e>
