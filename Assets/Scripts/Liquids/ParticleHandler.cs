@@ -49,6 +49,16 @@ namespace Assets.Scripts.Liquids
                     if (ObiCollider.idToCollider.TryGetValue(item.other, out collider))
                     {
                         OnParticleCollided.Invoke(this, collider.gameObject);
+
+                        // Destroy particle
+                        if (collider.tag.Equals("Throwable"))
+                        {
+                            ObiSolver.ParticleInActor pa = _solver.particleToActor[item.particle];
+                            ObiEmitter emitter = pa.actor as ObiEmitter;
+
+                            if (emitter != null)
+                                emitter.life[pa.indexInActor] = 0;
+                        }
                     }
                 }
             }
